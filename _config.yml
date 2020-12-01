@@ -4,6 +4,7 @@ highlighter: rouge
 highlight_theme: github  # https://github.com/jwarby/jekyll-pygments-themes
 kramdown:
   input: GFM
+  math_engine: katex
   syntax_highlighter_opts:
     css_class: 'highlight'
     span:
