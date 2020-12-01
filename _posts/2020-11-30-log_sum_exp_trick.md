@@ -14,3 +14,7 @@ $$\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.$$
 \f\relax{x} = \int_{-\infty}^\infty
     \f\hat\xi\,e^{2 \pi i \xi x}
     \,d\xi
+    
+{% katex %}
+c = \pm\sqrt{a^2 + b^2}
+{% endkatex %}
