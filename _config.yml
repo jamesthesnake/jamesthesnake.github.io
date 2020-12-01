@@ -1,5 +1,45 @@
 name: James Hennessy
 markdown: kramdown
+highlighter: rouge
+highlight_theme: github  # https://github.com/jwarby/jekyll-pygments-themes
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
+      start_line: 1
+
+# Includes & excludes
+include: ['_pages']
+exclude: [vendor]
+
+# Plug-ins
+plugins:
+  - jekyll-email-protect
+  - jekyll-github-metadata
+  - jekyll-paginate-v2
+  - jekyll/scholar
+  - jekyll-twitter-plugin
+  - jemoji
+  # - bootstrap
+  # - material-sass
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+news_limit: 5
+
+enable_google_analytics:  false
+enable_mansory:           true
+enable_math:              true
+enable_tooltips:          false
+enable_darkmode:          false
+show_social_icons:        false
+
 social_media:
   behance: your_username
   dribbble: your_username  
