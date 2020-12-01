@@ -23,6 +23,7 @@ plugins:
   - jekyll-github-metadata
   - jekyll-paginate-v2
   - jekyll/scholar
+  - jekyll-katex
   - jekyll-twitter-plugin
   - jemoji
   # - bootstrap
