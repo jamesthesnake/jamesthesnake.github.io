@@ -1,9 +1,9 @@
 ---
 layout:     post
-title:      Rmarkdown
-date:       2020-12-01
+title:      oh yoko youtube
+date:       2020-12-012
 summary:    youtube
-categories: oh yoko
+categories: ohyoko
 ---
 
 {% include youtube.html id=https://www.youtube.com/watch?v=7yttffLoWJw %}
