@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      oh yoko youtube
-date:       2020-12-012
+date:       2020-12-02
 summary:    youtube
 categories: ohyoko
 ---
