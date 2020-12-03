@@ -6,5 +6,6 @@ summary:    youtube
 categories: ohyoko
 ---
 
-{% include youtube.html id=https://www.youtube.com/watch?v=7yttffLoWJw %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7yttffLoWJw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 
