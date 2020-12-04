@@ -1,8 +1,8 @@
 ---
 layout:     post
-title:      Proof of Log_sum_exp
-date:       2020-11-30
-summary:    Proof of Log_sum_exp?
+title:      Higgs Boson
+date:       2020-12-03
+summary:    TLDR Higgs Boson?
 categories: Higgs Boson
 ---
 
@@ -24,4 +24,4 @@ Right pointing backhand indexThese t̅t can then "annihilate" to produce a higgs
 #3. Higgs decay
 Higgs lives 1.56 *10^-22
 tt channel dies
-two photons exist
+two photons exist3
