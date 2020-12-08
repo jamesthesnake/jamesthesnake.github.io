@@ -6,7 +6,10 @@ summary:    Feature Flags
 categories: Feature Flags Infrastructure 
 ---
 
-# Feature flags are how infrastructure is rolled out. “Feature flags” are a common way product engineers roll out new features in a system. Feature flags are typically associated with frontend A/B testing where they are used to show a new design or feature to only some of the userbase. But they are a powerful way of replacing infrastructure as well.
+# Feature flags are how infrastructure is rolled out. 
+
+
+“Feature flags” are a common way product engineers roll out new features in a system. Feature flags are typically associated with frontend A/B testing where they are used to show a new design or feature to only some of the userbase. But they are a powerful way of replacing infrastructure as well.
 
 Too many projects have failed because they went for the “big cutover” or a series of “big cutovers” that were then forced into rollbacks by bugs found too late. By using feature flags instead, you’ll gain confidence in your project and mitigate the costs of failure.
 
