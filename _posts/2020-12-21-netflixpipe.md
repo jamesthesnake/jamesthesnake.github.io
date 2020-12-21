@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Netflix
-date:       2020-12-211
+date:       2020-12-21
 summary:    Netflix pipeline
 categories: netflix
 ---
