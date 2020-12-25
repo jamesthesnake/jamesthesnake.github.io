@@ -6,4 +6,4 @@ summary:    Netflix pipeline
 categories: netflix
 ---
 https://www.cortex.dev/post/reproducible-machine-learning-pipelines-with-metaflow-and-cortex
-This is really cool
+This is really cool,compared to michelangelo at UBER
