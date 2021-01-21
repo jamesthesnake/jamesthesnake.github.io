@@ -43,7 +43,7 @@ $$\begin{eqnarray*}(\alpha=\text(max)x_i\end{eqnarray*}$$
 
 PROOF
 $$\begin{eqnarray*}
-y= \text{log} |left(|sum_{i=1}^n e^x_i|right)
-\Leftrightarrow	
-\Leftrightarrow	
+y= \text{log}\left(\sum_{i=1}^n e^x_i\right)\newline
+\Leftrightarrow	\newline
+\Leftrightarrow	\newline
 \end{eqnarray*}$$
