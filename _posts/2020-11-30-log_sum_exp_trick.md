@@ -45,8 +45,10 @@ PROOF
 $$\begin{eqnarray*}
 y= \text{log}\left(\sum_{i=1}^n e^x_i\right)\newline
 \Leftrightarrow e^{y}=\left(\sum_{i=1}^n e^{(x_i)} \right) 	\newline
-\Leftrightarrow e^{-\alpha}e^{y}=e^{-\alpha}\left(\sum_{i=1}^n e^{(x_i)} \right)	\newline
-\Leftrightarrow	e^{y-\alpha}=left(\sum_{i=1}^n e^{(x_i)*e^{-\alpha}} \right) \newline
-\Leftrightarrow y-\alpha=\text{log}\left(\sum_{i=1}^n e^{(x_i-\alpha)} \right)	\newline
-\Leftrightarrow y= \alpha + \text{log}\left(\sum_{i=1}^n e^{(x_i-\alpha)} \right) \newline
+\Leftrightarrow e^{-a}e^{y}=e^{-a}\left(\sum_{i=1}^n e^{(x_i)} \right)	\newline
+\Leftrightarrow	e^{y-a}=left(\sum_{i=1}^n e^{(x_i)*e^{-a}} \right) \newline
+\Leftrightarrow y-a=\text{log}\left(\sum_{i=1}^n e^{(x_i-a)} \right)	\newline
+\Leftrightarrow y= a + \text{log}\left(\sum_{i=1}^n e^{(x_i-a)} \right) \newline
+
+
 \end{eqnarray*}$$
