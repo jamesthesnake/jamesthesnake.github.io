@@ -40,19 +40,10 @@ Both problems have in common, that if you try to calculate it naively, you quite
 
 We can show, that the following equation holds:
 
-$$\begin{eqnarray*}(\text{log}\left(\sum_{i=1}^n e^{(x_i)} \right) = \alpha + \text{log} \left(\sum_{i=1}^n e^{(x_i)} \right))\end{eqnarray*}$$
+$$\begin{eqnarray*}(\text{log}\left(\sum_{i=1}^n e^{(x_i)} \right) = \alpha + \text{log} \left(\sum_{i=1}^n e^{(x_i)-\alpha} \right))\end{eqnarray*}$$
 
-<br>
-You can insert some formula $$f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \,d\xi$$ in the middle of a sentence.
 
-You can also put large formulas in their own paragraph.
+For an arbitrary $$\begin{eqnarray*}\alpha\end{eqnarray*}$$. This means, you can shift the center of the exponential sum. A typical value is setting aa to the maximum, which forces the greatest value to be zero and even if the other values would underflow, you get a reasonable result:
 
-$$f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \,d\xi$$
+$$\begin{eqnarray*}(\alpha=\text(max)x_i\end{eqnarray*}$$
 
-That's it!
-$$\begin{eqnarray*} \text{logsumexp}(\mathbf{x}) = \text{log} \left( \sum_{i} \text{exp}(x_i - \text{max}(\mathbf{x})) \right) + \text{max}(\mathbf{x}). \end{eqnarray*}$$</center><p>(See <a href="https://www.xarg.org/2016/06/the-log-sum-exp-trick-in-machine-learning/">this post</a> for the proof that the trick works.)</p><p>Now we won’t get an overflow because we’re taking the 
-    $\text{exp}$ of $[-2000,-1000,0]$ 
-    instead of $[7000,8000,9000]$. If we now run this instead:</p><pre style="font-size:13px">
-x = np.array([7000,8000,9000])
-
-[\log\sum\limits_{i=1}^n e^{x_i} = a + \log\sum\limits_{i=1}^n e^{x_i-a}\]
