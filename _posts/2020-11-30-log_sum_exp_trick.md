@@ -25,7 +25,7 @@ $$\begin{eqnarray*}({p(h_t\vert v_{1:t})} \equiv \alpha(h_t) = p(v_t\vert h_t)\p
 
 
 <br>
-$$\begin{eqnarray*}({\log \alpha(h_t) = \log p(v_t\vert h_t)+ \log \sum_{h_t}\exp(\log \alpha(h_{t-1}) + \log p(h_t\vert h_{t-1})))\end{eqnarray*}$$
+$$\begin{eqnarray*}({\text{log} \alpha(h_t) = \text{log} p(v_t\vert h_t)+ \text{log} left(\sum_{h_t}\e^(\text{log} \alpha(h_{t-1}) + \text{log} p(h_t\vert h_{t-1})))\right\end{eqnarray*}$$
 
 
 You can insert some formula $$f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \,d\xi$$ in the middle of a sentence.
