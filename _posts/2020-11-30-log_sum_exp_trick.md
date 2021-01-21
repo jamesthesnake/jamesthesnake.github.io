@@ -15,7 +15,7 @@ $$\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.$$
     \f\hat\xi\,e^{2 \pi i \xi x}
     \,d\xi
     
-$$\begin{eqnarray*} (\mathbf{y}) = \text{log} \left( \sum_{i=1}^n \e^{(x_i)} \right) . \end{eqnarray*}$$
+$$\begin{eqnarray*} (\mathbf{y}) = \text{log} \left( \sum_{i=1}^n e^{(x_i)} \right) . \end{eqnarray*}$$
       
 You can insert some formula $$f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \,d\xi$$ in the middle of a sentence.
 
