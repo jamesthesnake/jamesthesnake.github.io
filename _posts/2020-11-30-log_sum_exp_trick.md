@@ -23,7 +23,7 @@ As \alphaα can be quite small, it's a common method to solve the problem in log
 
 
 <br>
-$$\begin{eqnarray*}({\text{log} \alpha(h_t) =\text{log} p(v_t\vert h_t)+\text{log} \left( \sum_{i=1}^n \text{exp} (\text{log}(\alpha(h_t-1))+\text{log}p(h_t\vert h_{t-1}) \right)})\end{eqnarray*}$$
+$$\begin{eqnarray*}{\text{log} \alpha(h_t) =\text{log} p(v_t\vert h_t)+\text{log} \left( \sum_{i=1}^n \text{exp} (\text{log}(\alpha(h_t-1))+\text{log}p(h_t\vert h_{t-1}) \right)}\end{eqnarray*}$$
 
 <br>
 Another example is a multinomial distribution which you want to parameterize with softmax, like e.g. logistic regression with more than 2 unordered categories. If you now want to calculate the log-likelihood you get the quantity due to the normalization constant.
