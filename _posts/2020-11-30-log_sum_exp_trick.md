@@ -44,6 +44,9 @@ $$\begin{eqnarray*}(\alpha=\text(max)x_i\end{eqnarray*}$$
 PROOF
 $$\begin{eqnarray*}
 y= \text{log}\left(\sum_{i=1}^n e^x_i\right)\newline
-\Leftrightarrow	\newline
-\Leftrightarrow	\newline
+\Leftrightarrow e^{y}=\left(\sum_{i=1}^n e^{(x_i)} \right) 	\newline
+\Leftrightarrow e^{-\alpha}e^{y}=e^{-\alpha}\left(\sum_{i=1}^n e^{(x_i)} \right)	\newline
+\Leftrightarrow	e^{y-\alpha}=left(\sum_{i=1}^n e^{(x_i)*e^{-\alpha}} \right) \newline
+\Leftrightarrow y-\alpha=\text{log}\left(\sum_{i=1}^n e^{(x_i-\alpa)} \right)	\newline
+\Leftrightarrow y= \alpha + \text{log}\left(\sum_{i=1}^n e^{(x_i-\alpa)} \right) \newline
 \end{eqnarray*}$$
