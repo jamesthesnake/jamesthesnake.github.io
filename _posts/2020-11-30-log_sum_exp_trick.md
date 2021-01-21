@@ -45,4 +45,6 @@ PROOF
 $$\begin{eqnarray*}
 y= \text{log}\left(\sum_{i=1}^n e^x_i\right)\newline
 \Leftrightarrow e^{y}=\left(\sum_{i=1}^n e^{(x_i)} \right)\newline
-\Leftrightarrow e^{y-a}=\left(\sum_{i=1}^n e^{(x_i)e^{-a}} \right)\newline\end{eqnarray*}$$
+\Leftrightarrow e^{y-a}=\left(\sum_{i=1}^n e^{(x_i)e^{-a}} \right)\newline
+\Leftrightarrow y-a=\text{log}\left(\sum_{i=1}^n e^{(x_i-a)} \right)\newline
+\Leftrightarrow y= a + \text{log}\left(\sum_{i=1}^n e^{(x_i-a)} \right)\newline\end{eqnarray*}$$
