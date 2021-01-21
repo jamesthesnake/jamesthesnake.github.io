@@ -7,14 +7,7 @@ categories: logsum machinelearning proof
 ---
 
 
-Proof goes here!
-Latext to come
-$$\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.$$
-% \f is defined as #1f(#2) using the macro
-\f\relax{x} = \int_{-\infty}^\infty
-    \f\hat\xi\,e^{2 \pi i \xi x}
-    \,d\xi
-    
+
 $$\begin{eqnarray*} (\mathbf{y}) = \text{log} \left( \sum_{i=1}^n e^{(x_i)} \right) . \end{eqnarray*}$$
 
 For example in filtering problems for which the posterior is calculated recursively:
@@ -47,3 +40,10 @@ For an arbitrary $$\begin{eqnarray*}\alpha\end{eqnarray*}$$. This means, you can
 
 $$\begin{eqnarray*}(\alpha=\text(max)x_i\end{eqnarray*}$$
 
+
+PROOF
+$$\begin{eqnarray*}
+y= \text{log} |left(|sum_{i=1}^n e^x_i|right)
+\Leftrightarrow	
+\Leftrightarrow	
+\end{eqnarray*}$$
