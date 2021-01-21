@@ -7,6 +7,8 @@ categories: logsum machinelearning proof
 ---
 
 
+Let's say we have an n-dimensional vector and want to calculate:
+
 
 $$\begin{eqnarray*} (\mathbf{y}) = \text{log} \left( \sum_{i=1}^n e^{(x_i)} \right) . \end{eqnarray*}$$
 
@@ -29,11 +31,11 @@ Another example is a multinomial distribution which you want to parameterize wit
 Both problems have in common, that if you try to calculate it naively, you quite quickly will encounter underflows or overflows, depending on the scale of $$\begin{eqnarray*}({x_(ix)})\end{eqnarray*}$$
 
 ​	
- . Even if you work in log-space, the limited precision of computers is not enough and the result will be INF or -INF. So what can we do?
+ Even if you work in log-space, the limited precision of computers is not enough and the result will be INF or -INF. So what can we do?
 
 We can show, that the following equation holds:
 
-$$\begin{eqnarray*}(\text{log}\left(\sum_{i=1}^n e^{(x_i)} \right) = \alpha + \text{log} \left(\sum_{i=1}^n e^{(x_i)-\alpha} \right))\end{eqnarray*}$$
+$$\begin{eqnarray*}\text{log}\left(\sum_{i=1}^n e^{(x_i)} \right) = \alpha + \text{log} \left(\sum_{i=1}^n e^{(x_i)-\alpha} \right)\end{eqnarray*}$$
 
 
 For an arbitrary $$\begin{eqnarray*}\alpha\end{eqnarray*}$$. This means, you can shift the center of the exponential sum. A typical value is setting aa to the maximum, which forces the greatest value to be zero and even if the other values would underflow, you get a reasonable result:
