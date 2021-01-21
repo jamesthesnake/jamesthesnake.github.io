@@ -3,7 +3,7 @@ layout:     post
 title:      Proof of Log_sum_exp
 date:       2020-11-30
 summary:    Proof of Log_sum_exp?
-categories: machine-learning neural-networks drawing recurrent-neural-network
+categories: Logsum machinelearning proof
 ---
 
 
@@ -25,7 +25,7 @@ $$\begin{eqnarray*}({p(h_t\vert v_{1:t})} \equiv \alpha(h_t) = p(v_t\vert h_t)\p
 
 
 <br>
-$$\begin{eqnarray*}({\text{log} \alpha(h_t) =\text{log} \p(v_t\vert h_t)})\end{eqnarray*}$$
+$$\begin{eqnarray*}({\text{log} \alpha(h_t) =\text{log} p(v_t\vert h_t)\Pi\alpha(h_t-1)\p(h_t|vert h_t -1})\end{eqnarray*}$$
 
 
 You can insert some formula $$f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \,d\xi$$ in the middle of a sentence.
