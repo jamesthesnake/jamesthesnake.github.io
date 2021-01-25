@@ -20,18 +20,19 @@ The root cause of Iridium’s valuation failure was what I call goal seek bias w
 
 The result of the goal seek bias in the case of Iridium was preposterous on its face, if the assumptions were carefully examined.
 
-<b>The phone did not work indoors<b>
+<p><b>The phone did not work indoors</b></p>
 
-<b>The phones did not work in a car<b>
+<p><b>The phones did not work in a car</b></p>
 
-<b>The phones did not work without line of sight to the satellite (buildings and even trees are a problem)<b>
+<p><b>The phones did not work without line of sight to the satellite (buildings and even trees are a problem)</b></p>
 
-<b>The phones were very big, heavy and expensive<b>
+<p><b>The phones were very big, heavy and expensive</b></p>
 
-<b>The service was expensive<b>
-
+<p><b>The service was expensive</b></p>
+<p>
 What did the market researchers ask potential consumers about the Iridium service? A classic leading question of course: “Would you value a mobile phone that you could use anywhere?”  Who wouldn’t say yes to that question? But it wasn’t even close to the right question to ask.
 Whenever you receive a spreadsheet valuing a business, it is wise to focus on the assumptions. And as Bill Gurley points out that is particularly true of a young company. But people make emotional mistakes:
+</p>
 <blockquote>
 	<p>“Ed Staiano, formerly a senior executive at Motorola and the CEO of Iridium at the time of commercial activation, knew in intimate detail how the Iridium system actually functioned and was well aware of its various technical limitations, including the fact that the Iridium telephone would not work dependably indoors or in the urban canyons of central business districts, but he made the decision, nonetheless, to invest $500,000 of his own money in Iridium securities in March 1999”</p>
 </blockquote>
