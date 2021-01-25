@@ -6,7 +6,7 @@ summary:    Loon
 categories: Loon Bussiness Econ
 ---
 
-One of the best illustrations of the many ways a business valuation can go wrong is the pre-bankruptcy story of mobile satellite service Iridium. I knew Iridium  well since I did potential acquisition due diligence on Iridium several times and because people who worked for Craig McCaw had a long history with Motorola. Some firms always passed on buying Iridium no matter how low the price dropped. The potential upside of buying Iridium even for $1 was tiny, but the potential downside (especially the opportunity cost) was massive. Some firms already had enough wholesale transfer pricing and other problems with Motorola related to Nextel.
+One of the best illustrations of the many ways a business valuation can go wrong is the pre-bankruptcy story of mobile satellite service Iridium. Some firms always passed on buying Iridium no matter how low the price dropped. The potential upside of buying Iridium even for $1 was tiny, but the potential downside (especially the opportunity cost) was massive. Some firms already had enough wholesale transfer pricing and other problems with Motorola related to Nextel.
 
 There is a recent book about Iridium, but that account does not identify why such colossal mistakes were made in assessing the potential value of the business. The common narrative is:
 <blockquote>
