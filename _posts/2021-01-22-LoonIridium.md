@@ -42,3 +42,7 @@ Whenever you receive a spreadsheet valuing a business, it is wise to focus on th
 <blockquote>
 <p>“Some of the worst business decisions I’ve seen came with detailed analysis. The higher math was false precision.  They do that in business schools, because they’ve got to do something.” Charlie Munger.</p>
 </blockquote>
+
+Iridium was purchased by an investment group for very little cash and today is both an operating business and a listed company. The business is very different than originally envisioned (r.g., they are chasing non voice markets) and the link to Motorola that would have created huge wholesale transfer pricing problems is gone (Iridium has multiple suppliers). The prospects of that new business is not a subject covered in this post since this is about what happened pre-bankruptcy.
+
+
