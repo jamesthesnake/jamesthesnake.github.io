@@ -12,6 +12,7 @@ The main process which led to its discovery is its decay into 2 photons:  ℎ �
 This process is occurs at "loop level" mediated by the top and bottom quarks 𝑡 & 𝑏
 The higgs lifetime is 1.56×10⁻²² s
 
+Then that leads to ...
     
 ###1. Smash Proton
 LHC smashs protons toghether when two protons collide, itmake a lot of constituent quarks q and gluons G
