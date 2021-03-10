@@ -16,3 +16,6 @@ God knows. What is true, what makes Betrayal a luciferous study in motivations a
 
 I think of Robert like Jake La Motta in Raging Bull, a man who can't communicate with verbal words though he is a writer. Unlike Jake, he  values male friendship over romantic love.
 When all a  play is nothing, it is also a cornerstone for poltical thought.
+
+
+Humanity is weird
