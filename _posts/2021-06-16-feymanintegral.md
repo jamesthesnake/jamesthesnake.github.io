@@ -5,3 +5,17 @@ date: 2021-06-16
 ---
 
 Post Feymans Integral here!
+“I had learned to do integrals by various methods shown in a book that my high school physics teacher Mr. Bader had given me. [It] showed how to differentiate parameters under the integral sign — it’s a certain operation. It turns out that’s not taught very much in the universities; they don’t emphasize it. But I caught on how to use that method, and I used that one damn tool again and again. [If] guys at MIT or Princeton had trouble doing a certain integral, [then] I come along and try differentiating under the integral sign, and often it worked. So I got a great reputation for doing integrals, only because my box of tools was different from everybody else’s, and they had tried all their tools on it before giving the problem to me.” (Surely you’re Joking, Mr. Feynman!)
+Today’s article is going to discuss an obscure but powerful integration technique most commonly known as differentiation under the integral sign, but occasionally referred to as “Feynman’s technique” due to his popularization of this technique in his book, and properly known as the Leibniz Integral Rule.
+One point of clarification before we begin: While the Leibniz Rule is sometimes known as “Feynman’s technique” or similar names, it is not to be confused with Feynman’s path integral formulation of quantum mechanics. Hence for the rest of this article, I will refer to it by its proper name.
+Let’s start with the problem of computing the following integral:
+The book that Feynman mentions in the above quote is Advanced Calculus published in 1926 by an MIT mathematician named Frederick S Woods, this integral comes from that book, and is reproduced on Wolfram Mathworld.
+You can try the usual techniques that you learn in calculus. Trig substitution, change of variable, integration by parts, replacing the integrand with a series, none of it will work. You can also try having Wolfram Alpha compute it, and it will time out. We will need to be more creative.
+You should first observe that alpha is an arbitrary constant with respect to the integral. Since the definite integral will be a number that depends on alpha, we may treat this integral as a function of alpha. The outline of the approach is as follows:
+Consider the integral as a function f of alpha
+Compute the integral for some particular convenient value of alpha. In this case, if alpha is equal to one, then the integral is equal to zero, which gives us the condition f(1) = 0. We will need this for the last step.
+Differentiate the integral with respect to alpha.
+Compute the definite integral with respect to x.
+Integrate indefinitely with respect to alpha.
+Use the fact that f(1) = 0 to compute the value of the constant of integration.
+What we have done is we have transformed the problem from computing an integral into solving a simple differential equation. Observe:
