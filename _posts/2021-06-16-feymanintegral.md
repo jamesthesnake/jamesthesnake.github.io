@@ -5,7 +5,12 @@ date: 2021-06-16
 ---
 
 Post Feymans Integral here!
+
+
+<bt>
 “I had learned to do integrals by various methods shown in a book that my high school physics teacher Mr. Bader had given me. [It] showed how to differentiate parameters under the integral sign — it’s a certain operation. It turns out that’s not taught very much in the universities; they don’t emphasize it. But I caught on how to use that method, and I used that one damn tool again and again. [If] guys at MIT or Princeton had trouble doing a certain integral, [then] I come along and try differentiating under the integral sign, and often it worked. So I got a great reputation for doing integrals, only because my box of tools was different from everybody else’s, and they had tried all their tools on it before giving the problem to me.” (Surely you’re Joking, Mr. Feynman!)
+  
+<br>
 Today’s article is going to discuss an obscure but powerful integration technique most commonly known as differentiation under the integral sign, but occasionally referred to as “Feynman’s technique” due to his popularization of this technique in his book, and properly known as the Leibniz Integral Rule.
 One point of clarification before we begin: While the Leibniz Rule is sometimes known as “Feynman’s technique” or similar names, it is not to be confused with Feynman’s path integral formulation of quantum mechanics. Hence for the rest of this article, I will refer to it by its proper name.
 
