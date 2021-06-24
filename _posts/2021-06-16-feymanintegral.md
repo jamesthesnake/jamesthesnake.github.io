@@ -21,6 +21,8 @@ Let’s start with the problem of computing the following integral:
 The book that Feynman mentions in the above quote is Advanced Calculus published in 1926 by an MIT mathematician named Frederick S Woods, this integral comes from that book, and is reproduced on Wolfram Mathworld.
 You can try the usual techniques that you learn in calculus. Trig substitution, change of variable, integration by parts, replacing the integrand with a series, none of it will work. You can also try having Wolfram Alpha compute it, and it will time out. We will need to be more creative.
 You should first observe that alpha is an arbitrary constant with respect to the integral. Since the definite integral will be a number that depends on alpha, we may treat this integral as a function of alpha. The outline of the approach is as follows:
+<br>
+  $$\lambda^\prime = -\frac{df}{du}^\ast \lambda + \left(\frac{dg}{du} \right)^\ast$
 Consider the integral as a function f of alpha
 Compute the integral for some particular convenient value of alpha. In this case, if alpha is equal to one, then the integral is equal to zero, which gives us the condition f(1) = 0. We will need this for the last step.
 Differentiate the integral with respect to alpha.
