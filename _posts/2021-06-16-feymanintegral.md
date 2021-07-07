@@ -32,4 +32,4 @@ Use the fact that f(1) = 0 to compute the value of the constant of integration.
 What we have done is we have transformed the problem from computing an integral into solving a simple differential equation. Observe:
 
 $$\begin{eqnarray*}({p(h_t\vert v_{1:t})} \equiv \alpha(h_t) = p(v_t\vert h_t)\prod_{h_t}\alpha(h_{t-1})p(h_t\vert h_{t-1})\end{eqnarray*}$$
-mac open terminal
+$$\beign LET
