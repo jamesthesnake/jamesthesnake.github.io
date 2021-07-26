@@ -35,7 +35,7 @@ $$\int_0^\pi ln(1-2\alpha\cos x+\alpha^2 \dx for  |\alpha| >= 1$$
  if $$\alpha$$ is equal to one, then the integral is equal to zero, which gives us the condition $$f(1) = 0$$. 
  We will need this for the last step.
  <br>
-3.Differentiate the integral with respect to $$\alpha.
+3.Differentiate the integral with respect to $$\alpha$$.
 <br>
 4.Compute the definite integral with respect to x.
 <br>
