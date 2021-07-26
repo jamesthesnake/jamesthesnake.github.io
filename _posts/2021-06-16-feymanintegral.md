@@ -28,6 +28,8 @@ Compute the integral for some particular convenient value of alpha. In this case
 Differentiate the integral with respect to alpha.
 Compute the definite integral with respect to x.
 Integrate indefinitely with respect to alpha.
+TEST When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 Use the fact that f(1) = 0 to compute the value of the constant of integration.
 What we have done is we have transformed the problem from computing an integral into solving a simple differential equation. Observe:
 
