@@ -1,7 +1,9 @@
 ---
-layout: post
-title: "Feymans Integral"
-date: 2021-06-16
+layout:     post
+title:      Feymans intergral
+date:       2021-06-16
+summary:    Feymans Intergral
+categories: math physics calculus
 ---
 
 Post Feymans Integral here!
