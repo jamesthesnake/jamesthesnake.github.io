@@ -25,7 +25,7 @@ The book that Feynman mentions in the above quote is Advanced Calculus published
 You can try the usual techniques that you learn in calculus. Trig substitution, change of variable, integration by parts, replacing the integrand with a series, none of it will work. You can also try having Wolfram Alpha compute it, and it will time out. We will need to be more creative.
 You should first observe that alpha is an arbitrary constant with respect to the integral. Since the definite integral will be a number that depends on alpha, we may treat this integral as a function of alpha. The outline of the approach is as follows:
 <br>
-$$\int_0^\pi ln(1-2\alpha\cosx+\alpha^2 \,dx for  |\alpha| >= 1$$
+$$\int_0^\pi ln(1-2\alpha\cos x+\alpha^2 \,dx for  |\alpha| >= 1$$
 <br>
 
   $$\lambda^\prime = -\frac{df}{du}^\ast \lambda + \left(\frac{dg}{du} \right)^\ast$$
@@ -49,5 +49,7 @@ Use the fact that f(1) = 0 to compute the value of the constant of integration.
 <br>
 What we have done is we have transformed the problem from computing an integral into solving a simple differential equation. Observe:
 <br>
+Let $$f(\alpha) = \int_0^\pi ln(1-2\alpha\cos x + \alpha^2 \dx $$
+<br>
 $$\begin{eqnarray*}({p(h_t\vert v_{1:t})} \equiv \alpha(h_t) = p(v_t\vert h_t)\prod_{h_t}\alpha(h_{t-1})p(h_t\vert h_{t-1})\end{eqnarray*}$$
-$$\beign LET
+
