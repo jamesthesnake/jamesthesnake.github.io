@@ -67,10 +67,10 @@ $$=\frac{1}{a}\int_0^\pi (1 -\frac{1-\alpha^2}{1-2\alpha\cos x+\alpha^2}  ) {dx}
 new booty
 $$\frac{\pi}{\alpha}-\frac{1}{\alpha}$$
 $$\frac{1-\alpha^2}{1+\alpha^2}$$
-$$\int_0_\pi(\frac{1}{1-\frac{2\alpha}{1+\alpha^2}\cos x}){dx}$$
+$$\int_0^\pi (\frac{1}{1-\frac{2\alpha}{1+\alpha^2}\cos x}){dx}$$
 
 <br>
-$$\frac{\pi}{\alpha}-\frac{1}{\alpha}\frac{1-\alpha^2}{1+\alpha^2}\int_0_\pi(\frac{1}{1-\frac{2\alpha}{1+\alpha^2}\cos x}){dx}$$
+$$\frac{\pi}{\alpha}-\frac{1}{\alpha}\frac{1-\alpha^2}{1+\alpha^2}\int_0^\pi (\frac{1}{1-\frac{2\alpha}{1+\alpha^2}\cos x}){dx}$$
 <br>
 This last integral is simpler than it looks. We have to get rid of the cosine function. To do this, we can do a “reverse” u-substitution.
 
