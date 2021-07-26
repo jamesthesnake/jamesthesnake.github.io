@@ -55,7 +55,9 @@ Note that $$f(1)=\int_0^\pi ln(2-2\cos x){dx}=0$$
 $$\frac{\partial f}{\partial \alpha} =\int_0^\pi \frac{\partial}{\partial \alpha} ln(1-2\alpha\cos x + \alpha^2){dx}$$
 $$\int_0^\pi \frac{2\alpha-\cosx}{1-2\alpha\cos x+ \alpha^2}{dx}$$
 <br>
-$$\frac{\partial f}{\partial \alpha} =\int_0^\pi \frac{\partial}{\partial \alpha} ln(1-2\alpha\cos x + \alpha^2){dx}=\int_0^\pi \frac{2\alpha-\cosx}{1-2\alpha\cos x+ \alpha^2}{dx}$$
+$$\frac{\partial f}{\partial \alpha} =\int_0^\pi \frac{\partial}{\partial \alpha} ln(1-2\alpha\cos x + \alpha^2){dx}=\int_0^\pi \frac{2\alpha-\cos x}{1-2\alpha\cos x+ \alpha^2}{dx}$$
 <br>
+$$\int_0^\pi \frac{2\alpha-\cos x}{1-2\alpha\cos x+ \alpha^2}{dx}=\frac{1}{\alpha}\int_0^\pi \frac{2\alpha^2-\alpha\cos x}{1-2\alpha\cos x+ \alpha^2}{dx}$$
+
 $$\begin{eqnarray*}({p(h_t\vert v_{1:t})} \equiv \alpha(h_t) = p(v_t\vert h_t)\prod_{h_t}\alpha(h_{t-1})p(h_t\vert h_{t-1})\end{eqnarray*}$$
 
