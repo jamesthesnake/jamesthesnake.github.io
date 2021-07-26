@@ -25,7 +25,8 @@ The book that Feynman mentions in the above quote is Advanced Calculus published
 You can try the usual techniques that you learn in calculus. Trig substitution, change of variable, integration by parts, replacing the integrand with a series, none of it will work. You can also try having Wolfram Alpha compute it, and it will time out. We will need to be more creative.
 You should first observe that alpha is an arbitrary constant with respect to the integral. Since the definite integral will be a number that depends on alpha, we may treat this integral as a function of alpha. The outline of the approach is as follows:
 <br>
-$$\int_0^pi ln(1-2\alphacosx+\alpha^2 \,dx for \abs\alpha >= 1
+$$\int_0^pi ln(1-2\alphacosx+\alpha^2 \,dx for \abs\alpha >= 1$$
+<br>
 
   $$\lambda^\prime = -\frac{df}{du}^\ast \lambda + \left(\frac{dg}{du} \right)^\ast$$
 Consider the integral as a function f of alpha
