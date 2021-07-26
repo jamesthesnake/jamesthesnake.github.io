@@ -61,6 +61,9 @@ $$\int_0^\pi \frac{2(\alpha-\cos x)}{1-2\alpha\cos x+ \alpha^2}{dx}=\frac{1}{\al
 $$=\frac{1}{a}\int_0^\pi (\frac{2(\alpha^2-\alpha\cos x)}{1-2\alpha\cos x +\alpha^2} +1 -1 ) {dx}$$
 <br>
 $$=\frac{1}{a}\int_0^\pi (\frac{2(\alpha^2-\alpha\cos x)}{1-2\alpha\cos x +\alpha^2} -\frac{1-2\alpha\cos x+\alpha^2}{1-2\alpha\cos x+\alpha^2} +1  ) {dx}$$
+<br>
+s$$=\frac{1}{a}\int_0^\pi (1 -\frac{1-\alpha^2}{1-2\alpha\cos x+\alpha^2}  ) {dx}$$
+<br>
 
 $$\begin{eqnarray*}({p(h_t\vert v_{1:t})} \equiv \alpha(h_t) = p(v_t\vert h_t)\prod_{h_t}\alpha(h_{t-1})p(h_t\vert h_{t-1})\end{eqnarray*}$$
 
