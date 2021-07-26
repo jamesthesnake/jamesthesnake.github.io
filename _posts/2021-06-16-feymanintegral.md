@@ -35,7 +35,7 @@ $$\int_0^\pi ln(1-2\alpha\cos x+\alpha^2 \dx for  |\alpha| >= 1$$
  if $$\alpha$$ is equal to one, then the integral is equal to zero, which gives us the condition $$f(1) = 0$$. 
  We will need this for the last step.
  <br>
-3.Differentiate the integral with respect to $$\alpha$$.
+3.Differentiate the integral with respect to {alpha}.
 <br>
 4.Compute the definite integral with respect to x.
 <br>
@@ -49,9 +49,9 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 <br>
 What we have done is we have transformed the problem from computing an integral into solving a simple differential equation. Observe:
 <br>
-Let $$f(\alpha) = \int_0^\pi ln(1-2\alpha\cos x + \alpha^2 \dx $$
+Let $$f(\alpha) = \int_0^\pi ln(1-2\alpha\cos x + \alpha^2 {dx} $$
 <br>
-Note that $$f(1)=\int_0^pi ln(2-2\cosx)\dx=0$$
+Note that $$f(1)=\int_0^\pi ln(2-2\cos x){dx}=0$$
 <br>
 $$\begin{eqnarray*}({p(h_t\vert v_{1:t})} \equiv \alpha(h_t) = p(v_t\vert h_t)\prod_{h_t}\alpha(h_{t-1})p(h_t\vert h_{t-1})\end{eqnarray*}$$
 
