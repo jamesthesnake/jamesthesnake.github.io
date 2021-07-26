@@ -64,7 +64,12 @@ $$=\frac{1}{a}\int_0^\pi (\frac{2(\alpha^2-\alpha\cos x)}{1-2\alpha\cos x +\alph
 <br>
 $$=\frac{1}{a}\int_0^\pi (1 -\frac{1-\alpha^2}{1-2\alpha\cos x+\alpha^2}  ) {dx}$$
 <br>
-$$\frac{\pi}{\alpha}-frac{1}{\alpha}\frac{1-\alpha^2}{1+\alpha^2}\int_0_\pi(\frac{1}{1-\frac{2\alpha}{1+\alpha^2}\cos x}){dx}
+$$\frac{\pi}{\alpha}-frac{1}{\alpha}\frac{1-\alpha^2}{1+\alpha^2}\int_0_\pi(\frac{1}{1-\frac{2\alpha}{1+\alpha^2}\cos x}){dx}$$
+<br>
+This last integral is simpler than it looks. We have to get rid of the cosine function. To do this, we can do a “reverse” u-substitution.
+
+<br>
+let x= 2 arctan(u) then cosx=$$\frac{1-{u}^2}{1+{u}^2}$$ and $${u}=\tan \frac{x}{2} , {dx}=\frac {2{du}}{1+{u}^2}$$
 
 $$\begin{eqnarray*}({p(h_t\vert v_{1:t})} \equiv \alpha(h_t) = p(v_t\vert h_t)\prod_{h_t}\alpha(h_{t-1})p(h_t\vert h_{t-1})\end{eqnarray*}$$
 
