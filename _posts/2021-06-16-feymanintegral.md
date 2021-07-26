@@ -25,31 +25,33 @@ The book that Feynman mentions in the above quote is Advanced Calculus published
 You can try the usual techniques that you learn in calculus. Trig substitution, change of variable, integration by parts, replacing the integrand with a series, none of it will work. You can also try having Wolfram Alpha compute it, and it will time out. We will need to be more creative.
 You should first observe that alpha is an arbitrary constant with respect to the integral. Since the definite integral will be a number that depends on alpha, we may treat this integral as a function of alpha. The outline of the approach is as follows:
 <br>
-$$\int_0^\pi ln(1-2\alpha\cos x+\alpha^2 \,dx for  |\alpha| >= 1$$
+$$\int_0^\pi ln(1-2\alpha\cos x+\alpha^2 \dx for  |\alpha| >= 1$$
 <br>
 
   $$\lambda^\prime = -\frac{df}{du}^\ast \lambda + \left(\frac{dg}{du} \right)^\ast$$
-Consider the integral as a function f of alpha
-Compute the integral for some particular convenient value of alpha. In this case,
+1.Consider the integral as a function f of alpha
 <br>
-
- if alpha is equal to one, then the integral is equal to zero, which gives us the condition f(1) = 0. 
- <br>
+2.Compute the integral for some particular convenient value of alpha. In this case,
+ if $$\alpha$$ is equal to one, then the integral is equal to zero, which gives us the condition $$f(1) = 0$$. 
  We will need this for the last step.
-Differentiate the integral with respect to alpha.
+ <br>
+3.Differentiate the integral with respect to $$\alpha.
 <br>
-Compute the definite integral with respect to x.
-Integrate indefinitely with respect to alpha.
+4.Compute the definite integral with respect to x.
+<br>
+5.Integrate indefinitely with respect to alpha.
 <br>
 TEST When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 <br>
 
-Use the fact that f(1) = 0 to compute the value of the constant of integration.
+5.Use the fact that $$f(1) = 0$$ to compute the value of the constant of integration.
 <br>
 What we have done is we have transformed the problem from computing an integral into solving a simple differential equation. Observe:
 <br>
 Let $$f(\alpha) = \int_0^\pi ln(1-2\alpha\cos x + \alpha^2 \dx $$
+<br>
+Note that $$f(1)=\int_0^pi ln(2-2\cosx)\dx=0$$
 <br>
 $$\begin{eqnarray*}({p(h_t\vert v_{1:t})} \equiv \alpha(h_t) = p(v_t\vert h_t)\prod_{h_t}\alpha(h_{t-1})p(h_t\vert h_{t-1})\end{eqnarray*}$$
 
