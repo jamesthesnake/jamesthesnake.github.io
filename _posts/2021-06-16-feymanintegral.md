@@ -63,6 +63,11 @@ $$=\frac{1}{a}\int_0^\pi (\frac{2(\alpha^2-\alpha\cos x)}{1-2\alpha\cos x +\alph
 $$=\frac{1}{a}\int_0^\pi (\frac{2(\alpha^2-\alpha\cos x)}{1-2\alpha\cos x +\alpha^2} -\frac{1-2\alpha\cos x+\alpha^2}{1-2\alpha\cos x+\alpha^2} +1  ) {dx}$$
 <br>
 $$=\frac{1}{a}\int_0^\pi (1 -\frac{1-\alpha^2}{1-2\alpha\cos x+\alpha^2}  ) {dx}$$
+
+$$\frac{\pi}{\alpha}-\frac{1}{\alpha}$$
+$$\frac{1-\alpha^2}{1+\alpha^2}$$
+$$\int_0_\pi(\frac{1}{1-\frac{2\alpha}{1+\alpha^2}\cos x}){dx}$$
+
 <br>
 $$\frac{\pi}{\alpha}-\frac{1}{\alpha}\frac{1-\alpha^2}{1+\alpha^2}\int_0_\pi(\frac{1}{1-\frac{2\alpha}{1+\alpha^2}\cos x}){dx}$$
 <br>
