@@ -24,12 +24,19 @@ You should first observe that alpha is an arbitrary constant with respect to the
 <br>
   $$\lambda^\prime = -\frac{df}{du}^\ast \lambda + \left(\frac{dg}{du} \right)^\ast$
 Consider the integral as a function f of alpha
-Compute the integral for some particular convenient value of alpha. In this case, if alpha is equal to one, then the integral is equal to zero, which gives us the condition f(1) = 0. We will need this for the last step.
+Compute the integral for some particular convenient value of alpha. In this case,
+<br>
+ if alpha is equal to one, then the integral is equal to zero, which gives us the condition f(1) = 0. 
+ <br>
+ We will need this for the last step.
 Differentiate the integral with respect to alpha.
 Compute the definite integral with respect to x.
 Integrate indefinitely with respect to alpha.
+<br>
 TEST When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+<br>
+
 Use the fact that f(1) = 0 to compute the value of the constant of integration.
 What we have done is we have transformed the problem from computing an integral into solving a simple differential equation. Observe:
 
