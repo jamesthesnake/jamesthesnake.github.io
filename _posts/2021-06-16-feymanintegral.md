@@ -21,6 +21,7 @@ One point of clarification before we begin: While the Leibniz Rule is sometimes 
 <break>
 Let’s start with the problem of computing the following integral:
 The book that Feynman mentions in the above quote is Advanced Calculus published in 1926 by an MIT mathematician named Frederick S Woods, this integral comes from that book, and is reproduced on Wolfram Mathworld.
+<br>
 You can try the usual techniques that you learn in calculus. Trig substitution, change of variable, integration by parts, replacing the integrand with a series, none of it will work. You can also try having Wolfram Alpha compute it, and it will time out. We will need to be more creative.
 You should first observe that alpha is an arbitrary constant with respect to the integral. Since the definite integral will be a number that depends on alpha, we may treat this integral as a function of alpha. The outline of the approach is as follows:
 <br>
@@ -28,10 +29,12 @@ You should first observe that alpha is an arbitrary constant with respect to the
 Consider the integral as a function f of alpha
 Compute the integral for some particular convenient value of alpha. In this case,
 <br>
+<\n>
  if alpha is equal to one, then the integral is equal to zero, which gives us the condition f(1) = 0. 
  <br>
  We will need this for the last step.
 Differentiate the integral with respect to alpha.
+<br>
 Compute the definite integral with respect to x.
 Integrate indefinitely with respect to alpha.
 <br>
@@ -40,7 +43,8 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 <br>
 
 Use the fact that f(1) = 0 to compute the value of the constant of integration.
+<br>
 What we have done is we have transformed the problem from computing an integral into solving a simple differential equation. Observe:
-
+<br>
 $$\begin{eqnarray*}({p(h_t\vert v_{1:t})} \equiv \alpha(h_t) = p(v_t\vert h_t)\prod_{h_t}\alpha(h_{t-1})p(h_t\vert h_{t-1})\end{eqnarray*}$$
 $$\beign LET
