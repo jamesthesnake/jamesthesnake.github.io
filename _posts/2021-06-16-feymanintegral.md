@@ -3,7 +3,7 @@ layout:     post
 title:      Feymans intergral
 date:       2021-06-16
 summary:    Feymans Intergral
-categories: math physics calculus
+categories:
 ---
 
 Post Feymans Integral here!
