@@ -78,4 +78,6 @@ This last integral is simpler than it looks. We have to get rid of the cosine fu
 let x= 2 arctan(u) then cosx=$$\frac{1-{u}^2}{1+{u}^2}$$ and $${u}=\tan \frac{x}{2} , {dx}=\frac {2{du}}{1+{u}^2}$$
 
 $$\begin{eqnarray*}({p(h_t\vert v_{1:t})} \equiv \alpha(h_t) = p(v_t\vert h_t)\prod_{h_t}\alpha(h_{t-1})p(h_t\vert h_{t-1})\end{eqnarray*}$$
+  
+  Then at the end you find the similarities between the two!
 
