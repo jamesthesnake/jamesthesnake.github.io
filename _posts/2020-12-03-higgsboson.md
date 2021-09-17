@@ -26,3 +26,6 @@ Right pointing backhand indexThese t̅t can then "annihilate" to produce a higgs
 Higgs lives 1.56 *10^-22
 tt channel dies
 two photons exist3
+
+
+QUED very staright forward
