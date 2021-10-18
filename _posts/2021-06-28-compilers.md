@@ -5,7 +5,7 @@ date: 2021-06-28
 ---
 
 Why do compilers even bother with exploiting undefinedness signed overflow? And what are those
-mysterious cases where it helps?
+mysterious cases where it helps? This is what I'm trying to think of as I work.
 
 A lot of people (myself included) are against transforms that aggressively exploit undefined behavior, but
 I think it's useful to know what compiler writers are accomplishing by this.
