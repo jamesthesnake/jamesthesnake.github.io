@@ -10,6 +10,8 @@ categories: logsum machinelearning proof
 Let's say we have an n-dimensional vector and want to calculate:
 
 
+
+
 $$\begin{eqnarray*} (\mathbf{y}) = \text{log} \left( \sum_{i=1}^n e^{(x_i)} \right) . \end{eqnarray*}$$
 
 For example in filtering problems for which the posterior is calculated recursively:
@@ -43,7 +45,7 @@ For an arbitrary $$\begin{eqnarray*}\alpha\end{eqnarray*}$$. This means, you can
 $$\begin{eqnarray*}(\alpha=\text(max)x_i\end{eqnarray*}$$
 
 
-PROOF
+PROOF OF LOG SUM
 $$\begin{eqnarray*}
 y= \text{log}\left(\sum_{i=1}^n e^x_i\right)\newline
 \Leftrightarrow e^{y}=\left(\sum_{i=1}^n e^{(x_i)} \right)\newline
