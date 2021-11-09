@@ -1,3 +1,11 @@
+---
+layout:     post
+title:      Culture in work
+date:       2021-11-09
+summary:    How powerful is culture?
+categories: culture work process
+---
+
 Three major tools that companies have to influence behavior are incentives, process, and culture. People often mean different things when talking about these, so I'll provide an example of each so we're on the same page (if you think that I should be using a different word for the concept, feel free to mentally substitute that word).
 
 Getting people to show up to meetings on time
