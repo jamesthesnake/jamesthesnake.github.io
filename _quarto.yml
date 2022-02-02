@@ -1,0 +1,3 @@
+project:
+  type: site
+  output-dir: docs
