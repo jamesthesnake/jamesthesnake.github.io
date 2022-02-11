@@ -6,3 +6,4 @@ summary:    Proof of Log_sum_exp?
 categories: logsum machinelearning proof
 ---
 https://whatdimitrilearned.substack.com/p/2022-02-07
+https://asatarin.github.io/testing-distributed-systems/
