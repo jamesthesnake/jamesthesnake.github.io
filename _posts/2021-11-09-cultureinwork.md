@@ -23,3 +23,5 @@ Avoiding manufacturing defects
 Incentive: pay people per good item created and/or dock pay for bad items
 Process: have QA check items before shipment and discard bad items
 Culture: people value excellence and try very hard to avoid defects
+
+P.S people get more angry over a legal wrong than a violent wrong, because one is a semi-equal beating you and the other is you were conquered by a superior force.
