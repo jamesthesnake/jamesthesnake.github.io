@@ -1,3 +1,11 @@
+---
+layout:     post
+title:      why Tensors?
+date:       2022-03-15
+summary:    Why tensors
+categories: hardware vertical-intergration IBM s
+---
+
 I’ve been working through Leonard Susskind’s The Theoretical Minimum course, and one thing I’ve found interesting is the ubiquity of tensors - they seem to pop up everywhere in physics. I’ve been trying to build some intution behind what makes them so widely applicable, and I wanted to share my notes on this in the hopes that others might also find this useful. I’d also welcome any insights or corrections.
 
 Most commonly, a tensor is defined as being anything that transforms like a tensor. Specifically, a tensor 
