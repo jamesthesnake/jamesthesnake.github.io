@@ -1,3 +1,12 @@
+---
+layout:     post
+title:      EMR machine learning
+date:       2022-03-22
+summary:    EMR
+categories: Electronic Medical Records Machine Learning
+---
+
+
 A few years ago, I worked on a project to investigate the potential of machine learning to transform healthcare through modeling electronic medical records. I walked away deeply disillusioned with the whole field and I really don’t think that the field needs machine learning right now. What it does need is plenty of IT support. But even that’s not enough. Here are some of the structural reasons why I don’t think deep learning models on EMRs are going to be useful any time soon.
 1. Data is fragmented
 
