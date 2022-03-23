@@ -55,3 +55,11 @@ The idea here is that we want to represent an object that doesn’t depend on th
 T
 , should change in a way such that they always represent the same object.
 
+So starting from 
+T
+, a machine to map two vectors into a scalar, we now have built a new machine 
+T
+′
+ that maps a single vector into a scalar. Internally, this new machine is just using 
+T
+ and a hidden vector, but from the outside, it looks like something new - it takes a single vector and maps it to a scalar. Which is the definition of a tensor! So starting from a tensor that took two parameters, we have constructed a new tensor that takes a single parameter.
