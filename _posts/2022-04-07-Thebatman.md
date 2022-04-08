@@ -1,3 +1,11 @@
+---
+layout:     post
+title:      The Batman
+date:       2022-04-07
+summary:    cool article
+categories: Batman Movie Criticisim
+---
+
 This is what artistic freedom gets you : the first film where Batman is probably a virgin .
 When you put out a legacy blockbuster film that’s been rebooted and consumed by the cultural at large, you either dive into expectations or subvert them. It’s impossible to ignore an 80 year history, and not to have a reflective response to the character. You can do that by updating it to reflect the modern day ( the Nolan Trilogy is about a post 9/11 war), so it was curious of why THE BATMAN seems to have come out of the 1980’s. So it makes sense that the thing that connects to the two is Vengeance and the problems that come from it.
 The first 30 minutes of BATMAN BEGINS is about how Vengeance can never be Justice. Because Vengeance is for short term personal emotional catharsis and Justice is for structural reason. The only time somebody could think the two could be the same would be if they themselves are the system, or in a Biblical sense , GOD. This kind of delusion can come to be in many ways, from extreme ego and narcissism , to cutting yourself off so much from society that you become the entire world based on refusing to see or hear the outside world. Who is seen? Who gets to decide what is hidden? There is a gadget in the movie that are contact lenses that are high definition video recorders. While gadgetry is a crucial part of every Batman movie, this camera is doubly effective because it ties directly into The Batman’s most important theme: The question of who is seen and who goes unseen in a society, and how problems that are willfully ignored — if not intentionally buried — can metastasize from the shadows. To ignore these problems, and not deal with them, is the same act of selfishness that allows one to put personal vengeance over structural justice. In the same way that focusing only on what criminals do and how they see you, you are warped at how everyday folk interact with the system you put on the city.
