@@ -1,3 +1,10 @@
+---
+layout:     post
+title:      Do machines dream in atoms
+date:       2022-04-08
+summary:    Proof of Log_sum_exp?
+categories: Machines dream atoms ml
+---
 “Do machines dream of atoms?”  TLDR; basically if you train a RF model that predicts a value of the function that is a sum of atomic-type contributions (cLogP), the resulting model (models is using fps as an input) can learn that the importance of the bits in the fp that correspond to specific atoms/fragments closely follow the atomic-types contributions in the function that they attempted to learn 
 
 Do machines dream of atoms? A quantitative molecular benchmark for explainable AI heatmaps
