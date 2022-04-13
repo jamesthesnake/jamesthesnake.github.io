@@ -1,3 +1,12 @@
+---
+layout:     post
+title:      PPP Millitary
+date:       2022-04-13
+summary:    Military PPP
+categories: Millitary PPP
+---
+
+
 Do NYPD has a larger budget than X military takes account for purchasing power parity? Like I know Russia's military budget looks absurdly small until you normalize for PPP.
 The need to adjust for local price differences when making international comparisons of real GDP or standards of living is well recognised. Because relative prices differ across countries, a dollar spent on non-traded goods and services can go a lot further in some countries than in others. This is known as the Penn effect or the Balassa-Samuelson effect, and reflects the fact that the market exchange rate only arbitrages the price of traded goods, so international relative prices of non-traded goods can differ widely from the exchange rate.
 
