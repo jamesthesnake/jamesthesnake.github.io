@@ -1,3 +1,12 @@
+---
+layout:     post
+title:      Unreal vs Unity
+date:       2022-04-17
+summary:    Unity Unreal
+categories: Unity Unreal
+---
+
+
 Casey asked this [on Twitter](https://twitter.com/cmuratori/status/1514420516286709760)...
 
 > Having looked at UE5's promotional content, I'm honestly just wondering: what is the point of Unity, now? Either you don't want to deal with a big unwieldy engine, in which case you roll/mod your own, or you do, and you would just use UE5, right? What am I missing?
@@ -6,7 +15,6 @@ Casey asked this [on Twitter](https://twitter.com/cmuratori/status/1514420516286
 
 A lot of interesting responses came from developers, mainly people working on games, which of course makes sense. But, it may be interesting to look at it from the angle of someone who's less focused on the art and more on the software, specifically from a maintainer's point of view. I've worked with a number of Unity games and (admittedly) I've occasionally poked at some Unreal games. More recently I've been working with UE5's Linux editor support as part of work on [SDL](https://libsdl.org/). (TL;DR: I'm kind of stunned at [what I've been able to do with it from day one](https://twitter.com/flibitijibibo/status/1511530172553605124).)
 
-I lazily call myself a game developer, but in reality I focus on ports and long-term maintenance, not much else - if you want a Linux version, or you want a game cleaned up after 10 years of bit-rot, [I'm your guy](https://flibitijibibo.com/index.php?page=Portfolio/Ports). I've been doing this for [some time now](https://icculus.org/finger/flibitijibibo)!
 
 Anyway, what makes Unity appealing comes down to the typical Unity project lifecycle, one that I've seen consistently across many games, sizes of studios, etc: The beginning of the project is always really nice! You already know this, because literally everybody using Unity will tell you the same thing: It's great for prototyping. It's a great way to get people hooked, as long as the rest of the lifecycle is at least _decent_. Hell, [people still put up with all of XNA's numerous failures to this very day](https://flibitijibibo.com/index.php?page=Portfolio/Tools#01_FNA.txt) because they can at least bend it to fit their needs from start to finish.
 
@@ -14,7 +22,7 @@ This was the case with Unity for a long time, but in the last few years the qual
 
 I would attribute most of Unity's reputation to the fact that people are absolutely _sick_ of that back half, and are willing to jump ship even if it means having to re-train an entire team to do so. As impressive as UE5 is, **I don't think the technology has to do with its appeal as much as the long-term user experience**. My guess is that even if UE5 doesn't actually make finishing games easier, Unity's going to get smoked this next generation solely based on the promise (not even guarantee) that shipping will not make you want to die constantly.
 
-As a maintainer? I already know Unreal's going to be better because it allows maintainers to do something that we physically cannot do with Unity, and probably never will: Contribute to the engine itself. Not in terms of features, but in terms of _fixes_ - 99% of what makes finishing a Unity game hard is that there's this huge wall between the developer and the engine, which might have been fine when that wall wasn't blocking off _tens of millions of lines_ of code. Developers aren't dumb; they can literally see the bug right in front of their face, and they do not care whatsoever that it's in someone else's code, they just want to fix it and get on with their lives.
+I already know Unreal's going to be better because it allows maintainers to do something that we physically cannot do with Unity, and probably never will: Contribute to the engine itself. Not in terms of features, but in terms of _fixes_ - 99% of what makes finishing a Unity game hard is that there's this huge wall between the developer and the engine, which might have been fine when that wall wasn't blocking off _tens of millions of lines_ of code. Developers aren't dumb; they can literally see the bug right in front of their face, and they do not care whatsoever that it's in someone else's code, they just want to fix it and get on with their lives.
 
 As an example, I spent about 2 years staring at a blatant Vulkan bug that was publicly acknowledged (it would slowly delay presentation indefinitely causing multiple whole seconds of input lag (yes, seriously)), and I diagnosed it on my own end rather quickly, but I got the final fix for it 2 _months_ ago. While I'm grateful that the internal team found it, fixed it, and even backported it, why couldn't I do that myself, with my own build and my own QA lab, even if only to help validate it for inclusion in a future release? Why am I forcing other developers to endure this pressure when they've already got enough _unsolved_ problems to deal with?
 
