@@ -1,3 +1,11 @@
+---
+layout:     post
+title:      1x progammer
+date:       2022-04-19
+summary:    programming effiency
+categories: programming
+---
+
 Find the best software written in your programming language of choice. Usually, the language’s standard library is a good place to start. Look for patterns. Try to consider how you would implement things.
 
 Small children learn by copying others. Why shouldn’t adults?
@@ -28,17 +36,17 @@ The phrase is terrible, but it’s worth repeating anyway. Make sure that you �
 
 This matters because sometimes – perhaps often – working on the boring thing that no one wants to work on is really the thing that you should be doing.
 
-Simplicity really helps
+###Simplicity really helps
 
 We all want to write simple software, as hard as that is. Ideally, your code should be simple enough so that a junior programmer who doesn’t like you can understand it.
 
 Ironically, simple code probably has a shorter lifespan than complex code. Complex and difficult code remains fixed because people are afraid to change it. Complex code is very hard to test. And without regression tests, we don’t know if we’ve broken behaviour. So it becomes brittle.
 
-API beats algorithm
+###API beats algorithm
 
 Syntax matters. One of the lessons from the success of Kenneth Reith’s requests package — which completely took over from the standard library’s own implementation of making web requests — is that the (public) API is more important than every millisecond that you save from implementing the perfect algorithm. Users care about convenience. Convenient code is easy to write, easy to read and easy to maintain.However, it’s also understand what comprises your “Porcelain API” and your “Plumbing API”.
 
-Other people make mistakes
+###Other people make mistakes
 
 The majority of us are better drivers than average. I’m sure the same is true for programming.Brains are imperfect.
 
