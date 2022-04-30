@@ -1,3 +1,11 @@
+---
+layout:     post
+title:      Optimization
+date:       2022-04-30
+summary:    optimization
+categories: Optimization
+---
+
 Multi-variable optimization is about finding minima of functions that take many inputs and produce a single output. Given a real valued function f ⁣:Rn→Rf\colon \mathbb{R}^{n} \rightarrow \mathbb{R}f:Rn→R, we want to find a point a=(a1,…,an)∈Rna = (a_{1}, \ldots, a_{n}) \in \mathbb{R}^na=(a1​,…,an​)∈Rn so that f(a)≤f(x)f(a) \leq f(x)f(a)≤f(x) for all xxx, or at least the xxx in some region.
 
 An optimizer is an algorithm that attempts to do this automatically. It intelligently tests many different variable assignments until it finds one that minimizes fff. Later, we will provide more detail about how it works and identify a few mathematical requirements for fff that allow it to be optimized.
