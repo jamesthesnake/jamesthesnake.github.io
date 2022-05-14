@@ -1,3 +1,10 @@
+---
+layout:     post
+title:      progress and poverty 
+date:       2022-05-14
+summary:    progress and pvoerty
+categories: 1mbd
+---
 In 1879, a man asked "How come all this new economic development and industrialized technology hasn't eliminated poverty and oppression?" That man was Henry George, his answer came in the form of a book called Progress & Poverty, and this is a review of that book.
 
 Henry George is variously known for leading an early movement that popularized Universal Basic Income, sporting a fancy beard while shouting "The Rent Is Too Damn High!" and inspiring a popular board game that was shamelessly ripped off and repackaged as Monopoly.
