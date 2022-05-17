@@ -1,3 +1,10 @@
+---
+layout:     post
+title:      Magic Words
+date:       2022-05-16
+summary:    Magic Words
+categories: Magic Words Tech
+---
 As new technologies are adopted into society, their logics permeate fundamental aspects of our lives, including the spiritual — offering new deities and values that redefine what it means to worship. Online, many young people are now keenly aware that their lives are fodder for attention algorithms — that all digital expressions of thoughts, hobbies, and experiences operate within a larger ecosystem of data analysis. Friends spend hours curating their Spotify feeds, or post “algoselfies” on Instagram to maximize reach. On TikTok, spiritualists encourage you to “like, comment, and interact” to claim your message from the universe and help others find it, a tacit acknowledgement and befitting offering to the workings of the algorithm. 
 
 We have been trained to measure personal success, impact, and meaning by how many views and comments we get, which, in times of precarity, can be understood as both an economic necessity and a mode of self-actualization. The algorithms offer to center our lives and concentrate our expression of self, and thus our expression of belief, into new practices based on performance and engagement. In place of being subject to forms of algorithmic control, one can see oneself instead as engaging in algorithmically inflected rituals, tapping into the power of faith. 
