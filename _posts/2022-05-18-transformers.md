@@ -1,4 +1,10 @@
-
+---
+layout:     post
+title:      Transformers
+date:       2022-05-19
+summary:    Transformers
+categories: machine-learning neural-networks transformers
+---
 
 
 # Transformer Recipe
@@ -63,16 +69,6 @@ This paper by Vaswani et al. introduced the Transformer architecture. Read it af
 *Figure source: https://arxiv.org/pdf/1706.03762v5.pdf*
 
 ## 👩🏼‍💻 Applying Transformers
-After some time studying and understanding the theory behind transformers, you may be interested in applying them to different NLP projects or research. At this time, your best bet is the Transformers library by HuggingFace.
+After some time studying and understanding the theory behind transformers, you may be interested in applying them to different NLP projects or research.
 
-🔗 https://github.com/huggingface/transformers
 
-![](/images/hf.jpeg)
-
-The Hugging Face Team is also publishing a new book on NLP with Transformers, so you might want to check that out [here](https://www.oreilly.com/library/view/natural-language-processing/9781098103231/).
-
----
-
-Feel free to suggest study material. In the next update, I am looking to add a more comprehensive collection of Transformer applications and papers. In addition, a code implementation for easy experimentation is coming as well. Stay tuned!
-
-*To get regular updates on new ML and NLP resources, [follow me on Twitter](https://twitter.com/omarsar0).*
