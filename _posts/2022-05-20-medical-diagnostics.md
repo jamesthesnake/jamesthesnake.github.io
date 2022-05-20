@@ -1,3 +1,11 @@
+---
+layout:     post
+title:      Medical diagnostics
+date:       2022-05-20
+summary:    Medical diagnostics
+categories: Med diagnosis
+---
+
 1.
 
 Say we’re detectives. We’re getting a drink and have the following conversation:
