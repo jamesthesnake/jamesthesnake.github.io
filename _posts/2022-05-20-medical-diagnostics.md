@@ -82,3 +82,19 @@ Fine. But let’s think about the other reasons. The logic of #3 seems to be thi
     If you do a CT scan and it shows a mass, you’ll order a biopsy.
     But because that patient was low-risk, the harms of that biopsy will outweigh the benefits.
     Thus, you shouldn’t do the CT scan.
+
+What? If the harms of the biopsy outweigh the benefits, don’t do the damn biopsy! Why are we taking as given that a net-negative decision to do a biopsy will be made, and solving that problem by trying to prevent the opportunity to make that bad decision?
+
+If you know that a patient’s prior probability for a condition is low, you still know that after doing a test. In a sane world, wouldn’t you do the CT scan, and then… only do the biopsy only if the CT scan showed something serious enough to justify the risks?
+
+The suggestion is that once the test is done and you’re looking at the results, you will inevitably neglect the prior probability. Thus, you should avoid doing tests where disregarding the prior leads to bad outcomes. In other words, “If I gather some data, I will disregard the base rate. So, I won’t gather any data.”
+
+I’m not sure if this phenomena has a name. Maybe “base rate avoidance disorder”?
+
+Now, I can sort of understand this kind of thinking when you can order the test, but further choices are out of your hands. Maybe you’re convinced that the patient or other doctors will irrationally insist on harmful treatments. But there’s eerily little reflection on the possibility that the mistake might be somewhere other than the initial test.
+
+It’s a fact that if you make decisions correctly, then putting more information into the system can’t hurt you. Or in case you’d be impressed by seeing that sentence turned into an equation: Say Y is a random unknown quantity (e.g. if someone has cancer), a is the action/choice you can make (e.g. if you do a biopsy or not), and utility(a,Y) is how happy you are to have done a if the value was Y. If X is some observed quantity that is related to Y (e.g. a CT scan) then
+
+    maxₐ 𝔼[utility(a,Y)] ≤ 𝔼[ maxₐ 𝔼[utility(a,Y)｜X]].
+
+It can only help you to know X! But what do I know, maybe medicine has some counterintuitive dynamics (psychology? insurance? legal issues?) that mean you can’t hope to make optimal choices.
