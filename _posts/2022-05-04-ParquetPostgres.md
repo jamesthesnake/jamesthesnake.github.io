@@ -52,3 +52,35 @@ However, I was able to demonstrate to my own satisfaction that things were baked
 Loading Data
 
 I started with a handy data table of Philadelphia parking infractions, that I used in a previous blog post on spatial joins, and sorted the file by date of infraction, issue_datetime.
+
+Data Download and Sort
+
+-- Create parking infractions table
+CREATE TABLE phl_parking (
+    anon_ticket_number integer,
+    issue_datetime timestamptz,
+    state text,
+    anon_plate_id integer,
+    division text,
+    location text,
+    violation_desc text,
+    fine float8,
+    issuing_agency text,
+    lat float8,
+    lon float8,
+    gps boolean,
+    zip_code text
+    );
+
+-- Read in the parking data
+\copy phl_parking FROM 'phl_parking.csv' WITH (FORMAT csv, HEADER true);
+
+OK, so now I have an 8M record data table, good for some bulk data experiments. How big is the table?
+
+SELECT pg_size_pretty(pg_relation_size('phl_parking')) AS pg_table_size;
+
+ pg_table_size
+----------------
+ 1099 MB
+
+Just over 1GB!
