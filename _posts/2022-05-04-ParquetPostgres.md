@@ -1,3 +1,10 @@
+---
+layout:     post
+title:      Parquet PostGress 
+date:       2022-05-04
+summary:    parquet postgres
+categories: parquet postgres
+---
 The thing about log tables is, they don't change much. They are append-only by design. They are also queried fairly irregularly, and the queries are often time ranged: "tell me what happened then" or "show me the activities between these dates".
 
 So, one way the Retool migration could have been easier is if their log tables were constructed as time-ranged partitions. That way there'd would only be one "live" table in the partition set (the one with the recent entries) and a larger collection of historical tables. The migration could move the live partition as part of the critical path, and do all the historical partitions later.Even after breaking up the log tables into manageable chunks they still remain, in aggregate, pretty big! The PostgreSQL documentation on partitioning has some harsh opinions about stale data living at the end of a partition collection:
