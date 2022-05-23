@@ -1,3 +1,10 @@
+---
+layout:     post
+title:      Math Machine Learning
+date:       2022-05-22
+summary:    ML machine MAth
+categories: Math AI Machine Learning 
+---
 # Mathematics for Machine Learning
 
 A collection of resources to learn mathematics for machine learning.
