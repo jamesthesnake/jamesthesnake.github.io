@@ -1,5 +1,5 @@
 # jamesthesnake.github.io
 Personal site
-the king himself
+the KING himself
 
 Very excited for this webpage.
