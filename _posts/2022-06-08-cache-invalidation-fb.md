@@ -1,3 +1,11 @@
+---
+layout:     post
+title:      Cache Invalidation meta comments
+date:       2022-06-08
+summary:    Meta Fb cache invalidation
+categories: Cache Invalidation
+---
+
 https://engineering.fb.com/2022/06/08/core-data/cache-invalidation/
 My problem has never been invalidation as stated in the article, but how to manage interdependent cache entries, so that when one is invalidated, the dependent ones must also be invalidated. For example get_user(123) and get_users_for_org(456). Suppose user with id 123 is part of the org with id 456. When the user is deleted, you have to invalidate the get_users_for_org(456) entry. I haven’t seen any convincing “design pattern” for managing such dependencies.
 
