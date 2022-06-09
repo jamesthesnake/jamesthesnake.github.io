@@ -1,3 +1,11 @@
+---
+layout:     post
+title:      Embodiment AI
+date:       2022-06-09
+summary:    AI robotics
+categories: AI Robotics
+---
+
 There are many paths on the road to AGI. Nando de Freitas recently wrote that “Scale is all you need” following the release of Deepmind’s Gato paper. Larger and larger transformers, with language interfaces doing supervised learning on large datasets is one such touted path. While Gato trains and evaluates on data from physical robots, there is a larger paradigm on getting to AGI that fully bypasses embodiment or robotics. This is the path pursued by OpenAI/Anthropic, who once famously disbanded their robotics team. I recently found myself in a car ride with a friend who was a “member of technical staff” at OpenAI and he asked “Do you think solving embodied AI is required for AGI or is it enough to be digital?” I have thought a lot about that question since.
 
 Language as the end-all of intelligence
