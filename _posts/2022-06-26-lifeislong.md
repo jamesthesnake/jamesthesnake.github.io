@@ -28,3 +28,13 @@ Seriously? You think that the universe is going to let your life proceed the way
 Putting things off for the future is the biggest waste of a life. You deny yourself the present by promising the future. You’re relying on the future, which is outside of your control, and abandoning the present, which is the only thing you can control.
 
 The whole future lies in uncertainty – live immediately
+
+The real failure mode to avoid is intentionally pursuing a path that doesn’t bring you any joy. Let’s take the great emperor Augustus as an example. He was the most powerful man in the world. He had all the social status, all the money, and he could do anything he wanted.
+
+Even with all that, he was looking forward to the day that he could step down and retire from it all. The man with all the power in the world was happiest when he thought about the day he could let go of all the power.8
+
+How foolish is it to spend your life chasing fame, riches, and power, while being unhappy the entire time, even after you achieve it? What is the point of it all? To impress other people? Is that really worth it in the end?
+
+At the same time, people who get caught up in power and status games are at least somewhat excusable. They’re facing a lot of social pressure to do it, and being deceived into thinking these goals are worthy.
+
+On the other hand, people who waste their time pursuing empty pleasures and escapism are dishonorable and depressing. There’s nothing good to say about them
