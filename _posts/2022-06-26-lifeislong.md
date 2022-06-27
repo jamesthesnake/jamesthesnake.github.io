@@ -1,3 +1,10 @@
+---
+layout:     post
+title:      Life is long
+date:       2022-06-26 
+summary:    life is long
+categories: advice life 
+---
 Everyone complains about how short life is, but that perspective is broken. Life is not short. The real issue is that we waste so much of it.
 
 Life is long enough for you to achieve your wildest dreams. You’re just so busy wasting it that you get to the end without living much of it.
