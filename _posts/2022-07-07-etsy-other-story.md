@@ -1,11 +1,12 @@
 
 ---
 layout:     post
-title:      Etsy-other-story
+title:      Etsy other story
 date:       2022-07-07 
 summary:    Etsy
 categories: ETsy 
 ---
+
 https://gist.github.com/aconbere/1982a5eb17b77817017a3da50914732f
 which says :
 <br>
