@@ -17,26 +17,15 @@ Running Up That Hill
 Arguably Kate Bush’s most well-known song, Running Up That Hill (A Deal With God) is full of strange tones, with a dreamy background that transcends the usual synthpop palette of the era. When asked about some of the production techniques in a 1986 interview with Island Ear, Kate Bush was very tight-lipped, preferring to keep her production secrets to herself so they wouldn’t be imitated. However, she did confirm that the songs synth parts came from the Fairlight.
 
 Regarding the types of sounds you get, how did you get that little part on “Running Up That Hill” that comes in first at the start of the song, after the drums and before the vocals? That’s the Fairlight and that was actually what I wrote the song with. That was what the song was written around.
-
-The Fairlight sound that Kate Bush used on Running Up That Hill is the CELLO2 patch; here’s what it sounds like:
-
-00:00
  kate bush cello 2
 One of the biggest drawbacks of sampling with the Fairlight was that it could only handle short samples, around one second long, due to memory limitations. This means that long-sustained sounds are only possible by looping short sections of the sample, and this produces artefacts and clicking effects. Instead, it sounds like Kate Bush has run the sound through a long reverb effect and fed a portion of the reverb tail back into the sampler. 
 
 An interview with Musician magazine notes Kate Bush’s new studio (the one built for Hounds of Love) as containing AMS, Quantec and Lexicon 224 reverb &  delays, so the Fairlight could have been fed through one of those, or even a combination of them. Here I’ve used Valhalla VintageVerb on the Homestar Blade Runner preset, a huge ten-second long reverb, that is also dark and noisy – perfect for the Running Up That Hill drone sound.
 
-00:00
- kate bush reverb
-I’ve then dropped the audio from the reverbed Cello back into the sampler, looped a portion of the tail, and ran the track through more reverb to help mask the loop. I also added some EQ, boosting 1.24k Hz and 2 kHz and creating low cut at 700 Hz to brighten the sound.
-
-00:00
 The Running Up That Hill lead synth and chords use the same Fairlight Cello 2 sound, only with a pitchbend scoop at the start of the sound. For this, I think Kate Bush programmed the pitchbend, then resampled the cello note with pitchbend back into the Fairlight, which is why the scoop-time is shorter for higher notes and longer for lower notes. Here are the chords played with the pitchbend sample:
 
-00:00
-The same sample has been used for the main hook. An interesting technique used here is that the delay effect on the track is louder for the higher notes but quieter and less noticeable for the lower notes. You can achieve this effect by automating either the mix level or the input level for the delay effect. I also EQed in some brightness to the track to make it sound less muddy, adding 5db at 2.84Hz. 
+The same sample has been used for the main hook. An interesting technique used here is that the delay effect on the track is louder for the higher notes but quieter and less noticeable for the lower notes. You can achieve this effect by automating either the mix level or the input level for the delay effect.
 
-00:00
 The drums are classic eighties synthpop and came from the Linndrum, a drum machine that uses samples of real drum hits. Producer Paul Hardiman heard one of the early versions of the song, saying:
 
 “The first time I heard ‘Running Up That Hill’ it wasn’t a demo, it was a working start. We carried on working on Kate and Del’s original. Del had programmed the Linndrum part, the basis of which we kept. I know we spent time working on the Fairlight melody hook but the idea was there plus guide vocals.”
@@ -55,22 +44,13 @@ Lastly, bring some life to the sound by using the CS-80’s onboard chorus and d
 Army Dreamers
 Army Dreamers from Bush’s 1980 album Never For Ever uses the Fairlight for its cello sound, this time the SOLOSTR2 sample from the HISTRING bank. The folk instrument that plays the melody in the intro sounds suspiciously like the KICHAPEE sample, although it can’t be the Fairlight as the sounds last longer than its sampler would allow. The song may have been demo’d with the Kichapee sound and then recorded with a real instrument for the final version. For my example, I used the Kichapee sound with some repitching to extend the sample length.
 
-00:00
- kate bush army dreamers fairlight
 All We Ever Look For
-In the track All We Ever Look For, the intro’s whistling hook comes from the Fairlight, specifically the WHISTLE sample from the WIND bank. Again, the patch is played without manipulation, although it is layered with a piano and synth to strengthen the overall sound of the sample. The synth is the Yamaha CS-80, which was Bush’s favourite at the time. The lead patch is a simple square wave patch that uses pulse-width modulation to get a wind-like hollow sound. Again, I only used one of the voice layers and I used preset 4 (Flute) as a starting point.
+In the track All We Ever Look For, the intro’s whistling hook comes from the Fairlight, specifically the WHISTLE sample from the WIND bank. Again, the patch is played without manipulation, although it is layered with a piano and synth to strengthen the overall sound of the sample. The synth is the Yamaha CS-80, which was Bush’s favourite at the time. The lead patch is a simple square wave patch that uses pulse-width modulation to get a wind-like hollow sound.
 
-00:00
- kate bush cs80 synth
 Babooshka
 The lead plucked sound in Babooshka is likely the CS-80, possibly layered with a Balalaika or another folk instrument. In Arturia CS-80 V, I used the Voice I preset 9 (Guitar 1) and made use of the touch sensitivity to add a human element to the part. The touch-sensitivity is the feature that Kate has mentioned being her favourite of the CS-80, which isn’t surprising as she is also a pianist. I also ran the track through an analog-style delay effect and plenty of reverb.
-
-00:00
- kate bush babooshka lead
 The song also features some Fairlight samples, for the glass shattering effects played during the drum breaks towards the end of the song. The Fairlight had only been out for a year when Babooshka was released, so these effects were one of the first famous uses of the sampler. The sample can be found in the EFFECTS4 bank and is called GLASMASH, here’s what it sounds like.
 
-00:00
-Download
 An interesting thing I read is that the string-based song Cloudbusting started as a Fairlight composition, but as Kate Bush explained in an interview, most of the Fairlight elements were replaced with the real strings: 
 
 “Cloudbusting” I wrote on the Fairlight and I just felt it would be much more interesting with real strings, so we transcribed the Fairlight arrangement for string players to read. And then they redid it.” 
