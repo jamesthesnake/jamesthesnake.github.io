@@ -1,3 +1,10 @@
+---
+layout:     post
+title:      Kate Bush Synth
+date:       2022-07-10
+summary:    Kate Bush Art
+categories: Music
+---
 Kate Bush has had an enormous impact on modern music, as a musician her adoption of the Yamaha CS-80 synth and CMI Fairlight sampler empowered her to be more creative. Bush released four albums before finally building her own studio in 1985, and subsequently released her fifth album, Hounds of Love which featured Running Up That Hill (A Deal with God). The album was an art-rock masterpiece with heavy synthpop overtones; it topped charts and is regarded as her finest album.
 
 Kate Bush Synths
