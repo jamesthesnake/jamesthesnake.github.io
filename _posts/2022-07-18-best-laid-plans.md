@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Best Laid Plans
-date:       2022-18-07
+date:       2022-07-18
 summary:    value in planning software
 categories: Planning software
 ---
