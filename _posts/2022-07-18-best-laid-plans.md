@@ -1,10 +1,16 @@
+---
+layout:     post
+title:      Best Laid Plans
+date:       2022-18-07
+summary:    value in planning software
+categories: Planning software
+---
 Yearly software development plans are my favourite genre of fiction. In the fabulous world of yearly plans, product developers assume they know exactly what product they must build and how long each task will take.
 
 There are two sub-genre of long-term plans: the “imaginative” and the “naive” ones. The “imaginative” sub-genre assumes nothing unplanned will happen. The “naive” one presumes that you can plan for unexpected events by adding a long enough buffer to the plan (fillers).
 
 Regardless of the sub-genre, long-term plans simply don’t work.
 
-In this blog post, I’ll explain why long-term plans are pernicious, how they cause products to fail and provide alternatives for producing useful, profitable products.
 
 
 
