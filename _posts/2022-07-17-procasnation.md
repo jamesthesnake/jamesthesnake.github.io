@@ -1,3 +1,11 @@
+---
+layout:     post
+title:      Procrastination
+date:       2022-07-17
+summary:    Procrastination
+categories: Procrastination
+---
+
 A systems model of anxiety-driven procrastination
 This model illustrates some of the emotional and behavioural "knots" underlying some forms of procrastination.
 
