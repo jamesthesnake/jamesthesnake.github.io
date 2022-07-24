@@ -1,13 +1,10 @@
-
 ---
 layout:     post
 title:      Solar Panels
 date:       2022-07-22
-summary:    Solar Panels
-categories: Solar Panels
-
+summary:    Solar panels
+categories: hardware vertical-intergration IBM s
 ---
-
 It turns out it’s possible to turn CO2 and H2 into CH4.
 There is nothing particularly special about the technological approach we’re taking. Each of the various parts is built on at least 100 years of industrial development, but up until this point no-one has considered scaling these up as a fundamental source of hydrocarbons, because doing so would be cost prohibitive. Why? The machinery is not particularly complex, but the energy demands are astronomical. Yet as our atmospheric CO2 concentration creeps steadily ever upwards year over year, our ability to extract silicon from rocks and transform it in frankly magical ways continues to progress.
 
@@ -118,7 +115,6 @@ Substituting solar power into our electrical grid and atmospheric CO2-derived hy
 Let’s take the Colorado River as an example. Historical average flows of 22,000 cubic feet per second (cfs) were mediated through several large dams, diverted for agriculture and city water supplies, and support about $1.4t of US GDP annually. A series of more recent droughts have seen the annual flow collapse to less than half the historical average. The river is drying up, and with it the communities that depend on it.
 
 
-Caitlin Ochs / Reuters
 There are higher value uses for water but modern reverse osmosis (RO) desalination plants can generate a cubic meter of fresh water from the ocean for just 2.5 kWh. This works out to 250 kW per cfs, or 5.5 GW for the entire Colorado River. That is, the entire flow could be replaced by RO for just one 5.5 GW power plant adjacent to enough RO to exceed total Saudi desal capacity by a factor of 10. If it were solar powered, we’d need more like 15 GW of capacity to operate just during the day, and about 3x this again to pump the water up over the intervening mountain ranges towards the Colorado headwaters.
 
 This sounds like a continent-traversing water transport megaproject, but we’ve done it before. Back before RO and solar power, water scarcity in California was solved on a generational time scale by the visionary construction of an enormous network of canals and pumps that effectively terraformed large swaths of the state, and which we take for granted now. But for climate change, this system would be adequate indefinitely but the times have found us, yet again.
