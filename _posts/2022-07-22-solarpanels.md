@@ -1,13 +1,11 @@
-The team at Terraform Industries is now 11 people working towards a near term future where atmospheric CO2, much of it centuries of unpriced industrial waste, becomes the preferred default source of industrial carbon. Our family of technologies will displace drilling and mining as sources of carbon and, in the process, stop the net flux of carbon from the crust into the atmosphere and oceans that is causing anthropogenic climate change.
 
-
-Terraform Industries’ process for combining solar power and atmospheric CO2 to generate natural gas.
-Our process works by using solar power to split water into hydrogen and oxygen, concentrating CO2 from the atmosphere, then combining CO2 and hydrogen to form natural gas. Very similar processes can produce other hydrocarbon fractions, including liquid fuels. Synthetic hydrocarbons are drop in replacements for existing oil and gas wells and are distributed through existing pipeline infrastructure. As far as any of the market participants are concerned, fuel synthesis plants are less polluting, cheaper gas wells that convert capital investment into steady flows of fuel in a boringly predictable way.
-
-
-How fuel synthesis plants integrate into existing hydrocarbon distribution infrastructure and displace fossil production.
-Most recently, Terraform Industries succeeded in producing methane from hydrogen and CO2.
-
+---
+layout:     post
+title:      Solar Panels
+date:       2022-07-22
+summary:    Solar Panels
+categories: Solar Panels
+---
 
 It turns out it’s possible to turn CO2 and H2 into CH4.
 There is nothing particularly special about the technological approach we’re taking. Each of the various parts is built on at least 100 years of industrial development, but up until this point no-one has considered scaling these up as a fundamental source of hydrocarbons, because doing so would be cost prohibitive. Why? The machinery is not particularly complex, but the energy demands are astronomical. Yet as our atmospheric CO2 concentration creeps steadily ever upwards year over year, our ability to extract silicon from rocks and transform it in frankly magical ways continues to progress.
