@@ -6,11 +6,11 @@ summary:    Solar panels
 categories: hardware vertical-intergration IBM s
 ---
 It turns out it’s possible to turn CO2 and H2 into CH4.
-There is nothing particularly special about the technological approach we’re taking. Each of the various parts is built on at least 100 years of industrial development, but up until this point no-one has considered scaling these up as a fundamental source of hydrocarbons, because doing so would be cost prohibitive. Why? The machinery is not particularly complex, but the energy demands are astronomical. Yet as our atmospheric CO2 concentration creeps steadily ever upwards year over year, our ability to extract silicon from rocks and transform it in frankly magical ways continues to progress.
+Each of the various parts is built on at least 100 years of industrial development, but up until this point no-one has considered scaling these up as a fundamental source of hydrocarbons, because doing so would be cost prohibitive. Why? The machinery is not particularly complex, but the energy demands are astronomical. Yet as our atmospheric CO2 concentration creeps steadily ever upwards year over year, our ability to extract silicon from rocks and transform it in frankly magical ways continues to progress.
 
 One of these ways has produced the cheapest electricity ever. Electricity so cheap that in an ever growing number of markets it now makes more sense to turn solar electricity into hydrocarbons, than to burn hydrocarbons to make electricity.
 
-To a good approximation, the Earth is a pile of iron atoms (the core) surmounted by a pile of oxygen atoms (the mantle and crust), with other, smaller atoms filling in the gaps. One of the most common of these is silicon, and the silicate minerals are the major component of 95% of rocks. To say that extracting sufficiently pure crystalline silicon is difficult is an understatement, but we’ve been able to do it for longer than a human lifetime and we are continuing to make steady progress. The silicon industry turns over nearly a trillion dollars a year, so the profit motive is doing its job!
+To a good approximation, the Earth is a pile of iron atoms (the core) surmounted by a pile of oxygen atoms (the mantle and crust), with other, smaller atoms filling in the gaps. One of the most common of these is silicon, and the silicate minerals are the major component of 95% of rocks. To say that extracting sufficiently pure crystalline silicon is difficult is an understatement, but we’ve been able to do it for longer than a human lifetime and humans are continuing to make steady progress. The silicon industry turns over nearly a trillion dollars a year, so the profit motive is doing its job!
 
 Silicon is one of several materials that can be used to make solar photovoltaic (PV) panels, in addition to its starring role in integrated semiconductors inside computers. The solar panel industry has been growing by about 25-35% per year for the last decade, making steady progress on cost and becoming a mainstream energy source to the point where its continued displacement of other grid power sources is partly limited only by the battery manufacturing ramp rate, itself redlining at about 250%/year!
 
@@ -27,11 +27,11 @@ For more than a decade, some industry experts have predicted that cost improveme
 
 2021 production (190 GW) is literally off this chart.
 https://rameznaam.com/wp-content/uploads/2020/05/IEA-Solar-Growth-Forecasts-vs-Reality-Simon-Evans-Carbon-Brief.jpg
-It has been clear to me that absent a fundamental physical limit being reached, there is no reason to suspect that the still accelerating positive feedback loop would slow down or stop. Here’s a post I wrote about the topic back in 2018. If anything, we should expect production growth rate to increase from around three years per doubling to perhaps two years. It is still not fast enough.
+It has been clear to me that absent a fundamental physical limit being reached, there is no reason to suspect that the still accelerating positive feedback loop would slow down or stop. Here’s a post I wrote about the topic back in 2018. If anything, humanity should expect production growth rate to increase from around three years per doubling to perhaps two years. It is <b>still</b> not fast enough.
 
 Global solar production last year (2021) was about 190 GW. With 30% cost reduction per doubling, solar continues its steady march into adjacent competitive energy markets and its displacement and augmentation of energy generation.
 
-What people have missed is that reaching cost parity on fuel synthesis will unlock huge new demand centers and flatten the gradient on the demand curve enough. Even if we copied each new factory 5 times, reducing learning rate by 5x in exchange for increasing production 5x, price declines will still stimulate far more demand than this expanded production can meet.
+What people have missed is that reaching cost parity on fuel synthesis will unlock huge new demand centers and flatten the gradient on the demand curve enough. Even if society copied each new factory 5 times, reducing learning rate by 5x in exchange for increasing production 5x, price declines will still stimulate far more demand than this expanded production can meet.
 
 
 https://solargis.com/maps-and-gis-data/download/world
