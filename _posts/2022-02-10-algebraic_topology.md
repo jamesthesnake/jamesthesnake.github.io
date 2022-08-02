@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Whattoelarn"
+title: "what to learn"
 date: 2022-02-10
 ---
 
