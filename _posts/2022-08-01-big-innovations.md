@@ -1,3 +1,12 @@
+---
+layout:     post
+title:      Big innovation
+date:       2022-08-01
+summary:    How are things invention
+categories: Multiple innovation 
+---
+
+
 One of the coolest patterns in history is something called "the multiple." It's this spooky phenomenon where someone invents something or makes a new discovery and then, at roughly the same time, someone else invents the same thing or makes the same discovery independent of the first person. Consider:
 
 Isaac Newton and Gottfried Leibniz independently developed calculus in the 1670s
