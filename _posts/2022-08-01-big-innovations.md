@@ -37,10 +37,10 @@ The same make crops, trees, animals — but by their combination.
 
 Lucretius predated formal atomic theory by nearly 2,000 years, but he was spot on: When you combine two parts hydrogen atom with one part oxygen atom, an altogether new configuration emerges called water (H₂O). This new water configuration, in turn, becomes a brand-new spare part that nature can combine with all the other spare parts that exist. For example, to create the configuration we call glucose (C₆H₁₂O₆) — a necessary energy source for all life on earth — you have to combine a few parts water with a few parts carbon dioxide.
 
-And voila: in a very broad sense, this act of combining spare parts into new configurations is what we mean by innovation. Not all new configurations are innovations, mind you, since most new things are worthless. So really, an innovation is a useful new configuration. A configuration that, to paraphrase popular science author Steven Johnson, enables jobs to be done that couldn't be done before. [1]
+And voila: in a very broad sense, this act of combining spare parts into new configurations is what we mean by innovation. Not all new configurations are innovations, mind you, since most new things are worthless. So really, an innovation is a useful new configuration. A configuration that, to paraphrase popular science author Steven Johnson, enables jobs to be done that couldn't be done before. 
 
-The adjacent possible
-The magic in all of this is that innovation doesn't merely enable. It also compounds enablement. That is, it provides a platform on which to stack second-order innovations, then third-order innovations, then fourth-order innovations, and so on. This is because every new configuration of spare parts is really just a brand-new spare part. And by adding to the sum total of spare parts, you expand the "adjacent possible" [2] — the total space of possible configurations.
+#### The adjacent possible
+The magic in all of this is that innovation doesn't merely enable. It also compounds enablement. That is, it provides a platform on which to stack second-order innovations, then third-order innovations, then fourth-order innovations, and so on. This is because every new configuration of spare parts is really just a brand-new spare part. And by adding to the sum total of spare parts, you expand the "adjacent possible" — the total space of possible configurations.
 
 "The strange and beautiful truth about the adjacent possible," writes Steven Johnson:
 
