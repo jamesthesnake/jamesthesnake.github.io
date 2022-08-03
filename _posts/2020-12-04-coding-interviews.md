@@ -3,7 +3,7 @@ layout:     post
 title:      Coding Interview
 date:       2020-12-04
 summary:    What about coding Interviews?
-categories: Higgs Boson
+categories: Coding Interviews
 ---
 
 
