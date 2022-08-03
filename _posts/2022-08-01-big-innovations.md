@@ -54,7 +54,7 @@ With all that in mind, we're ready to solve the problem of the multiple.
 Innovation multiples don't just happen. They get made possible by prior events that introduce new spare parts into the environment. When these new spare parts become available, it's largely a matter of time before the brilliant (or merely obsessive) tinkerers of the world start combining them with all the old spare parts and eventually achieve their discoveries.
 
 ### Multipes revisited :
-Calculus. Newton and Leibniz independently developed calculus in the 1670s. But only because they'd both been given access to an ancient precursor to calculus called the method of exhaustion. This long-lost method, originally developed in the 5th century BC in Greece, had only recently been rediscovered, and in 1647 the mathematician Bonaventura Cavalieri had formalized it into a much more workable form.
+Calculus. Newton and Leibniz independently developed calculus in the 1670s. But only because they'd both been given access to an ancient precursor to calculus called the [https://en.wikipedia.org/wiki/Method_of_exhaustion](method of exhaustion). This long-lost method, originally developed in the 5th century BC in Greece, had only recently been rediscovered, and in 1647 the mathematician Bonaventura Cavalieri had formalized it into a much more workable form.
 
 Oxygen. Scheele and Priestley independently discovered oxygen in the 1770s. But only because they'd both been given access to literal new spare parts like the bell jar — a kind of advanced scale — as well as new techniques for heating and separating gases.
 
