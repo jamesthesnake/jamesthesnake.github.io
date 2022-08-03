@@ -25,21 +25,21 @@ To get to the bottom of innovation multiples, you have to understand innovation 
 What is innovation?
 Simply put: all new things come from old things. You just have to combine the old things in the right way. As the Roman poet Lucretius wrote in 50 BC:
 
-And how these atoms are arranged makes all the difference —
+*And how these atoms are arranged makes all the difference —*
 
-Their position and formations, and what moves they give and take
+*Their position and formations, and what moves they give and take*
 
-From one another, for the selfsame atoms go to make
+*From one another, for the selfsame atoms go to make*
 
-The heavens and the sea, the land, the rivers and the sun,
+*The heavens and the sea, the land, the rivers and the sun,*
 
-The same make crops, trees, animals — but by their combination.
+*The same make crops, trees, animals — but by their combination.*
 
 Lucretius predated formal atomic theory by nearly 2,000 years, but he was spot on: When you combine two parts hydrogen atom with one part oxygen atom, an altogether new configuration emerges called water (H₂O). This new water configuration, in turn, becomes a brand-new spare part that nature can combine with all the other spare parts that exist. For example, to create the configuration we call glucose (C₆H₁₂O₆) — a necessary energy source for all life on earth — you have to combine a few parts water with a few parts carbon dioxide.
 
 And voila: in a very broad sense, this act of combining spare parts into new configurations is what we mean by innovation. Not all new configurations are innovations, mind you, since most new things are worthless. So really, an innovation is a useful new configuration. A configuration that, to paraphrase popular science author Steven Johnson, enables jobs to be done that couldn't be done before. 
 
-#### The adjacent possible
+# The adjacent possible
 The magic in all of this is that innovation doesn't merely enable. It also compounds enablement. That is, it provides a platform on which to stack second-order innovations, then third-order innovations, then fourth-order innovations, and so on. This is because every new configuration of spare parts is really just a brand-new spare part. And by adding to the sum total of spare parts, you expand the "adjacent possible" — the total space of possible configurations.
 
 "The strange and beautiful truth about the adjacent possible," writes Steven Johnson:
@@ -53,8 +53,8 @@ With all that in mind, we're ready to solve the problem of the multiple.
 
 Innovation multiples don't just happen. They get made possible by prior events that introduce new spare parts into the environment. When these new spare parts become available, it's largely a matter of time before the brilliant (or merely obsessive) tinkerers of the world start combining them with all the old spare parts and eventually achieve their discoveries.
 
-### Multipes revisited :
-Calculus. Newton and Leibniz independently developed calculus in the 1670s. But only because they'd both been given access to an ancient precursor to calculus called the [https://en.wikipedia.org/wiki/Method_of_exhaustion](method of exhaustion). This long-lost method, originally developed in the 5th century BC in Greece, had only recently been rediscovered, and in 1647 the mathematician Bonaventura Cavalieri had formalized it into a much more workable form.
+# Multipes revisited :
+Calculus. Newton and Leibniz independently developed calculus in the 1670s. But only because they'd both been given access to an ancient precursor to calculus called the [method of exhaustion](https://en.wikipedia.org/wiki/Method_of_exhaustion). This long-lost method, originally developed in the 5th century BC in Greece, had only recently been rediscovered, and in 1647 the mathematician Bonaventura Cavalieri had formalized it into a much more workable form.
 
 Oxygen. Scheele and Priestley independently discovered oxygen in the 1770s. But only because they'd both been given access to literal new spare parts like the bell jar — a kind of advanced scale — as well as new techniques for heating and separating gases.
 
