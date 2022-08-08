@@ -1,3 +1,7 @@
+-------
+
+date:2022-08-01
+-------
 STOLEN FROM WIRED SO I CAN READ WITHOUT SUB
 I USED TO worry about using too much electricity.
 
