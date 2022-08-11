@@ -7,4 +7,4 @@ categories: Transformers
 ---
 https://www.apronus.com/math/transformer-language-model-definition
 ![unrolled start](/images/rnn_short/unrolled_start.jpg)
-![transformers](images/transformer.jpeg)
+![transformers](/images/transformer.png)
