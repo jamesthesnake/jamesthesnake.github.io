@@ -9,7 +9,7 @@ categories: Happy
 
 Two truths (no lies):
 
-1. Once you are moderately happy, it’s very hard to get any happier. 
+1. Once you are moderately happy, it’s *very hard* to get any happier. 
 
 2. Everybody secretly believes they can be the exception to this rule.
 
@@ -81,4 +81,5 @@ Setpiece escape room experiences, like climbing into a coffin or getting blindfo
 Getting free dessert at the end of a meal (I’m still thinking about the surprise pudding the Mermaid Inn gives you)
 
 Planning one big splurge activity during a vacation––a decadent meal, a night in a palatial AirBnB, front-row tickets at a show
+
 
