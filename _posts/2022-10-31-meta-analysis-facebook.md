@@ -23,3 +23,4 @@ People underestimated the actual ad value social media would have, it's not craz
 
 Is Mark doing the metaverse ploy to help his legacy more than his company? He won't make gobs of money, but he will be very very cool if this suceeds!
 Worth a big shot!
+(/images/meta_spreadsheey/sheet.jpg)
