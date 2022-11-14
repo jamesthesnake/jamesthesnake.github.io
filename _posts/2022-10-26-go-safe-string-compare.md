@@ -1,3 +1,10 @@
+---
+layout:     post
+title:      Go safe
+date:       2022-10-26
+summary:    Go safe comparsion
+categories: Go String 
+---
 Three-way string comparison is widely used in programming. But up to now (Go 1.19), the strings.Compare function in the standard library is (intentionally) implemented with a non-opitimized way:
 
 func Compare(a, b string) int {
