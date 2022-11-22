@@ -1,3 +1,10 @@
+---
+layout:     post
+title:      GNN issues
+date:       2022-11-22
+summary:    GNN
+categories: GNN ML AI Drug discovery 
+---
 We want to be able to capture structural differences in graphs using GNN. Consider the below two graphs below, they can be the whole graphs or even part of a subgraph. It becomes even more important in case of a classification scenario.structure
 
 Essentially this is called the graph isomorphism test problem. No polynomial algorithms exist for general case. GNN's might not perfectly distinguish any graphs, but we want to understand how well can GNNs can do graph isomorphism test. We need to rethink the mechanism of how GNNs we studied till now capture graph structure.
