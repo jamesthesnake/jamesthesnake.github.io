@@ -1,3 +1,10 @@
+---
+layout:     post
+title:      Simulation
+date:       2022-11-19
+summary:    Simulation
+categories: Simulation 
+---
 Is it possible for an entity that exists only in a computer simulation to run an accurate computer simulation of the ‘higher’ entity that simulated them?
 
 If the answer is ‘no’, then whatever we contemplate in our universe is only a small subset of what can be known by those who reside higher in the sequence of more complex simulations. And if the answer is ‘no’, it would mean that there are deep aspects of reality that we cannot even imagine.
