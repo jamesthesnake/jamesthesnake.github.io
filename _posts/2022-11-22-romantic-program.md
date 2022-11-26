@@ -1,3 +1,12 @@
+---
+layout:     post
+title:      Romantic Programming
+date:       2022-11-22
+summary:    Romantic programming
+categories: Romantic Programming 
+---
+
+
 We’re programming computers. We spend large parts of our days writing down instructions for machines. Other parts of the day are spent making sure that we chose the right instructions. Then we talk about those instructions: why and how we picked the ones we picked, which ones we will consider in the future, what those should do and why and how long it will probably take to write those down.
 
 It can sound very serious and dry; a bureaucracy of computer instructions. And yet.
