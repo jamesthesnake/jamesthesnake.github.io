@@ -1,3 +1,11 @@
+ ---
+layout:     post
+title:      Stable Diffusion Depth
+date:       2022-11-28
+summary:    Stable Diffusion Depth Map
+categories: Refs. Diffusion Depth 
+---
+
  Xmas came early because Stable Diffusion 2.0 is out — and the feature I’m most excited about is depth2img. Inferring a depth map to maintain structural coherence will be pretty sweet for all sorts of #img2img use cases. Let’s explore why.
 
 
