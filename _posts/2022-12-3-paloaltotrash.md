@@ -1,3 +1,9 @@
+---
+layout: post
+title: "Palo Alto Trash"
+summary: Palo Alto trash
+date: 2022-12-03
+---
 Four years ago, city officials in Palo Alto, California, posed what they thought was a straightforward question: Where did their recycling go? 
 
 Concerned citizens had seen dire headlines about plastic dumping in Southeast Asia, and they wanted to know if their waste contributed.
