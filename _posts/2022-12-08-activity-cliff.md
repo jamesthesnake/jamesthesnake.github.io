@@ -2,7 +2,7 @@ Deriving the properties of chemicals from their molecular structure is one of th
 
 One important topic left relatively unexplored is how machine learning models behave in the presence of Activity cliffs. An activity cliff appears when a small change in molecular structure results in a drastic change in its bioactivity (or other molecular property, see Fig. 1)
 . This term was coined by Gerald Maggiora [1] and is a reference to sudden changes or ‘cliffs’ in the structure-activity landscape.
-![fig 1](/images/activity_cliff/cliff_2.ping)
+![fig 1](/images/activity_cliff/cliff_2.png)
 
 
 Figure 1. An example of an activity cliff. Two molecules differ only slightly, but exhibit vastly different bioactivities. Bioactivity is experimentally measured in Ki or EC50. Here a lower number means that you need less molecules to achieve a certain biological response, i.e., the molecule is more potent.
