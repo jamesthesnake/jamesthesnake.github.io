@@ -5,7 +5,9 @@ One important topic left relatively unexplored is how machine learning models be
 ![fig 1](/images/activity_cliff/cliff_2.png)
 
 
-Figure 1. An example of an activity cliff. Two molecules differ only slightly, but exhibit vastly different bioactivities. Bioactivity is experimentally measured in Ki or EC50. Here a lower number means that you need less molecules to achieve a certain biological response, i.e., the molecule is more potent.
+Figure 1. <i>An example of an activity cliff. Two molecules differ only slightly, but exhibit vastly different bioactivities. Bioactivity is experimentally measured in Ki or EC50. Here a lower number means that you need less molecules to achieve a certain biological response, i.e., the molecule is more potent.</i>
+
+
 We know that for many drugs, a tiny change in a molecular structure can sometimes make a huge impact. Knowing which structural changes strongly affect bioactivity can tell you a lot about how a molecule interacts with its designated target (e.g., a specific protein involved in a disease). At the same time, it is well-known that activity cliffs can be troublesome for machine learning models to predict. For this reason, one could see these extreme scenarios as good test cases for molecular property prediction models. Besides, the presence of highly similar molecules is very common in commercial libraries that are used for prospective applications like drug screening. Therefore, models that are not able to distinguish the effects of small molecular changes are probably not your best option in prospective settings. Still, even though activity cliffs are important in molecular data, we don’t know when, why, and how machine learning models tend to fail in their presence. Therefore, we set out to illuminate the failure modes of common ‘out-of-the-box’ methods for bioactivity predictions in the presence of activity cliffs.
 
 [1] Maggiora, G. M. On outliers and activity cliffs--why QSAR often disappoints. J. Chem. Inf. Model. 46, 1535 (2006).
