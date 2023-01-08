@@ -1,3 +1,11 @@
+---
+layout:     post
+title:      Math divisor
+date:       2022-12-18
+summary:    Math Divisior
+categories: Math Divisor 
+---
+
 Taken from https://kavigupta.org/2021/08/07/BAN-ALL-AMBIGUOUS-MATHEMATICAL-EXPRESSIONS/ so I never forget
 
 If you’re on twitter or Facebook you’ve probably seen this expression (or a variant with different numbers) before
