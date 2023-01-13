@@ -1,4 +1,4 @@
 # jamesthesnake.github.io
 Personal site
-Be curious not judgemental
+Be curious not <b>judgemental</b>
 Very excited for this webpage.
