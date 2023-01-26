@@ -1,3 +1,11 @@
+---
+layout:     post
+title:      Logging Tips
+date:       2023-01-10
+summary:    Logging Tips
+categories: logging
+---
+
 No matter what kind of software you’re developing, you most definitely leverage logging to some extent, probably every single day.
 You write a lot of logs, you read tons of them too, it is the most basic observability tool we have.
 
