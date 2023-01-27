@@ -1,4 +1,4 @@
-Iwas pleased to see recently that researchers at the Lawrence Livermore Lab had achieved the goal of fusion ignition. But I felt that the reaction was somewhat disproportionate. A piece of context that a lot of people missed is that the multi-billion dollar National Ignition Facility was designed to achieve that point from the start—that’s why “ignition” is in the name of it. 
+I was pleased to see recently that researchers at the Lawrence Livermore Lab had achieved the goal of fusion ignition. But I felt that the reaction was somewhat disproportionate. A piece of context that a lot of people missed is that the multi-billion dollar National Ignition Facility was designed to achieve that point from the start—that’s why “ignition” is in the name of it. 
 <br>
 All these breathless headlines about whether this accelerates the timeline to fusion seem ironic in the context of it actually being a decade behind what was promised when the thing was built in 2009. When fusion energy might light our homes depends on whether you mean: timeline to first power-producing device, or to significant deployment in the world. Those are two <b>very</b> different things. 
 <br>
