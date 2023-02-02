@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Data Pipeline"
+summary: Data Pipeline
+date: 2022-01-21
+---
+
 Incorrect data screws up data pipelines.
 
 Data quality checks can fix these issues.
