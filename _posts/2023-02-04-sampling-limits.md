@@ -1,9 +1,9 @@
 ---
 layout:     post
-title:      Recurrent Neural Networks - The Intuition
+title:      Sampling limits
 date:       2023-02-12
-summary:    In two minutes, what is a Recurrent Neural Network basically doing?
-categories: machine-learning neural-networks drawing recurrent-neural-network
+summary:    Sampling limits
+categories: Sampling
 ---
 
 To accurately estimate the fraction of items with a given property, like M&Ms with Peter faces, each item must have the same chance of being selected, as each M&M did. Suppose instead that we had ten bags of M&Ms: nine one-pound bags with 500 M&Ms each, and a small bag containing the 37 M&Ms we used before. If we want to estimate the fraction of M&Ms with Peter faces, it would not work to sample by first picking a bag at random and then picking an M&M at random from the bag. The chance of picking any specific M&M from a one-pound bag would be 1/10 × 1/500 = 1/5,000, while the chance of picking any specific M&M from the small bag would be 1/10 × 1/37 = 1/370. We would end up with an estimate of around 9/370 = 2.4% Peter faces, even though the actual answer is 9/(9×500+37) = 0.2% Peter faces.
