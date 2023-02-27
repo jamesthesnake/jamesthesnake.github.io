@@ -1,0 +1,7 @@
+From a scientific approach, emotions are chemicals released in response to our interpretation of a specific trigger. This process usually takes a couple of seconds, where a sequence of sounds, interpreted by our brain as music, can be the trigger that evokes the emotion, bringing it to the conscious mind. It influences our thinking, behaviour, brings back memories and turns it into feelings. No wonder it’s sometimes hard to describe our feelings. We can barely grasp what happens in those split seconds, making it almost mysterious and powerful at the same time.
+
+KNOWING WHAT COMES NEXT.
+So what happens in those split seconds, when music enters our brain? Music has a lot of similarities with perception illusion, not to be confused with the optical ones. You’ve probably seen so-called optical illusions that use visual tricks to trigger certain assumptions within our human perception. However, a perceptual illusion is not an optical phenomenon, but rather a cognitive *) one.
+
+To give you a better understanding, have a look at the picture below. If you haven’t seen this picture before, your eyes will scan around the dots. On a subconscious level, your mind brings up templates to match the patterns. And as soon as it finds a match, which can take several seconds or even minutes, the object “pops” out at you. (The answer you will find under the image). And the most interesting part is that once you see it, it’s there and you can’t “unsee” it.
+
