@@ -1,3 +1,10 @@
+---
+layout:     post
+title:      llm evil waligui
+date:       2023-03-06
+summary:    llm
+categories: llm walugi
+---
 The hypothesis is that LLMs learn to simulate text-generating entities drawn from a latent space of text-generating entities, such that the output of an LLM is produced by a superposition of such simulated entities. 
 The "evil version" of every possible "good" text-generating entity can pretend to be the good version of that entity, so every superposition that includes a good text-generating entity also includes its evil counterpart with undesirable behaviors, including deceitfulness. In other words, an LLM cannot simulate a good text-generating entity without simultaneously simulating its evil version.
 
