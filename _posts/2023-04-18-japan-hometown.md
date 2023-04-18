@@ -6,3 +6,10 @@ The regions in Japan are not thrilled about this state of affairs for many reaso
 
 (If this sounds like it echoes the political economy of, say, two large English-speaking nations recently, well, folks greatly overestimate how different Western nations are from each other.)
 
+Educating children is incredibly expensive. The regions are quite annoyed that they pay to educate their children but that Tokyo reaps all the benefits. This state of affairs has continued for decades.
+
+But Japan has a policy response for it, and it is sort of beautiful. Called ふるさと納税 (Furusato Nouzei or, roughly, the Hometown Tax System), it works something like this:
+
+A substantial portion of Japan’s income-based taxes are residence taxes, which are paid to the city and prefecture (think state) that one resides in, based on one’s income in the previous year. The rate is a flat 10% of taxed income; due to quirks of calculating this which almost certainly aren’t relevant to you, you can estimate this as 8% of what white collar employees think their salary is.
+
+Furusato Nouzei allows you to donate up to 40% of next year’s residence tax to one or many cities/prefectures of your choice, in return for a 1:1 credit on your tax next year. This is entirely opt-in. Anyone can participate, regardless of where they live.
