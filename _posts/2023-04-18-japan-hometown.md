@@ -1,3 +1,10 @@
+---
+layout:     post
+title:      Japan Hometown taxes
+date:       2023-04-18
+summary:    Japan hometown tax
+categories: taxes japan
+---
 The Japanese employment market has a curious feature: there are regions of Japan with extremely high economic productivity (such as Tokyo, Osaka, and Nagoya, but for the purpose of this issue think “Tokyo” and you won’t be wrong) and regions with low economic productivity (substantially everywhere else). This counsels that a young person born and educated in e.g. Gifu move to Tokyo after graduation to earn a living.
 
 Many, many do. While Japan’s overall population is declining, Tokyo’s increases by about 100,000 people per year.
