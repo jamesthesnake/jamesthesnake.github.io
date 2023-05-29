@@ -19,7 +19,7 @@ Radiologists have a whole host of grounded models to make determinations, and ac
 
 Radiologists, because they have a grounded brain model, only need to see a single example of a rare and obscure condition to both remember it and identify it in the future. This long tail of rare conditions to avoid missing is a large part of their training, and no one has any clue how to make a model that acts similar in this way.
 
-There’s so many ways to make Radiologist lives easier instead of just replacing them, it doesn’t even make sense to try. I interviewed and hired 25 radiologists, whose primary and chief complaint was that they had to reboot their computers several times a day..
+There’s so many ways to make Radiologist lives easier instead of just replacing them, it doesn’t even make sense to try. If you interviewed and hired 25 radiologists, their  primary and chief complaint would be  that they had to reboot their computers several times a day...
 
 A large part of the radiologist job is communicating their findings with physicians, so if you are thinking about automating them away you also need to understand the complex interactions between them and different clinics, which often are unique.
 
