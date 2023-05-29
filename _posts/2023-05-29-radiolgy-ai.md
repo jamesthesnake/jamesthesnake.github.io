@@ -1,3 +1,12 @@
+---
+layout:     post
+title:      Radiology AI
+date:       2023-05-29
+summary:    Radiology
+categories: Radiology AI
+---
+
+
 Geoffrey Miller was one of the loudest voices decrying the decline of radiology 5 years, and now he’s crying fear for new AI systems.
 
 There's a lot to unpack for both why Geof was wrong, and why his future predictions should not be taken seriously either. Geoff made a classic error that technologists often make, which is to observe a particular behavior (identifying some subset of radiology scans correctly) against some task (identifying hemorrhage on CT head scans correctly), and then to extrapolate based on that task alone.
