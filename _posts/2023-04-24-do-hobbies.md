@@ -1,3 +1,10 @@
+---
+layout:     post
+title:      do hobbies
+date:       2023-04-24
+summary:    Hobbies
+categories: Hobbies
+---
 The first axis is doing versus talking, and the second is the hobby versus the kit. In nearly every case I've seen, people roughly sort themselves into one of these categories.
 
 Doing the thing. These are the folks who enjoy doing the actual activity: taking photos, skiing, golfing, hiking, hunting, whatever. You'll find them out in the forest, on the slopes, or on the course.
