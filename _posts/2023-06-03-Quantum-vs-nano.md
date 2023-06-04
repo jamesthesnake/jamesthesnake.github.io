@@ -1,3 +1,11 @@
+---
+layout:     post
+title:      Quantum vs Nano
+date:       2023-06-03
+summary:    Quantum
+categories: Nano Quantum
+---
+
 Why did quantum computing take off somewhat smoothly, while molecular nanotechnology did not?
 There's many similarities:
 1.Both were proposed in the early-to-mid-1980s.
