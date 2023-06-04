@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      ART
+title:      What is art?
 date:       2023-05-06
 summary:    what is art
 categories: art
