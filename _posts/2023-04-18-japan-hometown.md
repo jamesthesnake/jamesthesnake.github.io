@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Japan Hometown taxes
+title:      Japan Hometown and how they use taxes
 date:       2023-04-18
 summary:    Japan hometown tax
 categories: taxes japan
