@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Radiology AI
+title:      Radiology AI and kill the hype
 date:       2023-05-29
 summary:    Radiology
 categories: Radiology AI
