@@ -8,15 +8,21 @@ categories: Nano Quantum
 
 Why did quantum computing take off somewhat smoothly, while molecular nanotechnology did not?
 There's many similarities:
+<br>
 1.Both were proposed in the early-to-mid-1980s.
+<br>
 2.Both had precursor work done by Feynman, although the key papers were written by others.
+<br>
 3.Both were exciting, but a little vague. The quantum computing model got firmed up pretty quickly into a very concrete goal; things like universal assemblers remained (and remain AFAIK) somewhat vaguely specified.
+<br>
 4.Both had just a small amount of research interest in the first ~10 years or so, and a tiny amount of funder interest, before the Clinton nanotech initiative.
+<br>
 5.Both were strongly critiqued by prominent scientists circa the mid-90s (Smalley for MNT, Landauer and Unruh for QC).
 <br>
 Some differences:
 
 1.MNT had more of a public profile in that first decade, because Drexler had written a popular book.
+<br>
 2.MNT nominally got a huge injection of funds in the 1990s – the nanotech initiative. A standard complaint of early MNT believers is that this was co-opted by others away from "real" MNT.
 The story I've heard (over and over and over) from early MNT believers is that the combination of these last two points, plus the Smalley critique, killed MNT. I doubt it. But I think the big differences were likely:
 
