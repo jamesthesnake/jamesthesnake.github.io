@@ -20,3 +20,9 @@ But Japan has a policy response for it, and it is sort of beautiful. Called ふ�
 A substantial portion of Japan’s income-based taxes are residence taxes, which are paid to the city and prefecture (think state) that one resides in, based on one’s income in the previous year. The rate is a flat 10% of taxed income; due to quirks of calculating this which almost certainly aren’t relevant to you, you can estimate this as 8% of what white collar employees think their salary is.
 
 Furusato Nouzei allows you to donate up to 40% of next year’s residence tax to one or many cities/prefectures of your choice, in return for a 1:1 credit on your tax next year. This is entirely opt-in. Anyone can participate, regardless of where they live.
+
+In principle, the idea is to donate to one’s hometown. Importantly, one actually has unfettered discretion as to which city/prefecture one donates to. This has some very important implications discussed later.
+
+Relevantly to your understanding of the incentives here: most Japanese people do not file taxes every year. Income-based taxes are calculated and remitted by employers directly on the behalf of their employees. Participating in the system requires friction which is somewhat above e.g. changing your direct deposit information but far below e.g. filing a tax return.
+
+
