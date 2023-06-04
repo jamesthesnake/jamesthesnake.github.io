@@ -1,3 +1,10 @@
+---
+layout:     post
+title:      Stat langague
+date:       2023-03-09
+summary:    Probablistic
+categories: Stat Probablistic 
+---
 Statistical language models have had engineering success, but that is irrelevant to science.
 Accurately modeling linguistic facts is just butterfly collecting; what matters in science (and specifically linguistics) is the underlying principles.
 Statistical models are incomprehensible; they provide no insight.
