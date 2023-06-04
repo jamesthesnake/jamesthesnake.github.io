@@ -16,7 +16,8 @@ I said that statistical models are sometimes confused with probabilistic models;
 But it must be recognized that the notion of "probability of a sentence" is an entirely useless one, under any known interpretation of this term.
 His main argument being that, under any interpretation known to him, the probability of a novel sentence must be zero, and since novel sentences are in fact generated all the time, there is a contradiction. The resolution of this contradiction is of course that it is not necessary to assign a probability of zero to a novel sentence; in fact, with current probabilistic models it is well-known how to assign a non-zero probability to novel occurrences, so this criticism is invalid, but was very influential for decades. Previously, in Syntactic Structures (1957) Chomsky wrote:
 
-I think we are forced to conclude that ... probabilistic models give no particular insight into some of the basic problems of syntactic structure.
+>I think we are forced to conclude that ... probabilistic models give no particular insight into some of the basic problems of syntactic structure.
+>
 In the footnote to this conclusion he considers the possibility of a useful probabilistic/statistical model, saying "I would certainly not care to argue that ... is unthinkable, but I know of no suggestion to this effect that does not have obvious flaws." The main "obvious flaw" is this: Consider:
 I never, ever, ever, ever, ... fiddle around in any way with electrical equipment.
 She never, ever, ever, ever, ... fiddles around in any way with electrical equipment.
