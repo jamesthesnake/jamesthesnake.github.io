@@ -1,6 +1,6 @@
 # jamesthesnake.github.io
 Personal site
 <br>
-Be curious not <b>judgemental</b> - Walt Whitman
+Be curious not <b>judgemental</b>
 /
 Very excited for this webpage.
