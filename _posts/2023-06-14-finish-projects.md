@@ -53,3 +53,16 @@ While I may not have any tricks or secrets for getting around the work, there ar
 
 Everyone is different. Our brains, environments, and experiences all vary. A foolproof strategy for some is doomed from the start for others. My challenge to you is to start with a system—any system at all—that you think will tip the odds even slightly in your favor. Try a system, keep the parts that work, and iterate on the parts that don't. 
 
+The joy of finishing
+There is a deep satisfaction in having finished something. You put in a massive amount of work, see it through to the end, and release it to the world. 
+
+There's the high of starting, the agony of seeing it through to the end, and finally the thrill of releasing. But after everything else has worn off, there remains the deep and quiet joy of having accomplished something. Maybe it was a great success, maybe it wasn't. That part is out of your control. What’s in your control is seeing it all the way through, and you did that. 
+
+Sometimes finishing is the end: You release the article, the podcast, the book, and that's it. The artifact is in its final form.
+
+Sometimes finishing is just the beginning: You release the library, the package, the SaaS product, and your work is really just beginning. Users have issues, customers have feedback, and dependencies need upgrading. In some sense, there is no finished software; there is only released software.
+
+Whether it's the beginning or the end, take pride in what you've accomplished. You've finished something. You are a person who finishes things. Keep finishing things and your body of work will continue to grow over time. Finishing is a skill, and you can hone it. With each release, you tell yourself that you are the kind of person who ships.
+
+One day you'll look back with quiet satisfaction at all the projects you've finished, and you'll feel proud of yourself— <b>as you should</b>.
+
