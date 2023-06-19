@@ -23,4 +23,10 @@ Even after the reactor is shut down, the radioactive materials continue to gener
 ### Inputs of plant construction costs
 There are a variety of nuclear plant cost breakdowns available, but we’ll look at a breakdown done by the DOE in 1980 for a hypothetical 1100 MW plant, which should reflect the costs of U.S. plants, excluding financing, during the era when most plants were being built. 
 
+ Roughly one third of the costs are “indirect” costs of the building process: engineering services, construction management, administrative overhead, etc. For the direct costs (the costs of materials, equipment, and on-site labor), the reactor, the turbine equipment, and the plant structures each make up 15-20% of overall costs, with the balance made up by additional plant systems. Also note that the plant’s engineering design cost nearly as much as the reactor itself.
+
+Rising labor costs are the bulk of increased construction costs
+Most nuclear plant cost increase in the 1970s-80s can be attributed to increased labor costs. An estimate by United Engineers and Constructors found that from 1976-1988, labor costs for plant construction climbed 18.7% annually, while material costs escalated by only 7.7% annually (against an overall inflation rate of 5.5%) Of those labor costs, over half were due to expensive professionals: engineers, supervisors, quality control inspectors, and so on.
+
+
 
