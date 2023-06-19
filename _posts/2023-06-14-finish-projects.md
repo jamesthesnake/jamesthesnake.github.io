@@ -1,3 +1,10 @@
+---
+layout:     post
+title:      Finish the job
+date:       2023-06-14
+summary:    Finish the job
+categories: quick
+---
 Starting a new project is a rush. The possibilities are infinite. There's no legacy code dragging you down; we're only making good decisions this time! The beginning of any project is always characterized by blissful productivity. There's so much to be done. How could you not get a lot done in a short amount of time? Edge cases don't exist. There are only happy paths. There are no hard decisions, no tradeoffs, no users, and no customers. Just you and an infinite canvas.
 
 Sooner or later, the blissful productivity gives way to something that feels much more like... work. More like a grind. But it's probably just this project, right? You've lost interest. The passion is gone. It's not as fun as you thought it would be. All that's left is the "boring" stuff. 
