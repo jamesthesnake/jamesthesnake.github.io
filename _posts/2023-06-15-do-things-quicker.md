@@ -1,3 +1,10 @@
+---
+layout:     post
+title:      Do things quicker
+date:       2023-06-15
+summary:    quick
+categories: tasks
+---
 The obvious benefit to working quickly is that you’ll finish more stuff per unit time. But there’s more to it than that. If you work quickly, the cost of doing something new will seem lower in your mind. So you’ll be inclined to do more.
 
 The converse is true, too. If every time you write a blog post it takes you six months, and you’re sitting around your apartment on a Sunday afternoon thinking of stuff to do, you’re probably not going to think of starting a blog post, because it’ll feel too expensive.
