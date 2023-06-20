@@ -29,7 +29,7 @@ Rising labor costs are the bulk of increased construction costs
 Most nuclear plant cost increase in the 1970s-80s can be attributed to increased labor costs. An estimate by United Engineers and Constructors found that from 1976-1988, labor costs for plant construction climbed 18.7% annually, while material costs escalated by only 7.7% annually (against an overall inflation rate of 5.5%) Of those labor costs, over half were due to expensive professionals: engineers, supervisors, quality control inspectors, and so on.
 /
 <br>
-Other estimates align with this. A 1980 estimate produced by Oak Ridge suggests that material volume increases between the early 1970s and 1980 generally ranged from 25-50%, not nearly enough to account for the total cost increases seen:
+Other estimates align with this. A 1980 estimate produced by [Oak Ridge](https://www.osti.gov/biblio/6886382) suggests that material volume increases between the early 1970s and 1980 generally ranged from 25-50%, not nearly enough to account for the total cost increases seen:
 /
 /
 <br>
