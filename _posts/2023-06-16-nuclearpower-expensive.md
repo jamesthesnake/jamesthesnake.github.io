@@ -1,3 +1,10 @@
+---
+layout:     post
+title:      Nuclear
+date:       2023-06-23
+summary:    Whats he deal with haskell
+categories: pacman
+---
 Nuclear plant construction is often characterized as exhibiting “negative learning.” That is, instead of getting better at building plants over time, we’re getting worse. Plants have gotten radically more expensive, even as technology has improved and we understand the underlying science better. 
 
 
