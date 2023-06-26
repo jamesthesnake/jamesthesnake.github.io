@@ -8,6 +8,7 @@ b = \exp\left( \frac{\log n!}{n} \right)
 
 What’s interesting is that b is very nearly a linear function of n.
 
+![unrolled start](/images/graph.png)
 
 
 In hindsight it’s clear that this should be the case—it follows easily from Stirling’s approximation—but I didn’t anticipate this before I plotted it.
