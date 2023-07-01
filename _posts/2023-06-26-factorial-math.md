@@ -23,9 +23,9 @@ which is true. It follows from the multiplication identity for the gamma functio
 
 Let z = n + 1/2 so that the left side is (2n)!. On the right side, Γ(z + 1/2) = n! and Γ(z) is not too different from n!. The rest of the right side is 22n/√π.
 
-So our observation that b(n) is nearly linear gave us a hint of Gauss’s multiplication formula.
+So our observation that <i>b(n)</i> is nearly linear gave us a hint of Gauss’s multiplication formula.
 
 [1] Numerically you would probably evaluate this function by calling a routine that computes log Γ(n + 1) directly without computing Γ(n + 1) first. This avoids overflow for large n.
 
-This is why mathematical libraries will have not only gamma functions but also loggamma functions. The latter seems redundant, but it’s not.
+This is why mathematical libraries will have not only gamma functions but also loggamma functions. The latter seems redundant, but it’s not (math library functions are rarely redunant).
 
