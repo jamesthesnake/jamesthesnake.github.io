@@ -3,11 +3,7 @@ An FRC match is split into two phases: a fifteen-second autonomous period, and a
 
 The punch line of this story is that we switched from Java to Lua and started using coroutines. Lua has coroutines, which are a way better tool for autonomous code than anything FIRST provides. Let me explain why!
 
-```
-var add2 = function(number) {
-  return number + 2;
-}
-```
+
 What does FIRST code look like?
 FIRST code is very simple. This is a complete robot program in Java:
 
