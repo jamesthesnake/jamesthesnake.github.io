@@ -46,6 +46,7 @@ Suppose we want to write the following simple autonomous routine to pick up and 
 A diagram of a four-step autonomous routine: drive backward, pick up ball, drive forward, score ball.
 
 The "natural" way to write this is a state machine, and the work for this routine needs to be spread across at minimum four different states. In practice there may be more, if for example you need to pause between steps. Things are now a lot more complicated:
+```
 
 package frc.robot;
 
@@ -100,6 +101,8 @@ public class Robot extends TimedRobot {
     }
   }
 }
+```
+
 To a seasoned programmer, this might seem reasonable, but to a beginner, this is a massive leap in complexity. Creating and modifying this now requires a lot of planning up front. It requires you to name every tiny state, no matter how trivial (WAITING_FOR_GRAB, WAITING_WHILE_SHOOTING, etc.), and you need to update the program in multiple places. Any supplementary state such as the grabTimer needs to be defined at the top of the file, far away from where it's actually used. It's also very easy to mess up the transitions - students get lost in the noise and forget to stop mechanisms on transition, or accidentally transition to the wrong state.
 
 And this is a very simple sequence! As autonomous routines get more sophisticated, the complexity grows rapidly.
@@ -119,6 +122,7 @@ There is obvious overlap here, but to build these effectively, we need a way of 
 
 FIRST's solution
 For years FIRST has encouraged the use of a "command" system. We followed this pattern for many years. A "command" is a class with some lifecycle methods on it, corresponding to a single state of your state machine:
+```
 
 public class DriveForwardCommand extends Command {
   private double speed;
@@ -149,7 +153,10 @@ public class DriveForwardCommand extends Command {
     drivetrain.arcadeDrive(0, 0);
   }
 }
+```
+
 You can then compose these commands using some meta-commands:
+```
 
 Command autoCommand = new SequentialCommand( // runs commands in sequence
   new DriveForwardCommand(0.5, 48),
@@ -160,6 +167,8 @@ Command autoCommand = new SequentialCommand( // runs commands in sequence
   new DriveBackwardCommand(-0.5, 48),
   new ShootCommand(),
 );
+```
+
 We ended up with a lot of these meta-commands. ParallelCommand, LoopCommand, ConditionalCommand...the list goes on. The more we did this, the worse it felt to me. We were basically creating a crappy programming language out of Java classes. And while this did make things a little more reusable, it doubled the boilerplate and split it into tiny pieces.
 
 The students really struggled with this. It's already difficult for beginners to reason about a single function, much less a meta-function whose pieces are spread across ten different files. I struggled with this when I was a student too, with my commands stomping on each other, ruining each other's exit conditions, etc.
@@ -170,6 +179,7 @@ If only there was a way for them to write simple procedural code again.
 
 Coroutines to the rescue
 In an ideal world, we would write our example autonomous routine like this:
+```
 
 public void myAuto() {
   // Drive backward
@@ -194,11 +204,14 @@ public void myAuto() {
   // Shoot!
   shooter.shoot();
 }
+```
+
 Unfortunately, we can't do this because we need our autonomousPeriodic function to keep ticking. Loops like this will never finish and will cause the robot program to hang. So you can't use loops!
 
 Well with coroutines, you can.
 
 I describe coroutines to my students as functions that can pause. Here's what our auto routine might look like in Lua (which has native coroutines):
+```
 
 function myAuto()
   -- Drive backward
@@ -237,6 +250,8 @@ end
 function autonomousPeriodic()
   coroutine.resume(autoCoroutine)
 end
+```
+
 The coroutine.yield() pauses the function's execution. Next time we coroutine.resume, it will pick up from that yield and continue. Put a coroutine.yield() at the end of every loop, and now you can use loops!
 
 If you know what coroutines are, you're probably very disappointed by that definition, but I don't care. 🙂 We don't actually need to yield values 95% of the time. We just need to pause.
