@@ -15,12 +15,12 @@ In hindsight it’s clear that this should be the case—it follows easily from 
 
 Now fix n and find b such that n! = bn. Since the relationship between n and b(n) is nearly linear, this suggests
 
-![unrolled start](/images/math/math_1.png)
+![unrolled start](/images/math_factorial/math_1.png)
 
 which is true. It follows from the multiplication identity for the gamma function:
 
 
-![unrolled start](/images/math/math_2.png)
+![unrolled start](/images/math_factorial/math_2.png)
 
 Let z = n + 1/2 so that the left side is (2n)!. On the right side, Γ(z + 1/2) = n! and Γ(z) is not too different from n!. The rest of the right side is 22n/√π.
 
