@@ -6,7 +6,8 @@ The punch line of this story is that we switched from Java to Lua and started us
 What does FIRST code look like?
 FIRST code is very simple. This is a complete robot program in Java:
 
-'''package frc.robot;
+'''
+package frc.robot;
 
 import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 
@@ -32,7 +33,8 @@ public class Robot extends TimedRobot {
     double steering = gamepad.getRawAxis(2); // right stick X
     robotDrive.arcadeDrive(speed, steering);
   }
-}'''
+}
+'''
 This is a very simple event loop structure. We simply fill in a tick function (teleopPeriodic), and the larger robot framework calls that function 50 times per second when the bot is enabled. This is great for teleoperated code, and it's very simple to understand. Read inputs, set outputs, repeat.
 
 Autonomous code works the same way, with an autonomousPeriodic method that gets called when the autonomous mode is active. However, autonomous routines are much harder to write, because of state.
