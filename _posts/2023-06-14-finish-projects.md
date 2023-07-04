@@ -57,10 +57,26 @@ Doing that last bit of work isn’t glamorous, there are no shortcuts, and there
 Jerry Seinfeld, the most prolific comedian of our time, was asked by aspiring comedians for advice on how to succeed in comedy. His response? "Just work." That's it. Just work.
 
 While I may not have any tricks or secrets for getting around the work, there are strategies for getting through the work. This is a key distinction: You can't avoid the slog, but you can figure out the way that works best for you to get through it. 
-
+## Fear to finish 
 Everyone is different. Our brains, environments, and experiences all vary. A foolproof strategy for some is doomed from the start for others. My challenge to you is to start with a system—any system at all—that you think will tip the odds even slightly in your favor. Try a system, keep the parts that work, and iterate on the parts that don't. 
+You've slogged through, done the hard work, lashed yourself to the mast, and finished the project, yet you still can't bring yourself to publish. Instead, you tinker endlessly, changing things that don't matter, fiddling around the margins and swapping out libraries or build tools until finally you're all out of things to tweak. 
 
-The joy of finishing
+Even with a fully completed project, you convince yourself that it's not quite good enough, so it remains unreleased. You move on to a new project, and the cycle repeats. 
+
+Finishing requires work, but it also requires a great deal of courage.
+
+Behind the fear of releasing is often the fear of exposing your work, and yourself,  to criticism. 
+
+It’s easier and safer to tell yourself that the project isn't quite right and that it’s better to spend your time on a new (and better!) idea. You tell yourself that it could have been a success if only you’d released it, but you decided not to... for "reasons." It's a comforting narrative that tricks you every time and leaves your best work to gather dust on your hard drive.
+
+You have a duty to your past self to release the project. It’s a way to honor your work and sacrifice. All the time spent on the project is time you could have spent on something else. That time was not without cost.
+
+You also have a duty to your future self to release the project. Every time you don't release a project, you're telling yourself that you’re the kind of person who doesn't ship. Tell yourself that enough, and you'll start to believe it. Trust me, it's hard to unwind. Possible! But hard. 
+
+The fear is real, it exists, and it's something you'll have to wrestle with. 
+
+
+## The joy of finishing
 There is a deep satisfaction in having finished something. You put in a massive amount of work, see it through to the end, and release it to the world. 
 
 There's the high of starting, the agony of seeing it through to the end, and finally the thrill of releasing. But after everything else has worn off, there remains the deep and quiet joy of having accomplished something. Maybe it was a great success, maybe it wasn't. That part is out of your control. What’s in your control is seeing it all the way through, and you did that. 
