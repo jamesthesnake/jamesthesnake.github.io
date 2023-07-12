@@ -19,3 +19,12 @@ And speaking of the walk back to your hotel room…
 Walt had a term for the sore feet we often get after a long day of traipsing around the parks… he called it “museum feet”. His goal in designing the original parks was to avoid tired, aching feet as much as possible by creating useful walkways that connected people quickly to their destination.
 
 After traveling to Washington D.C. and seeing the French-born architect Pierre L’Enfant’s hub-and-spoke street designs, Walt proposed the same concept for Disneyland (if you’ve ever traveled in Paris, you’ll notice this is a common architectural street layout there as well). Below is a 1:100 scale model of opening day in Disneyland, where you can see this concept played out:
+
+
+In this original design, every land is accessible via the hub in the center of the park. This hub, called “Central Plaza” or “Plaza” by Walt and the Imagineers (hence “The Plaza Inn” name) allowed for visitors to always have an anchor point to orient themselves to no matter where they were in the park. The castle itself became a visual reference for this anchor point.
+
+But what Walt soon realized is that everyone had to backtrack back to the hub in order to get to another land, and that simply called for too much walking. So, secondary routes between each land were created at the back so that you could easily travel from land to land.
+
+I am going to pause here and mention that, in my opinion, it is a major flaw in the design of the Magic Kingdom in Disney World that there is NOT a back entrance to Frontierland connecting it to Liberty Square/Fantasyland as there is in Disneyland. That walk from Big Thunder Mountain Railroad is ROUGH to backtrack around the Rivers of America on a hot Floridian day.
+
+
