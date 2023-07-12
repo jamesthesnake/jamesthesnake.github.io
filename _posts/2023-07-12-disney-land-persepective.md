@@ -1,3 +1,4 @@
+https://disneycicerone.com/how-the-design-of-disney-parks-affects-our-perspective/
 The layout of the Disney parks may not be something you think about except for at the end of the day when your feet are aching and sitting feels like the best ride ever. Or when you’re hiking around the Epcot World Showcase in the blazing sun and afternoon heat. But the ways the Imagineers have creatively designed the parks influence your experience more than you think, and in ways you might not have considered before.
 
 So today we’re going to talk about why we love (or mostly love) Disney’s park designs and architectural illusions. And we’ll learn a bit about the history of Disney’s design along the way.
