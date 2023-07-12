@@ -5,6 +5,7 @@ So today we’re going to talk about why we love (or mostly love) Disney’s par
 Let’s dive in, shall we?
 
 We all know Disney creates the impression of height using forced perspective (or at least you do now!). Almost all the buildings on Main Street USA are designed with a 1—5/8—1/2 scale. The first floor is full scale, followed by the next facade floor being 5/8 before adding a third fake floor that is only 1/2 size. This illusion draws the eyes up and makes you think (from the ground) that the building is three stories when it actually is quite shorter. (Note: Main Street USA in the Magic Kingdom in Florida uses a 7/8 scale instead because it has a larger castle and so everything is sized up instead of “pony size” like Walt wanted at Disneyland).
+![concept](/images/Disney/layout-post-pics.jpg)
 
   There are a few buildings on Main Street USA, however, that do not use forced perspective. One is Tony’s Town Square restaurant building, which needed to be tall enough to block the view of the Contemporary while in the parks and was therefore built with all its floors true-to-size.
 
@@ -27,5 +28,11 @@ In this original design, every land is accessible via the hub in the center of t
 But what Walt soon realized is that everyone had to backtrack back to the hub in order to get to another land, and that simply called for too much walking. So, secondary routes between each land were created at the back so that you could easily travel from land to land.
 
 I am going to pause here and mention that, in my opinion, it is a major flaw in the design of the Magic Kingdom in Disney World that there is NOT a back entrance to Frontierland connecting it to Liberty Square/Fantasyland as there is in Disneyland. That walk from Big Thunder Mountain Railroad is ROUGH to backtrack around the Rivers of America on a hot Floridian day.
+
+Sadly, not all of the parks are laid out in this brilliant hub-and-spoke fashion. Epcot could easily be known as “Every Person Comes Out Tired” simply because of its massive double-circle design that arguably creates more steps needed than any other park. We could go on and on about why it’s that way (namely: it was supposed to be two separate parks and they pushed the two models together to create one large one) but that’s a whole other post for another day.
+
+Animal Kingdom takes a page from the Magic Kingdom in design, with the hub being Discovery Island with the Tree of Life as a visual anchor. There are also walkways on the backside of all lands leading into the next land, much like Disneyland. This park feels smaller than it is at times because of this simple design that makes almost every area easily accessible. I particularly appreciate the bypass of DinoLand U.S.A., allowing me quick access to Expedition Everest without having to pass through that visually assaulting area.
+
+
 
 
