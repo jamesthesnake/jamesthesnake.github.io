@@ -10,3 +10,12 @@ We all know Disney creates the impression of height using forced perspective (or
 
 Another is the Town Square Firehouse, which stands a full three stories because the original plans for the parks included an apartment for Walt’s family like its counterpart in Disneyland. As you may know, Walt sadly passed away before the opening of Walt Disney World, which made the apartment unnecessary. But as construction was already underway, the building was completed full-scale.
 
+Forced perspective isn’t limited to the height of the buildings, however, on Main Street USA. The buildings themselves are designed to be at a slightly wider angle on one side of the building, so when you are traveling down the street towards the castle, it creates an illusion that the end of the street (and castle) is far away in the distance. When you turn around and head towards the exit after a long day, the street appears shorter and the end of the street manageably closer.
+
+The trees also play a part in this visual trickery, as they are smaller as you look down the street towards the castle to make the magnificent structure appear larger and more impressive. The trees planted in the Town Square near the exit are larger and therefore create the illusion as you walk back to your resort that the train station is much closer.
+
+And speaking of the walk back to your hotel room…
+
+Walt had a term for the sore feet we often get after a long day of traipsing around the parks… he called it “museum feet”. His goal in designing the original parks was to avoid tired, aching feet as much as possible by creating useful walkways that connected people quickly to their destination.
+
+After traveling to Washington D.C. and seeing the French-born architect Pierre L’Enfant’s hub-and-spoke street designs, Walt proposed the same concept for Disneyland (if you’ve ever traveled in Paris, you’ll notice this is a common architectural street layout there as well). Below is a 1:100 scale model of opening day in Disneyland, where you can see this concept played out:
