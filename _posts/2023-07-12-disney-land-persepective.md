@@ -5,7 +5,7 @@ So today we’re going to talk about why we love (or mostly love) Disney’s par
 Let’s dive in, shall we?
 
 We all know Disney creates the impression of height using forced perspective (or at least you do now!). Almost all the buildings on Main Street USA are designed with a 1—5/8—1/2 scale. The first floor is full scale, followed by the next facade floor being 5/8 before adding a third fake floor that is only 1/2 size. This illusion draws the eyes up and makes you think (from the ground) that the building is three stories when it actually is quite shorter. (Note: Main Street USA in the Magic Kingdom in Florida uses a 7/8 scale instead because it has a larger castle and so everything is sized up instead of “pony size” like Walt wanted at Disneyland).
-![concept](/images/Disney/layout-post-pics-vertical.jpg)
+![concept](/images/Disney/layout-post-pics-vertical.png)
 
   There are a few buildings on Main Street USA, however, that do not use forced perspective. One is Tony’s Town Square restaurant building, which needed to be tall enough to block the view of the Contemporary while in the parks and was therefore built with all its floors true-to-size.
 
