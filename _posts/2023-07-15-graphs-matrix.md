@@ -59,5 +59,31 @@ Yes, and with the help of directed graphs, this is much easier to show than pure
 
 Here is the famous theorem in full form.
 
+But what are permutation matrices?
+
+## Permutation matrices
+Let’s look at a special case: what happens if we multiply a 2 x 2 matrix with
+
+a simple zero-one matrix? With a quick calculation, you can verify that
+
+1.it switches the rows when multiplied from the left,
+
+2. and it switches the columns when multiplied from the right.
+
+Just like this:
+Multiplying with P from both left and right compounds the effects: it switches rows and columns.
+
+(By the way, this is a similarity transformation, as our special zero-one matrix is its own inverse. This is not an accident; more about it later.)
+
+Why are we looking at this? Because behind the scenes, this transformation doesn’t change the underlying graph structure, just relabels its nodes!
+
+You can easily verify this by hand, but I visualized it for you below.
+
+A similar phenomenon is true in the general n x n case. Here, we define the so-called transposition matrices by switching the i-th and j-th rows of the identity matrix:
+
+
+
+
+
 
 
