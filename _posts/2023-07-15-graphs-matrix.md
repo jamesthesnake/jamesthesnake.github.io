@@ -51,3 +51,13 @@ You bet. Enter the Frobenius normal form.
 ## The Frobenius normal form
 In general, this block-matrix structure that we have just seen is called the Frobenius normal form.
 
+If you have a sharp eye with a hint of OCD, you probably noticed that I switched up the colors a bit. From now on, irreducible blocks (a.k.a. matrices that correspond to strongly connected graphs) will be colored maize, while reducible ones will be light blue.
+
+Let's reverse the question: can we transform an arbitrary nonnegative matrix into the Frobenius normal form?
+
+Yes, and with the help of directed graphs, this is much easier to show than purely using algebra.
+
+Here is the famous theorem in full form.
+
+
+
