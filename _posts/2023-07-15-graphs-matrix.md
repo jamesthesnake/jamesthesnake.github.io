@@ -28,4 +28,26 @@ A directed graph is strongly connected if every node can be reached from every o
 If this is not true, the graph is not strongly connected.
 
 Below, you can see an example of both.
+Matrices that correspond to strongly connected graphs are called irreducible. All other nonnegative matrices are called reducible. Soon, we'll see why.
+
+(For simplicity, I assumed each edge to have a unit weight, but each weight can be an arbitrary nonnegative number.)
+
+Back to the general case!
+Let's label the nodes of this graph and construct the corresponding matrix!
+
+(For simplicity, assume that all edges have unit weight.) Do you notice a pattern?
+
+The corresponding matrix of our graph can be reduced to a simpler form!
+
+
+Even though not all directed graphs are strongly connected, we can partition the nodes into strongly connected components.
+
+Its diagonal comprises blocks whose graphs are strongly connected. (That is, the blocks are irreducible.) Furthermore, the block below the diagonal is zero.
+
+Is this true for all nonnegative matrices?
+
+You bet. Enter the Frobenius normal form.
+
+## The Frobenius normal form
+In general, this block-matrix structure that we have just seen is called the Frobenius normal form.
 
