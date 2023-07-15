@@ -88,6 +88,32 @@ We are not going to spell it out in detail (as the overcomplicated notation make
 
 Here is a brief summary. Take note of these, as they’ll be essential in a bit.
 
+The most important property for us: similarity transformations with transposition matrices just relabel two nodes, but otherwise leave the graph structure invariant.
+
+Now, about the aforementioned permutation matrices. A permutation matrix is simply a product of transposition matrices.
+
+Permutation matrices inherit some properties from their building blocks. Most importantly,
+
+1.their inverse is their transpose,
+
+2. and a similarity transformation with them is just a relabeling of nodes that leave the graph structure invariant.
+
+To see this latter one, consider the following argument below.
+(Recall that transposing a matrix product switches up the order, and transposition matrices are their own transposes.)
+
+Conversely, every node relabeling is equivalent to a similarity transformation with a well-constructed permutation matrix.
+
+Why are we talking about this? Because the proper labeling of nodes is key to the Frobenius normal form.
+
+## Directed graphs and their strongly connected components
+Now, let’s talk about graphs. We’ll see how every digraph decomposes into strongly connected components. For that, let’s see a concrete one.
+This’ll be our textbook example.
+
+How many nodes can be reached from a given node? Not necessarily all. Say, for the one at the bottom right, only a portion of the graph is accessible.
+
+
+
+
 
 
 
