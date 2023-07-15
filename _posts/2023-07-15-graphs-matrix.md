@@ -82,6 +82,12 @@ You can easily verify this by hand, but I visualized it for you below.
 A similar phenomenon is true in the general n x n case. Here, we define the so-called transposition matrices by switching the i-th and j-th rows of the identity matrix:
 
 
+Multiplication with a transposition matrix has the same effect: switches rows from the left, and switches columns from the right.
+
+We are not going to spell it out in detail (as the overcomplicated notation makes it especially painful), but you can verify by hand that this is indeed what’s going on.
+
+Here is a brief summary. Take note of these, as they’ll be essential in a bit.
+
 
 
 
