@@ -113,7 +113,62 @@ How many nodes can be reached from a given node? Not necessarily all. Say, for t
 
 
 
+However, the set of mutually reachable nodes is much smaller.
 
+Algebraically speaking, the relation “a and b are mutually reachable from each other“ is an equivalence relation. In other words, it partitions the set of nodes into disjoint subsets such that
+
+1.two nodes from the same subset are mutually reachable from each other,
+
+2. and two nodes from different subsets are not mutually reachable.
+
+(Equivalence relations are the workhorses of mathematics. If you are not familiar with them, check out this Wikipedia article about partitions to see how they relate.)
+
+The subsets of this partition are called the strongly connected components, and we can always decompose a directed graph in this way.
+
+
+Now, let’s connect everything together! (Not in a graph way, but you know, in a wholesome mathematical way.)
+
+## Putting graphs and permutation matrices together
+We are two steps away from proving that every nonnegative square matrix can be transformed into Frobenius normal form with a permutation matrix.
+
+Here is the plan.
+
+1.Construct the graph for our nonnegative matrix.
+
+2. Find the strongly connected components.
+
+3. Relabel the nodes in a clever way.
+
+And that’s it! Why? Because, as we have seen, relabeling is the same as a similarity transform with a permutation matrix.
+
+There’s just one tiny snag: what is the clever way? I’ll show you.
+
+First, we “skeletonize” the graph: merge the components together, as well as any edges between them. Consider each component as a black box: we don’t care what’s inside, only about their external connections.
+In this skeleton, we can find that components that cannot be entered from another components. These will be our starting points, the zeroth-class components. In our example, we only have one.
+
+Now, things get a bit tricky. We number each component by the longest path from the farthest zero-class component from which it can be reached.
+
+This is hard to even read, let alone to understand. So, here is what’s happening.
+
+The gist is that if you can reach an m-th-class from an n-th-class, then n < m.
+
+In the end, we have the following.
+
+This defines an ordering on the components. (A partial ordering, if you would like to be precise.)
+
+Now, we label the nodes inside such that
+
+1.higher-order classes come first,
+
+2. and consecutive indices are labeling nodes from the same component if possible.
+
+This is how it goes.
+
+
+
+If the graph itself is coming from an actual matrix, such a relabeling yields the Frobenius normal form!
+
+Here is the matrix in this particular example, with zeros and ones for simplicity:
 
 
 
