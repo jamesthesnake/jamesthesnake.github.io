@@ -1,4 +1,4 @@
-The directed graph of a nonnegative matrix
+## The directed graph of a nonnegative matrix
 If you looked at the example above, you probably figured out the rule.
 
 Each row is a node, and each element represents a directed and weighted edge. Edges of zero elements are omitted. The element in the i-th row and j-th column corresponds to an edge going from i to j.
@@ -6,4 +6,11 @@ Each row is a node, and each element represents a directed and weighted edge. Ed
 The resulting graph is called the directed graph (or digraph) of the matrix.
 
 To unwrap the definition a bit, let's check the first row, which corresponds to the edges outgoing from the first node.
+
+## Benefits of the graph representation
+Why is the directed graph representation beneficial for us?
+
+For one, the powers of the matrix correspond to walks in the graph.
+
+Take a look at the elements of the square matrix. All possible 2-step walks are accounted for in the sum defining the elements of A².
 
