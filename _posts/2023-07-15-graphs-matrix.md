@@ -172,5 +172,11 @@ Here is the matrix in this particular example, with zeros and ones for simplicit
 
 
 
+# Conclusion 
+
+What we have seen is just the tip of the iceberg. For example, with the help of matrices, we can define the eigenvalues of graphs! This idea gave birth to the fascinating topic of spectral graph theory, a beautiful field of mathematics.
+
+Utilizing the relation between matrices and graphs has been extremely profitable for both graph theory and linear algebra.
+
 
 
