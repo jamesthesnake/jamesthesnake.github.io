@@ -1,3 +1,6 @@
+
+Most programmers have an intimate understanding of CPUs and sequential programming because they grow up writing code for the CPU, but many are less familiar with the inner workings of GPUs and what makes them so special. Over the past decade, GPUs have become incredibly important because of their pervasive use in deep learning. Today, it is essential for every software engineer to possess a basic understanding of how they work. My goal with this article is to give you that background. 
+
 We will start by doing a comparison between CPU and GPU which will give us a better vantage point of the GPU landscape. However, this is a topic of its own and we cannot possibly squeeze everything in one section. So, we will stick to a few key points.
 
 The major difference between CPUs and GPUs is in their design goals. CPUs were designed to execute sequential instructions1. To improve their sequential execution performance, many features have been introduced in the CPU design over the years. The emphasis has been on reducing the instruction execution latency so that CPUs can execute a sequence of instructions as fast as possible. This includes features like instruction pipelining, out of order execution, speculative execution and multilevel caches (just to list a few).
