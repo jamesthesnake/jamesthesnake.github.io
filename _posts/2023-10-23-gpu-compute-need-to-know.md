@@ -1,0 +1,10 @@
+We will start by doing a comparison between CPU and GPU which will give us a better vantage point of the GPU landscape. However, this is a topic of its own and we cannot possibly squeeze everything in one section. So, we will stick to a few key points.
+
+The major difference between CPUs and GPUs is in their design goals. CPUs were designed to execute sequential instructions1. To improve their sequential execution performance, many features have been introduced in the CPU design over the years. The emphasis has been on reducing the instruction execution latency so that CPUs can execute a sequence of instructions as fast as possible. This includes features like instruction pipelining, out of order execution, speculative execution and multilevel caches (just to list a few).
+
+GPUs on the other hand have been designed for massive levels of parallelism and high throughput, at the cost of medium to high instruction latency. This design direction has been influenced by their use in video games, graphics, numerical computing, and now deep learning. All of these applications need to perform a ton of linear algebra and numerical computations at a very fast rate, because of which a lot of attention has gone into improving the throughput of these devices.
+
+Let’s consider a concrete example. A CPU can add two numbers much faster than the GPU because of its low instruction latency. They will be able to do several of such computations in a sequence faster than a GPU. However, when it comes to doing millions or billions of such computations, a GPU will do those computations much much faster than a CPU because of its sheer massive parallelism.
+
+If you like numbers, let’s talk about numbers. The performance of hardware for numerical computations is measured in terms of how many floating point operations it can do per second (FLOPS). The Nvidia Ampere A100 offers a throughput of 19.5 TFLOPS for 32-bit precision. In comparison, the throughput of an Intel 24-core processor is 0.66 TFLOPS for 32-bit precision (these numbers are from 2021). And, this gap in the throughput performance between GPUs and CPUs has been growing wider with each passing year.
+
