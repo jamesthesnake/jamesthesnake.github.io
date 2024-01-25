@@ -1,3 +1,11 @@
+---
+layout:     post
+title:      Drug discovery articles
+date:       2024-01-17
+summary:    Drug discovery articles
+categories: Ml drug dsicovery 
+---
+
 Property Prediction
 
 Machine Learning Methods for Small Data Challenges in Molecular Science
