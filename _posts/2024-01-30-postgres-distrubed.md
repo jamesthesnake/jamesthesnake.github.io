@@ -21,3 +21,7 @@ PostgreSQL, like most other RDBMSs, uses a synchronous, interactive protocol whe
 
 Any network latency between client and database server will already be a noticeable factor in the overall duration of a transaction. When PostgreSQL itself is a distributed system that makes internal network round trips (e.g. while waiting for WAL commit), the duration can get many times higher.
 
+Why is it bad for transactions to take longer? Surely humans won’t notice if they need to wait 10-20ms? Well, if transactions take on average 20ms, then a single (interactive) session can only do 50 transactions per second. You then need a lot of concurrent sessions to actually achieve high throughput.
+
+Having many sessions is not always practical from the application point-of-view, and each session uses significant resources like memory on the database server. Most PostgreSQL set ups limit the maximum number of sessions in the hundreds or low thousands, which puts a hard limit on achievable transaction throughput when network latency is involved. In addition, any operation that is holding locks while waiting for network round trips is also going to affect the achievable concurrency.
+
