@@ -44,14 +44,14 @@ For an arbitrary $$\begin{eqnarray*}\alpha\end{eqnarray*}$$. This means, you can
 
 $$\begin{eqnarray*}(\alpha=\text(max)x_i\end{eqnarray*}$$
 
+**Proof of Log-Sum-Exp Stability Trick:**
 
-PROOF OF LOG SUM
 $$
 \begin{align*}
 y &= \log\left(\sum_{i=1}^n e^{x_i}\right) \\
-\Leftrightarrow e^{y} &= \sum_{i=1}^n e^{x_i} \\
-\Leftrightarrow e^{y - a} &= \sum_{i=1}^n e^{x_i - a} \\
-\Leftrightarrow y - a &= \log\left(\sum_{i=1}^n e^{x_i - a}\right) \\
-\Leftrightarrow y &= a + \log\left(\sum_{i=1}^n e^{x_i - a}\right)
+e^{y} &= \sum_{i=1}^n e^{x_i} & \text{(Exponentiating both sides)} \\
+e^{y - a} &= \sum_{i=1}^n e^{x_i - a} & \text{(Multiplying both sides by } e^{-a}\text{)} \\
+y - a &= \log\left(\sum_{i=1}^n e^{x_i - a}\right) & \text{(Taking the logarithm of both sides)} \\
+y &= a + \log\left(\sum_{i=1}^n e^{x_i - a}\right) & \text{(Adding } a \text{ to both sides)}
 \end{align*}
 $$
