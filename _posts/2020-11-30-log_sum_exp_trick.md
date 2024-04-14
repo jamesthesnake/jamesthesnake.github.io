@@ -46,9 +46,12 @@ $$\begin{eqnarray*}(\alpha=\text(max)x_i\end{eqnarray*}$$
 
 
 PROOF OF LOG SUM
-$$\begin{eqnarray*}
-y= \text{log}\left(\sum_{i=1}^n e^x_i\right)\newline
-\Leftrightarrow e^{y}=\left(\sum_{i=1}^n e^{(x_i)} \right)\newline
-\Leftrightarrow e^{y-a}=\left(\sum_{i=1}^n e^{(x_i)}e^{-a} \right)\newline
-\Leftrightarrow y-a=\text{log}\left(\sum_{i=1}^n e^{(x_i-a)} \right)\newline
-\Leftrightarrow y= a + \text{log}\left(\sum_{i=1}^n e^{(x_i-a)} \right)\newline\end{eqnarray*}$$
+$$
+\begin{align*}
+y &= \log\left(\sum_{i=1}^n e^{x_i}\right) \\
+\Leftrightarrow e^{y} &= \sum_{i=1}^n e^{x_i} \\
+\Leftrightarrow e^{y - a} &= \sum_{i=1}^n e^{x_i - a} \\
+\Leftrightarrow y - a &= \log\left(\sum_{i=1}^n e^{x_i - a}\right) \\
+\Leftrightarrow y &= a + \log\left(\sum_{i=1}^n e^{x_i - a}\right)
+\end{align*}
+$$
