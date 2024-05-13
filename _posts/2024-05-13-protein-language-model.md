@@ -16,3 +16,25 @@ A lot of the initial work in pLMs is based on Encoder-only Transformer architect
 
 Most of these models use BERT-like architectures and denoising autoencoding training objectives, i.e., they are pre-trained by corrupting input tokens in some way and trying to reconstruct the original sequence. Examples of such models include TCR-BERT, epiBERTope, ESM, ProtTrans or ProteinBERT. After pre-training to generate embeddings, these models are further refined through supervised learning techniques to address various downstream tasks in protein engineering (secondary structure and contact prediction, remote homology detection, post-translation and biophysical properties prediction)
 
+Unlike encoder models, decoder models adopt autoregressive training, a method where models are trained to predict subsequent words based on a given context. The most well-known of these types of models are, you guessed it, the GPT-x models.
+
+An early example of the GPT style decoder models in the protein world is ProtGPT2, trained on 50M sequences with 738 parameters.
+
+Did it work?
+
+Kind of. ProtGPT2 managed to generate sequences with characteristics similar to those of natural proteins. The amino acid types and frequencies closely matched those in nature, and the sequences exhibited a comparable balance between ordered (stable) and disordered (flexible) regions. And visual inspection of the structural superimposition showed that generated proteins preserved some of the binding sites, which is essential for functionality. So, although the generated sequences looked a lot of natural proteins, it's hard to say if they really functioned like one. It was quickly outpaced by bigger and better models.
+
+Conditional transformers
+While ProGPT2 leverages a GPT2-like architecture for general protein sequence generation, newer approaches have been developed that integrate deeper biological contexts during the training phase. These methods ensure the patterns learned are not only statistically correct but also biologically meaningful. Protein models can be conditioned in two main ways: i) by conditioning on sequences, or ii) by conditioning on the structure of the proteins.
+
+Conditioning on sequence:
+The development of Conditional TRansformer Language (CTRL), an autoregressive model that includes conditional tags, marked a significant advance in NLP. These tags allow for targeted text generation without requiring input sequences. Known as control codes, these tags significantly refine the influence over genre, topic, or style, marking a major advance toward targeted text generation.
+
+So naturally, CTRL was soon adapted to a dataset of 281 million protein sequences. The resulting model, named ProGen, employs UniProtKB Keywords as conditional tags. These tags span ten categories such as ‘biological process’, ‘cellular component’, and ‘molecular function’, encompassing over 1,100 terms. ProGen achieved perplexities on par with high-quality English language models, even when generating sequences for protein families not included in its training set.
+
+ProGen's performance shows significant advances in our ability to design proteins that behave like natural ones. This model has successfully created protein sequences that function effectively, as proven by rigorous tests where they performed as well or better than naturally occurring proteins. Specifically, ProGen was able to:
+
+Create proteins that match the energy efficiency and structural accuracy of naturally occurring proteins.
+Generate variations of a specific protein domain that proved to be more effective than random variations, suggesting a high degree of predictive accuracy and utility in practical applications.
+
+
