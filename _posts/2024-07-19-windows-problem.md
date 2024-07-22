@@ -1,4 +1,4 @@
-what many people of not taking is that why we are here:
+What many people of not taking is that why we are here:
 one simple reason: all eggs in one Microsoft PC basket
 why in one Microsoft PC basket?
 - most corporate desktop apps are developed for Windows ONLY
