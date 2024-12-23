@@ -21,4 +21,14 @@ Another example is that all methods under the AI umbrella are not dependent on c
 It took some hard theoretical advancements to move the needle on MonteCarlo Simulation methods like detecting convergence and ability to have non conjugated priors for posterior sampling to work etc. The new methods are better by leaps and bounds over the conventional methods in the field. The computation for running the modern models from 2013 would be enough to run em for most cases.
 
 Then again, compute>>>>creativity, if le cunn didn't exist we'd find a worse but also suitable archetircure. 
+I'm not sure that the Bitter Lesson is the end of the story. The Bitter Corollary seems to be that scaling computation also requires scaling data.
+Sometimes that's easy; self-play in Go, for example, can generate essentially infinite data.
+
+On the other hand, sometimes data isn't infinite. It can seem infinite, such as the aforementioned NLP work, where computation-heavy ML system can process more data than a human can read in their lifetime. However, our LLMs are already within an order of magnitude of reading every bit of human writing ever, and we're scaling our way to that data limit.
+
+"Clever" human algorithms are all a way of doing more with less. People are still more data-efficient learners than large ML systems, and I'm less sure that we'll be able to compute our way to that kind of efficiency.
+
+
+I think Geoffrey Hinton addresses this point well in his recent podcast with Pieter Abbeel. He says and I paraphrase, current Deep Learning methods are great at learning from large amounts of data with a relatively small amount of compute. Human brain on the other hand, with around 150 trillion synapses/ parameters has the opposing problem, parameters/ compute is cheap but data is expensive. It needs to learn a large amount from very less data and it is likely a large amount of regularization (things like dropout) will be required to do this without over-fitting. I think we will have a real shot at AGI once 100Trillion param models become feasible which might happen within this decade.
+
 
