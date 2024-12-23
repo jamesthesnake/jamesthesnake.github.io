@@ -1,34 +1,38 @@
-The benefit of "traditional" O(N^2) transformer attention is you correlate every token to every other token. So, in the limit, your network won't "miss" much.
-When you abandon O(N^2) attention, you are forced to start adding heuristics to choose what to correlate. Any time you see one of those giant context window LLMs, you need to be asking what heuristics they added, what is getting correlated, and what is not getting correlated.
+# Understanding Trade-offs in Transformer Attention Mechanisms
 
-This paper chooses an exponential heuristic where tokens further in the past get exponentially less attention. This heuristic is fine for certain tasks like responding in a chat room, where the most recent tokens are the most important, but bad for tasks where tokens are roughly equally important throughout the text, such as a dense academic paper or a reference manual.
+## The Challenge of Attention Mechanisms
 
-The bitter lesson [1] is going to eventually come for all of these. Eventually we'll figure out how to machine-learn the heuristic rather than hard code it. Recurrent neural networks (RNNs) do this implicitly, but we don't yet know how to effectively train RNNs on ultra-deep sequences.
+Traditional transformer attention operates with O(N²) complexity, allowing each token to correlate with every other token in the sequence. While computationally expensive, this approach ensures comprehensive coverage of relationships within the text.
 
-Another possibility is learning a heuristic for non-recurrent LLMs via reinforcement learning, such as in [2], which is basically a reinforcement learned "auto-researcher" that was trained in a style reminiscent of AlphaGo.
+When moving away from O(N²) attention to accommodate larger context windows, researchers must introduce heuristics to determine which tokens should be correlated. The choice of heuristics significantly impacts model performance across different tasks.
 
-[1] http://www.incompleteideas.net/IncIdeas/BitterLesson.html
+For example, using an exponential decay heuristic—where tokens further in the past receive exponentially less attention—works well for conversational tasks where recent context is most relevant. However, this approach may perform poorly when processing dense academic papers or technical documentation, where information throughout the text carries similar importance.
 
-[2] https://arxiv.org/pdf/2109.00527.pdf
+## The Bitter Lesson and Future Directions
 
-A parallel view to the BitterLesson is playing out . There are exceptions. Its not only computation but also a mix of:
-1. decades of theoretical breakthroughs coming together. 2. there is also collective human creativity and perseverance.
+As noted in Sutton's "The Bitter Lesson" [1], the field will likely evolve toward learning these heuristics rather than hardcoding them. While Recurrent Neural Networks (RNNs) implicitly learn such patterns, training them effectively on very deep sequences remains an open challenge.
 
-Like Yann Le Cunn, Geoff Hinton etc have been working since the 90's and there were several milestones that were hit and it only caught on fire/went on steroids once the application(and the associated funding) was found due to creativity in the tech sector. But if the computation was somehow available before I am not sure it would have happened so quickly.
+Another promising direction involves using reinforcement learning to discover attention heuristics for non-recurrent language models, as demonstrated in [2].
 
-Another example is that all methods under the AI umbrella are not dependent on crazy amounts of computation and data. Take the field of AutoRegressive models in Social/Life Sciences field. For example lets look at the STAN which broadly does heirarchical Bayesian Inference using MonteCarlo based methods in social science.
+## Beyond the Bitter Lesson
 
-It took some hard theoretical advancements to move the needle on MonteCarlo Simulation methods like detecting convergence and ability to have non conjugated priors for posterior sampling to work etc. The new methods are better by leaps and bounds over the conventional methods in the field. The computation for running the modern models from 2013 would be enough to run em for most cases.
+The development of modern AI reflects more than just increased computational power. It represents the confluence of:
 
-Then again, compute>>>>creativity, if le cunn didn't exist we'd find a worse but also suitable archetircure. 
-I'm not sure that the Bitter Lesson is the end of the story. The Bitter Corollary seems to be that scaling computation also requires scaling data.
-Sometimes that's easy; self-play in Go, for example, can generate essentially infinite data.
+1. Decades of theoretical breakthroughs
+2. Collective human creativity and perseverance
 
-On the other hand, sometimes data isn't infinite. It can seem infinite, such as the aforementioned NLP work, where computation-heavy ML system can process more data than a human can read in their lifetime. However, our LLMs are already within an order of magnitude of reading every bit of human writing ever, and we're scaling our way to that data limit.
+Pioneers like Yann LeCun and Geoffrey Hinton have worked since the 1990s, achieving crucial milestones before the recent explosion of applications and funding. While computational resources accelerated progress, they alone would not have been sufficient.
 
-"Clever" human algorithms are all a way of doing more with less. People are still more data-efficient learners than large ML systems, and I'm less sure that we'll be able to compute our way to that kind of efficiency.
+Not all AI methods depend primarily on computation and data. For instance, autoregressive models in social sciences, such as STAN's hierarchical Bayesian inference, advanced through theoretical breakthroughs in Monte Carlo simulation methods, including improved convergence detection and non-conjugate prior sampling.
 
+## The Data Scaling Challenge
 
-I think Geoffrey Hinton addresses this point well in his recent podcast with Pieter Abbeel. He says and I paraphrase, current Deep Learning methods are great at learning from large amounts of data with a relatively small amount of compute. Human brain on the other hand, with around 150 trillion synapses/ parameters has the opposing problem, parameters/ compute is cheap but data is expensive. It needs to learn a large amount from very less data and it is likely a large amount of regularization (things like dropout) will be required to do this without over-fitting. I think we will have a real shot at AGI once 100Trillion param models become feasible which might happen within this decade.
+The Bitter Lesson has an important corollary: scaling computation requires scaling data. In some domains, like Go, self-play can generate virtually unlimited training data. However, in natural language processing, we're approaching the limits of available human-written text. This constraint highlights the importance of data efficiency.
 
+Human learners remain more data-efficient than large machine learning systems. As Geoffrey Hinton noted in his conversation with Pieter Abbeel, current deep learning methods excel at learning from large datasets with relatively modest compute requirements. In contrast, the human brain, with approximately 150 trillion synapses, faces the opposite challenge: abundant parameters but limited data. Achieving human-like learning efficiency may require substantial advances in regularization techniques.
 
+## References
+
+[1] Sutton, R. (2019). The Bitter Lesson. http://www.incompleteideas.net/IncIdeas/BitterLesson.html
+
+[2] AutoResearcher paper (2021). https://arxiv.org/pdf/2109.00527.pdf
