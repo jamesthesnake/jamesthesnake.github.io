@@ -1,4 +1,4 @@
-The Global Transformer Shortage and Future of Power Infrastructure
+# The Global Transformer Shortage and Future of Power Infrastructure
 
 The global supply of transformers has become increasingly constrained in recent years. According to Wood MacKenzie's energy analytics, the waiting period for new transformers has expanded from 50 weeks in 2021 to approximately two years in the present day. Large power transformers (LPTs), which are essential for stepping up voltage from power stations to transmission lines, now have wait times extending up to four years. The cost of transformers has also risen substantially, with increases of 60-80% since 2020.
 
