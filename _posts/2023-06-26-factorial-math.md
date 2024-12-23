@@ -1,4 +1,4 @@
-The previous post mentioned that 24! ≈ 1024 and 25! ≈ 1025.
+One idea is  that 24! ≈ 1024 and 25! ≈ 1025.
 
 For every n, there is some base b such that n! = bn. For example, 30! ≈ 1230.
 
