@@ -5,42 +5,14 @@ date:       2023-06-03
 summary:    Quantum
 categories: Nano Quantum
 ---
+An interesting historical puzzle exists in the divergent paths of quantum computing (QC) and molecular nanotechnology (MNT). Both fields emerged in the 1980s, building on Feynman's earlier insights. Initially, both seemed similarly positioned for success: they were revolutionary but somewhat abstract concepts that attracted limited research and funding in their first decade.
+The conventional narrative from MNT proponents focuses on how increased public visibility (via Drexler's popular writing) and the Clinton administration's nanotech initiative paradoxically hurt the field, especially when combined with Smalley's prominent criticisms. However, this explanation seems insufficient.
+Several key factors appear to have differentiated QC's trajectory:
 
-Why did quantum computing take off somewhat smoothly, while molecular nanotechnology did not?
-There's many similarities:
-<br>
-\
-\
-\
-1.Both were proposed in the early-to-mid-1980s.
-<br>
-\
-2.Both had precursor work done by Feynman, although the key papers were written by others.
-<br>
-\
-3.Both were exciting, but a little vague. The quantum computing model got firmed up pretty quickly into a very concrete goal; things like universal assemblers remained (and remain AFAIK) somewhat vaguely specified.
-<br>
-\
-4.Both had just a small amount of research interest in the first ~10 years or so, and a tiny amount of funder interest, before the Clinton nanotech initiative.
-<br>
-\
-5.Both were strongly critiqued by prominent scientists circa the mid-90s (Smalley for MNT, Landauer and Unruh for QC).
-<br>
-\
-Some differences:
+The discovery of Shor's algorithm in 1994 provided a concrete, high-value application that immediately attracted serious attention from organizations like the NSA. As noted by physicist Gerard Milburn at the time: "quantum computing is going to matter now."
+This breakthrough incentivized top experimental labs to pursue proof-of-principle demonstrations, establishing a clear pathway for incremental progress.
+When faced with fundamental critiques from Landauer and Unruh, the QC community responded with novel theoretical insights about quantum mechanics. This generated extensive academic engagement and produced robust rebuttals. Landauer himself later acknowledged this progress, noting that "Quantum computing is 20 years closer today than it was a year ago." The MNT field's response to Smalley's criticisms was comparatively less innovative.
+MNT continued to lack both concrete intermediate milestones and a specific high-value application that would motivate major institutional investment.
 
-1.MNT had more of a public profile in that first decade, because Drexler had written a popular book.
-<br>
-\
-2.MNT nominally got a huge injection of funds in the 1990s – the nanotech initiative. A standard complaint of early MNT believers is that this was co-opted by others away from "real" MNT.
-\
-The story I've heard (over and over and over) from early MNT believers is that the combination of these last two points, plus the Smalley critique, killed MNT. I doubt it. But I think the big differences were likely:
+Interestingly, much of physics, chemistry, and biology research over the past 40 years has effectively advanced molecular nanotechnology capabilities through bottom-up approaches - improving control and sensing at the molecular level step by step. This incremental progress has been remarkably successful, potentially positioning MNT (or related capabilities) as a more feasible top-down goal today than in previous decades.
 
-1.Shor discovered a "killer app" in 1994, the factoring algorithm, which the NSA (and others) really wanted. A few days after Shor announced it, Gerard Milburn told me "quantum computing is going to matter now".
-\
-<br>
-2.This led to a small number of first-rate labs trying to do some simple proofs of quantum computing principle. It was the single step that began the journey of a thousand miles. In particular, second (and third and fourth) experimental steps could now be taken, with the justification of Shor's killer app.
-\
-3.Motivated in part by the last two points, the critiques of Landauer and Unruh were taken very seriously, and an effective rebuttal was worked out. Fortunately, some extraordinary new ideas about quantum mechanics were needed – as a result, dozens of theorists got involved, and wrote hundreds of papers. Landauer's dry (but approving) summary after the crucial year: "Quantum computing is 20 years closer today than it was a year ago". By contrast, the reply to Smalley's comments was far less imaginative.
-\
-4. Also by contrast: things like universal assemblers remained relatively somewhat vague as a goal; MNT didn't have a particular killer app that a specific really big customer desperately wanted; and as a result top labs weren't explicitly working on MNT as a goal
