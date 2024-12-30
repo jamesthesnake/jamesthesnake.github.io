@@ -1,3 +1,10 @@
+---
+layout:     post
+title:      Sprawl
+date:       2024-12-28
+summary:    Big sprawl and crime?
+categories: Urbanism 
+---
 One common argument against public transit expansions into suburbia is that better transit will enable urban criminals to visit suburbia more easily and commit more crimes; a related argument is that any non-sprawl development is crimogenic because compactness allows crime to migrate from neighborhood to neighborhood more easily.  The commonsense response to this argument is that there is no correlation between crime and transit use or density; the nation’s most dangerous cities are not the most transit-friendly or those with the best public transit.  For example, Boston (over 13,000 residents per square mile, 25 percent of commuters using public transit) had 4.7 murders per 100,000 residents and Oklahoma City (1145 people per square mile, 1 percent of workers using public transit) had 6.4. New York City had fewer murders than either city (4.3 per 100,000).
 
 When I point these facts out, the common response I get runs something like this: “Yes, but [my spread-out Sun Belt city) only has its crime in a few bad neighborhoods, while cities like New York have crime everywhere”. Until recently, there was no way to judge the validity of this argument.
