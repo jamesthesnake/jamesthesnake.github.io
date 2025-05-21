@@ -8,3 +8,6 @@ Let's also not forget the artists who laid the groundwork long before the French
 
 There's also a certain California dreaming that runs through much of French Touch. The imagery of Los Angeles—endless boulevards flanked by towering palm trees and that golden sunset light—is a romanticized vision of America that influenced the aesthetic, especially in later works. This fusion of European electronic sensibilities with American dream imagery created something uniquely transportive.
 What started as a movement became a signature sound: nostalgic, futuristic, cinematic, dirty, emotional.
+
+Part of what makes French Touch so compelling is also what makes it hard to replicate today. Those lush, imperfect textures weren’t just stylistic choices — they were the natural result of a specific time, place, and set of tools. Many of these tracks were recorded in a single take, often in cramped Parisian apartments or modest studios, using vintage analog gear and early digital samplers.
+There’s a rawness and spontaneity to that process. The hiss of a dusty synth, the unquantized groove of a looped disco break, the warmth of tape compression — all of it baked into the DNA of those tracks. Today’s high-resolution digital tools are often too clean, too precise. When you remove the imperfections, you also risk scrubbing out the soul.
