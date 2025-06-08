@@ -1,0 +1,1470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano Player - Metaphor: ReFantazio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Inter:wght@400;600;700&display=swap');
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #fff;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #f39c12, #e74c3c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #95a5a6;
+            margin-bottom: 30px;
+            font-size: 1.2em;
+        }
+        
+        .loading-status {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .loading-status.ready {
+            background: rgba(46, 204, 113, 0.2);
+            color: #2ecc71;
+        }
+        
+        .controls {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .control-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        label {
+            font-weight: 600;
+            color: #ecf0f1;
+        }
+        
+        select {
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            font-size: 16px;
+        }
+        
+        input[type="range"] {
+            width: 150px;
+            -webkit-appearance: none;
+            appearance: none;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.2);
+            outline: none;
+            border-radius: 5px;
+        }
+        
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 15px;
+            height: 15px;
+            background: #f39c12;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+        
+        .tempo-display {
+            color: #f39c12;
+            font-weight: 600;
+            min-width: 50px;
+        }
+        
+        .transport {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 16px;
+        }
+        
+        .play-btn {
+            background: #27ae60;
+            color: white;
+        }
+        
+        .play-btn:hover:not(:disabled) {
+            background: #2ecc71;
+            transform: translateY(-2px);
+        }
+        
+        .play-btn:disabled {
+            background: #7f8c8d;
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+        
+        .stop-btn {
+            background: #e74c3c;
+            color: white;
+        }
+        
+        .stop-btn:hover {
+            background: #c0392b;
+            transform: translateY(-2px);
+        }
+        
+        .chord-display {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        .current-chord {
+            font-size: 4em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #f39c12;
+            text-shadow: 0 0 20px rgba(243, 156, 18, 0.5);
+        }
+        
+        .roman-numeral {
+            font-size: 2.5em;
+            font-family: 'Crimson Text', serif;
+            color: #ecf0f1;
+            margin-bottom: 15px;
+        }
+        
+        .chord-function {
+            font-size: 1.2em;
+            color: #95a5a6;
+            font-style: italic;
+        }
+        
+        .measure-counter {
+            text-align: center;
+            font-size: 1.5em;
+            color: #ecf0f1;
+            margin-bottom: 20px;
+        }
+        
+        .measure-number {
+            color: #f39c12;
+            font-weight: 700;
+        }
+        
+        .progress-bar {
+            background: rgba(255, 255, 255, 0.1);
+            height: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #27ae60, #2ecc71);
+            width: 0%;
+            transition: width 0.5s ease;
+        }
+        
+        .piano-visual {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            min-height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .note-visualizer {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .note-bubble {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(243, 156, 18, 0.2);
+            border: 2px solid #f39c12;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            opacity: 0;
+            transform: scale(0);
+            animation: notePop 0.5s ease forwards;
+        }
+        
+        @keyframes notePop {
+            0% {
+                opacity: 0;
+                transform: scale(0);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.2);
+            }
+            100% {
+                opacity: 0.8;
+                transform: scale(1);
+            }
+        }
+        
+        .timeline {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            overflow-x: auto;
+        }
+        
+        .timeline-track {
+            display: flex;
+            gap: 2px;
+            min-width: fit-content;
+            padding-bottom: 10px;
+        }
+        
+        .measure-marker {
+            width: 20px;
+            height: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7em;
+            color: #95a5a6;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .measure-marker:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+        
+        .measure-marker.active {
+            background: #f39c12;
+            color: #000;
+            font-weight: bold;
+            transform: translateY(-4px);
+            box-shadow: 0 4px 10px rgba(243, 156, 18, 0.5);
+        }
+        
+        .measure-marker.played {
+            background: rgba(46, 204, 113, 0.3);
+            border-color: #27ae60;
+        }
+        
+        .info-box {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .info-box h3 {
+            color: #f39c12;
+            margin-bottom: 10px;
+        }
+        
+        .info-box p {
+            color: #95a5a6;
+            line-height: 1.6;
+        }
+        
+        .midi-option {
+            background: rgba(52, 152, 219, 0.2);
+            border: 2px solid #3498db;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        
+        .dancer-container {
+            position: fixed;
+            top: 50%;
+            right: 40px;
+            transform: translateY(-50%);
+            width: 180px;
+            height: 180px;
+            z-index: 9999;
+            background: rgba(0, 0, 0, 0.9);
+            border-radius: 20px;
+            padding: 20px;
+            border: 3px solid rgba(243, 156, 18, 0.5);
+            box-shadow: 0 0 30px rgba(243, 156, 18, 0.3);
+            pointer-events: none;
+            display: block !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+        }
+        
+        .dancer {
+            width: 80px;
+            height: 100px;
+            position: relative;
+            margin: 30px auto;
+            animation: bounce 0.5s ease-in-out infinite alternate;
+            transform-origin: center bottom;
+        }
+        
+        .dancer.dancing {
+            animation: dance 0.5s ease-in-out infinite alternate;
+        }
+        
+        .dancer-head {
+            width: 40px;
+            height: 40px;
+            background: #f39c12;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 20px;
+            box-shadow: 0 0 20px rgba(243, 156, 18, 0.8);
+            border: 2px solid rgba(255, 255, 255, 0.5);
+        }
+        
+        .dancer-body {
+            width: 50px;
+            height: 50px;
+            background: #3498db;
+            border-radius: 25px 25px 15px 15px;
+            position: absolute;
+            top: 35px;
+            left: 15px;
+            box-shadow: 0 0 15px rgba(52, 152, 219, 0.6);
+        }
+        
+        .dancer-arm-left, .dancer-arm-right {
+            width: 30px;
+            height: 8px;
+            background: #3498db;
+            position: absolute;
+            top: 45px;
+            border-radius: 4px;
+            transform-origin: 0 50%;
+            box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+        }
+        
+        .dancer-arm-left {
+            left: 10px;
+            animation: wave-left 0.5s ease-in-out infinite alternate;
+        }
+        
+        .dancer-arm-right {
+            right: 10px;
+            transform-origin: 100% 50%;
+            animation: wave-right 0.5s ease-in-out infinite alternate-reverse;
+        }
+        
+        .dancer-leg-left, .dancer-leg-right {
+            width: 12px;
+            height: 25px;
+            background: #2c3e50;
+            position: absolute;
+            bottom: 0;
+            border-radius: 6px;
+            box-shadow: 0 0 8px rgba(44, 62, 80, 0.5);
+        }
+        
+        .dancer-leg-left {
+            left: 20px;
+            animation: kick-left 0.5s ease-in-out infinite alternate;
+        }
+        
+        .dancer-leg-right {
+            right: 20px;
+            animation: kick-right 0.5s ease-in-out infinite alternate-reverse;
+        }
+        
+        .music-notes {
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 30px;
+            animation: float-up 2s ease-out infinite;
+            color: #f39c12;
+            text-shadow: 0 0 10px rgba(243, 156, 18, 0.8);
+        }
+        
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-10px); }
+        }
+        
+        @keyframes dance {
+            0% { transform: translateY(0) rotate(-5deg); }
+            100% { transform: translateY(-10px) rotate(5deg); }
+        }
+        
+        @keyframes wave-left {
+            0% { transform: rotate(-20deg); }
+            100% { transform: rotate(40deg); }
+        }
+        
+        @keyframes wave-right {
+            0% { transform: rotate(20deg); }
+            100% { transform: rotate(-40deg); }
+        }
+        
+        @keyframes kick-left {
+            0% { transform: rotate(-10deg); }
+            100% { transform: rotate(10deg); }
+        }
+        
+        @keyframes kick-right {
+            0% { transform: rotate(10deg); }
+            100% { transform: rotate(-10deg); }
+        }
+        
+        @keyframes float-up {
+            0% {
+                opacity: 1;
+                transform: translateX(-50%) translateY(0);
+            }
+            100% {
+                opacity: 0;
+                transform: translateX(-50%) translateY(-40px);
+            }
+        }
+        
+        .dance-floor {
+            position: absolute;
+            bottom: -20px;
+            left: -40px;
+            right: -40px;
+            height: 30px;
+            background: radial-gradient(ellipse at center, rgba(243, 156, 18, 0.8) 0%, rgba(52, 152, 219, 0.4) 50%, transparent 70%);
+            border-radius: 50%;
+            animation: pulse-floor 0.5s ease-in-out infinite alternate;
+            filter: blur(3px);
+        }
+        
+        @keyframes pulse-floor {
+            0% { transform: scale(1); opacity: 0.5; }
+            100% { transform: scale(1.1); opacity: 0.3; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Metaphor: ReFantazio - Handshake / 繋がる手</h1>
+        <div class="subtitle">Composed by Atsushi Kitajoh • Arranged by Pianobin</div>
+        
+        <div class="loading-status" id="loading-status">
+            Loading piano sounds... This may take a moment.
+        </div>
+        
+        <div class="dancer-container">
+            <div class="dancer" id="dancer">
+                <div class="music-notes" id="music-notes" style="display: none;">♪♫</div>
+                <div class="dancer-head"></div>
+                <div class="dancer-body"></div>
+                <div class="dancer-arm-left"></div>
+                <div class="dancer-arm-right"></div>
+                <div class="dancer-leg-left"></div>
+                <div class="dancer-leg-right"></div>
+                <div class="dance-floor"></div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <div class="control-group">
+                <label for="sound-select">Piano Sound:</label>
+                <select id="sound-select">
+                    <option value="webpiano">Web Piano (Built-in)</option>
+                    <option value="synth">Synthesized Piano</option>
+                    <option value="midi">MIDI Output</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label for="tempo">Tempo:</label>
+                <input type="range" id="tempo" min="50" max="100" value="72">
+                <span class="tempo-display" id="tempo-value">72 BPM</span>
+            </div>
+            
+            <div class="transport">
+                <button class="btn play-btn" id="play-btn" disabled>▶ Play Full Piece</button>
+                <button class="btn stop-btn" id="stop-btn">■ Stop</button>
+            </div>
+        </div>
+        
+        <div class="measure-counter">
+            Measure: <span class="measure-number" id="measure-number">1</span> / 36
+        </div>
+        
+        <div class="progress-bar">
+            <div class="progress-fill" id="progress"></div>
+        </div>
+        
+        <div class="chord-display">
+            <div class="dynamics-indicator" id="dynamics">mp</div>
+            <div class="current-chord" id="current-chord">F</div>
+            <div class="roman-numeral" id="roman-numeral">I</div>
+            <div class="chord-function" id="chord-function">Tonic - Opening</div>
+        </div>
+        
+        <div class="piano-visual">
+            <div class="note-visualizer" id="note-visualizer">
+                <!-- Notes will appear here -->
+            </div>
+        </div>
+        
+        <div class="timeline">
+            <div class="timeline-track" id="timeline-track">
+                <!-- Measure markers will be generated -->
+            </div>
+        </div>
+        
+        <div class="info-box">
+            <h3>Piano Sound Options</h3>
+            <p><strong>Web Piano:</strong> Uses Web Audio API with custom waveforms for a piano-like sound.</p>
+            <p><strong>Synthesized Piano:</strong> A warmer, fuller synthesized piano tone.</p>
+            <div class="midi-option">
+                <h4>MIDI Output</h4>
+                <p>Connect a MIDI device or use a software piano (like a DAW or virtual piano) for the best sound quality. When MIDI is selected, the player will send MIDI messages to your connected device.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/webmidi@3.1.0/dist/iife/webmidi.iife.js"></script>
+    <script>
+        // Piano configurations
+        let currentPiano = null;
+        let midiOutput = null;
+        
+        // Web Piano using additive synthesis
+        class WebPiano {
+            constructor() {
+                this.voices = {};
+                this.reverb = new Tone.Reverb({
+                    decay: 2.5,
+                    wet: 0.2
+                }).toDestination();
+                
+                this.chorus = new Tone.Chorus(2, 2.5, 0.5).connect(this.reverb);
+            }
+            
+            createVoice() {
+                const synth = new Tone.PolySynth(Tone.Synth, {
+                    oscillator: {
+                        type: "custom",
+                        partials: [1, 0.2, 0.1, 0.05, 0.02]
+                    },
+                    envelope: {
+                        attack: 0.005,
+                        decay: 1.5,
+                        sustain: 0.1,
+                        release: 1.5
+                    }
+                }).connect(this.chorus);
+                
+                return synth;
+            }
+            
+            triggerAttackRelease(notes, duration, time) {
+                if (!this.voice) {
+                    this.voice = this.createVoice();
+                }
+                this.voice.triggerAttackRelease(notes, duration, time);
+            }
+        }
+        
+        // Synthesized Piano with more complex sound
+        class SynthPiano {
+            constructor() {
+                // Layer 1: Main tone
+                this.layer1 = new Tone.PolySynth(Tone.Synth, {
+                    oscillator: { type: "triangle" },
+                    envelope: {
+                        attack: 0.01,
+                        decay: 0.3,
+                        sustain: 0.4,
+                        release: 1.5
+                    }
+                }).toDestination();
+                
+                // Layer 2: Harmonic richness
+                this.layer2 = new Tone.PolySynth(Tone.Synth, {
+                    oscillator: { type: "sine" },
+                    envelope: {
+                        attack: 0.02,
+                        decay: 0.5,
+                        sustain: 0.2,
+                        release: 2
+                    },
+                    volume: -12
+                }).toDestination();
+                
+                // Effects
+                const reverb = new Tone.Reverb({
+                    decay: 3,
+                    wet: 0.3
+                }).toDestination();
+                
+                const delay = new Tone.FeedbackDelay("16n", 0.2).toDestination();
+                delay.wet.value = 0.1;
+                
+                this.layer1.connect(reverb);
+                this.layer2.connect(reverb);
+                this.layer1.connect(delay);
+            }
+            
+            triggerAttackRelease(notes, duration, time) {
+                this.layer1.triggerAttackRelease(notes, duration, time);
+                // Add slight detuning to layer 2 for richness
+                const detunedNotes = notes.map(note => {
+                    const freq = Tone.Frequency(note).toFrequency();
+                    return freq * 1.002; // Slight detune
+                });
+                this.layer2.triggerAttackRelease(detunedNotes, duration, time);
+            }
+        }
+        
+        // MIDI Output class
+        class MIDIPiano {
+            constructor() {
+                this.output = null;
+                this.channel = 1;
+            }
+            
+            async init() {
+                try {
+                    await WebMidi.enable();
+                    if (WebMidi.outputs.length > 0) {
+                        this.output = WebMidi.outputs[0];
+                        return true;
+                    }
+                    return false;
+                } catch (err) {
+                    console.error("MIDI initialization failed:", err);
+                    return false;
+                }
+            }
+            
+            triggerAttackRelease(notes, duration, time) {
+                if (!this.output) return;
+                
+                const durationMs = Tone.Time(duration).toMilliseconds();
+                
+                notes.forEach(note => {
+                    const midiNote = Tone.Frequency(note).toMidi();
+                    // Send note on
+                    this.output.channels[this.channel].playNote(midiNote, {
+                        velocity: 0.7,
+                        duration: durationMs
+                    });
+                });
+            }
+        }
+        
+        // Initialize pianos
+        let webPiano = new WebPiano();
+        let synthPiano = new SynthPiano();
+        let midiPiano = new MIDIPiano();
+        
+        // Set default piano
+        currentPiano = webPiano;
+        
+        // Sound selection
+        document.getElementById('sound-select').addEventListener('change', async (e) => {
+            const loadingStatus = document.getElementById('loading-status');
+            
+            switch(e.target.value) {
+                case 'webpiano':
+                    currentPiano = webPiano;
+                    loadingStatus.textContent = 'Web Piano ready!';
+                    loadingStatus.classList.add('ready');
+                    break;
+                    
+                case 'synth':
+                    currentPiano = synthPiano;
+                    loadingStatus.textContent = 'Synthesized Piano ready!';
+                    loadingStatus.classList.add('ready');
+                    break;
+                    
+                case 'midi':
+                    loadingStatus.textContent = 'Initializing MIDI...';
+                    const midiReady = await midiPiano.init();
+                    if (midiReady) {
+                        currentPiano = midiPiano;
+                        loadingStatus.textContent = `MIDI ready! Output: ${midiPiano.output.name}`;
+                        loadingStatus.classList.add('ready');
+                    } else {
+                        loadingStatus.textContent = 'No MIDI devices found. Please connect a MIDI device.';
+                        loadingStatus.classList.remove('ready');
+                        // Fall back to web piano
+                        currentPiano = webPiano;
+                        document.getElementById('sound-select').value = 'webpiano';
+                    }
+                    break;
+            }
+        });
+        
+        // Musical content - Full 36 measures
+        const musicalPieces = [
+            // Opening Section (measures 1-8)
+            {
+                measure: 1,
+                chord: 'F',
+                roman: 'I',
+                function: 'Tonic - Opening',
+                dynamics: 'mp',
+                notes: [
+                    { time: 0, notes: ["F2", "F3"], duration: "8n" },
+                    { time: 0.5, notes: ["A3", "C4"], duration: "8n" },
+                    { time: 1, notes: ["F3", "A3", "C4"], duration: "4n" },
+                    { time: 2, notes: ["F3", "A3", "C4", "F4"], duration: "4n" },
+                    { time: 3, notes: ["F3", "C4", "E4"], duration: "4n" }
+                ]
+            },
+            {
+                measure: 2,
+                chord: 'Gm',
+                roman: 'ii',
+                function: 'Supertonic',
+                notes: [
+                    { time: 0, notes: ["G2", "G3"], duration: "8n" },
+                    { time: 0.5, notes: ["Bb3", "D4"], duration: "8n" },
+                    { time: 1, notes: ["G3", "Bb3", "D4"], duration: "4n" },
+                    { time: 2, notes: ["G3", "Bb3", "D4", "G4"], duration: "4n" },
+                    { time: 3, notes: ["G3", "D4", "F4"], duration: "4n" }
+                ]
+            },
+            {
+                measure: 3,
+                chord: 'C',
+                roman: 'V',
+                function: 'Dominant',
+                notes: [
+                    { time: 0, notes: ["C3"], duration: "8n" },
+                    { time: 0.5, notes: ["E3", "G3"], duration: "8n" },
+                    { time: 1, notes: ["C3", "E3", "G3", "C4"], duration: "4n" },
+                    { time: 2, notes: ["C3", "G3", "Bb3", "E4"], duration: "4n" },
+                    { time: 3, notes: ["C3", "G3", "C4"], duration: "4n" }
+                ]
+            },
+            {
+                measure: 4,
+                chord: 'F',
+                roman: 'I',
+                function: 'Tonic - Resolution',
+                notes: [
+                    { time: 0, notes: ["F2", "F3", "A3", "C4", "F4"], duration: "2n" },
+                    { time: 2, notes: ["F3", "C4", "F4"], duration: "2n" }
+                ]
+            },
+            {
+                measure: 5,
+                chord: 'Dm',
+                roman: 'vi',
+                function: 'Submediant',
+                notes: [
+                    { time: 0, notes: ["D3"], duration: "8n" },
+                    { time: 0.5, notes: ["F3", "A3"], duration: "8n" },
+                    { time: 1, notes: ["D3", "F3", "A3", "D4"], duration: "4n" },
+                    { time: 2, notes: ["D3", "A3", "C4", "F4"], duration: "4n" },
+                    { time: 3, notes: ["D3", "F3", "A3"], duration: "4n" }
+                ]
+            },
+            {
+                measure: 6,
+                chord: 'Bb',
+                roman: 'IV',
+                function: 'Subdominant',
+                notes: [
+                    { time: 0, notes: ["Bb2"], duration: "8n" },
+                    { time: 0.5, notes: ["D3", "F3"], duration: "8n" },
+                    { time: 1, notes: ["Bb2", "F3", "Bb3", "D4"], duration: "4n" },
+                    { time: 2, notes: ["Bb2", "F3", "A3", "D4"], duration: "4n" },
+                    { time: 3, notes: ["Bb2", "D3", "F3"], duration: "4n" }
+                ]
+            },
+            {
+                measure: 7,
+                chord: 'C',
+                roman: 'V',
+                function: 'Dominant - Tension',
+                notes: [
+                    { time: 0, notes: ["C3", "G3"], duration: "4n" },
+                    { time: 1, notes: ["C3", "E3", "G3", "C4"], duration: "4n" },
+                    { time: 2, notes: ["C3", "G3", "Bb3", "C4"], duration: "4n" },
+                    { time: 3, notes: ["C3", "E3", "G3"], duration: "4n" }
+                ]
+            },
+            {
+                measure: 8,
+                chord: 'F',
+                roman: 'I',
+                function: 'Tonic - Phrase end',
+                dynamics: 'mf',
+                notes: [
+                    { time: 0, notes: ["F2", "F3", "A3", "C4", "F4"], duration: "2n." },
+                    { time: 3, notes: ["F3", "C4"], duration: "4n" }
+                ]
+            },
+            // Development Section (measures 9-16)
+            {
+                measure: 9,
+                chord: 'Bb',
+                roman: 'IV',
+                function: 'Subdominant - New section',
+                dynamics: 'mf',
+                notes: [
+                    { time: 0, notes: ["Bb2", "F3", "Bb3"], duration: "4n" },
+                    { time: 1, notes: ["Bb2", "F3", "Bb3", "D4"], duration: "4n" },
+                    { time: 2, notes: ["Bb2", "F3", "A3", "C4"], duration: "4n" },
+                    { time: 3, notes: ["Bb2", "D3", "F3", "Bb3"], duration: "4n" }
+                ]
+            },
+            {
+                measure: 10,
+                chord: 'F/A',
+                roman: 'I⁶',
+                function: 'First inversion',
+                notes: [
+                    { time: 0, notes: ["A2", "A3"], duration: "8n" },
+                    { time: 0.5, notes: ["C4", "F4"], duration: "8n" },
+                    { time: 1, notes: ["A2", "F3", "A3", "C4"], duration: "4n" },
+                    { time: 2, notes: ["A2", "F3", "C4", "F4"], duration: "4n" },
+                    { time: 3, notes: ["A2", "C3", "F3"], duration: "4n" }
+                ]
+            },
+            {
+                measure: 11,
+                chord: 'Gm',
+                roman: 'ii',
+                function: 'Building tension',
+                notes: [
+                    { time: 0, notes: ["G3", "D4"], duration: "4n" },
+                    { time: 1, notes: ["G3", "Bb3", "D4", "G4"], duration: "4n" },
+                    { time: 2, notes: ["G3", "Bb3", "D4", "F4"], duration: "4n" },
+                    { time: 3, notes: ["G3", "Bb3", "D4"], duration: "4n" }
+                ]
+            },
+            {
+                measure: 12,
+                chord: 'C',
+                roman: 'V',
+                function: 'Half cadence',
+                notes: [
+                    { time: 0, notes: ["C3", "G3", "C4", "E4"], duration: "2n" },
+                    { time: 2, notes: ["C3", "G3", "Bb3", "C4"], duration: "4n" },
+                    { time: 3, notes: ["C3", "E3", "G3"], duration: "4n" }
+                ]
+            },
+            {
+                measure: 13,
+                chord: 'Dm',
+                roman: 'vi',
+                function: 'Deceptive motion',
+                dynamics: 'f',
+                notes: [
+                    { time: 0, notes: ["D2", "D3", "A3", "D4", "F4"], duration: "2n" },
+                    { time: 2, notes: ["D3", "F3", "A3", "D4"], duration: "2n" }
+                ]
+            },
+            {
+                measure: 14,
+                chord: 'Bb',
+                roman: 'IV',
+                function: 'Subdominant forte',
+                notes: [
+                    { time: 0, notes: ["Bb2", "F3", "Bb3", "D4", "F4"], duration: "2n" },
+                    { time: 2, notes: ["Bb2", "D3", "F3", "Bb3"], duration: "2n" }
+                ]
+            },
+            {
+                measure: 15,
+                chord: 'C',
+                roman: 'V',
+                function: 'Dominant preparation',
+                notes: [
+                    { time: 0, notes: ["C3", "G3", "C4", "E4", "G4"], duration: "2n" },
+                    { time: 2, notes: ["C3", "E3", "G3", "C4"], duration: "2n" }
+                ]
+            },
+            {
+                measure: 16,
+                chord: 'F',
+                roman: 'I',
+                function: 'Strong resolution',
+                notes: [
+                    { time: 0, notes: ["F2", "F3", "A3", "C4", "F4"], duration: "1n" }
+                ]
+            },
+            // Bridge Section (measures 17-24)
+            {
+                measure: 17,
+                chord: 'Am',
+                roman: 'iii',
+                function: 'Mediant - Modal color',
+                dynamics: 'mf',
+                notes: [
+                    { time: 0, notes: ["A2", "A3"], duration: "4n" },
+                    { time: 1, notes: ["A3", "C4", "E4"], duration: "4n" },
+                    { time: 2, notes: ["A3", "C4", "E4", "A4"], duration: "4n" },
+                    { time: 3, notes: ["A3", "C4", "E4"], duration: "4n" }
+                ]
+            },
+            {
+                measure: 18,
+                chord: 'Dm',
+                roman: 'vi',
+                function: 'Submediant',
+                notes: [
+                    { time: 0, notes: ["D3", "A3", "D4"], duration: "4n" },
+                    { time: 1, notes: ["D3", "F3", "A3", "D4"], duration: "4n" },
+                    { time: 2, notes: ["D3", "F3", "A3", "C4"], duration: "4n" },
+                    { time: 3, notes: ["D3", "F3", "A3"], duration: "4n" }
+                ]
+            },
+            {
+                measure: 19,
+                chord: 'Gm',
+                roman: 'ii',
+                function: 'Supertonic',
+                notes: [
+                    { time: 0, notes: ["G3", "Bb3", "D4"], duration: "4n" },
+                    { time: 1, notes: ["G3", "Bb3", "D4", "G4"], duration: "4n" },
+                    { time: 2, notes: ["G3", "Bb3", "D4", "F4"], duration: "4n" },
+                    { time: 3, notes: ["G3", "Bb3", "D4"], duration: "4n" }
+                ]
+            },
+            {
+                measure: 20,
+                chord: 'C',
+                roman: 'V',
+                function: 'Dominant preparation',
+                notes: [
+                    { time: 0, notes: ["C3", "G3", "C4"], duration: "4n" },
+                    { time: 1, notes: ["C3", "E3", "G3", "C4"], duration: "4n" },
+                    { time: 2, notes: ["C3", "E3", "G3", "Bb3"], duration: "4n" },
+                    { time: 3, notes: ["C3", "E3", "G3"], duration: "4n" }
+                ]
+            },
+            {
+                measure: 21,
+                chord: 'F',
+                roman: 'I',
+                function: 'Tonic return',
+                notes: [
+                    { time: 0, notes: ["F3", "A3", "C4", "F4"], duration: "2n" },
+                    { time: 2, notes: ["F3", "A3", "C4"], duration: "2n" }
+                ]
+            },
+            {
+                measure: 22,
+                chord: 'Bb/F',
+                roman: 'IV⁶⁴',
+                function: 'Subdominant over tonic',
+                notes: [
+                    { time: 0, notes: ["F2", "F3", "Bb3", "D4"], duration: "4n" },
+                    { time: 1, notes: ["F2", "Bb3", "D4", "F4"], duration: "4n" },
+                    { time: 2, notes: ["F2", "F3", "Bb3", "D4"], duration: "4n" },
+                    { time: 3, notes: ["F2", "Bb3", "D4"], duration: "4n" }
+                ]
+            },
+            {
+                measure: 23,
+                chord: 'F',
+                roman: 'I',
+                function: 'Tonic confirmation',
+                notes: [
+                    { time: 0, notes: ["F3", "A3", "C4"], duration: "4n" },
+                    { time: 1, notes: ["F3", "A3", "C4", "F4"], duration: "4n" },
+                    { time: 2, notes: ["F3", "A3", "C4", "E4"], duration: "4n" },
+                    { time: 3, notes: ["F3", "A3", "C4"], duration: "4n" }
+                ]
+            },
+            {
+                measure: 24,
+                chord: 'C/E',
+                roman: 'V⁶',
+                function: 'First inversion dominant',
+                notes: [
+                    { time: 0, notes: ["E3", "G3", "C4"], duration: "4n" },
+                    { time: 1, notes: ["E3", "G3", "C4", "E4"], duration: "4n" },
+                    { time: 2, notes: ["E3", "G3", "Bb3", "C4"], duration: "4n" },
+                    { time: 3, notes: ["E3", "G3", "C4"], duration: "4n" }
+                ]
+            },
+            // Recapitulation (measures 25-32)
+            {
+                measure: 25,
+                chord: 'Dm',
+                roman: 'vi',
+                function: 'Submediant - Deceptive',
+                dynamics: 'f',
+                notes: [
+                    { time: 0, notes: ["D3", "F3", "A3", "D4"], duration: "2n" },
+                    { time: 2, notes: ["D3", "A3", "D4", "F4"], duration: "2n" }
+                ]
+            },
+            {
+                measure: 26,
+                chord: 'Bb',
+                roman: 'IV',
+                function: 'Subdominant',
+                notes: [
+                    { time: 0, notes: ["Bb2", "F3", "Bb3"], duration: "4n" },
+                    { time: 1, notes: ["Bb2", "F3", "Bb3", "D4"], duration: "4n" },
+                    { time: 2, notes: ["Bb2", "F3", "A3", "D4"], duration: "4n" },
+                    { time: 3, notes: ["Bb2", "D3", "F3"], duration: "4n" }
+                ]
+            },
+            {
+                measure: 27,
+                chord: 'C',
+                roman: 'V',
+                function: 'Dominant - Final preparation',
+                notes: [
+                    { time: 0, notes: ["C3", "G3", "C4", "E4"], duration: "2n" },
+                    { time: 2, notes: ["C3", "G3", "Bb3", "C4"], duration: "2n" }
+                ]
+            },
+            {
+                measure: 28,
+                chord: 'F',
+                roman: 'I',
+                function: 'Tonic - Resolution',
+                notes: [
+                    { time: 0, notes: ["F2", "F3", "A3", "C4", "F4"], duration: "1n" }
+                ]
+            },
+            {
+                measure: 29,
+                chord: 'Dm',
+                roman: 'vi',
+                function: 'Submediant echo',
+                dynamics: 'mf',
+                notes: [
+                    { time: 0, notes: ["D3", "A3", "D4"], duration: "2n" },
+                    { time: 2, notes: ["D3", "F3", "A3"], duration: "2n" }
+                ]
+            },
+            {
+                measure: 30,
+                chord: 'Bb',
+                roman: 'IV',
+                function: 'Subdominant echo',
+                notes: [
+                    { time: 0, notes: ["Bb2", "F3", "Bb3"], duration: "2n" },
+                    { time: 2, notes: ["Bb2", "D3", "F3"], duration: "2n" }
+                ]
+            },
+            {
+                measure: 31,
+                chord: 'C',
+                roman: 'V',
+                function: 'Dominant suspension',
+                dynamics: 'dim.',
+                notes: [
+                    { time: 0, notes: ["C3", "E3", "G3"], duration: "4n" },
+                    { time: 1, notes: ["C3", "G3", "C4"], duration: "4n" },
+                    { time: 2, notes: ["C3", "E3", "G3"], duration: "4n" },
+                    { time: 3, notes: ["C3", "G3"], duration: "4n" }
+                ]
+            },
+            {
+                measure: 32,
+                chord: 'F',
+                roman: 'I',
+                function: 'Tonic - Settling',
+                notes: [
+                    { time: 0, notes: ["F3", "A3", "C4"], duration: "2n" },
+                    { time: 2, notes: ["F3", "C4"], duration: "2n" }
+                ]
+            },
+            // Coda (measures 33-36)
+            {
+                measure: 33,
+                chord: 'Dm',
+                roman: 'vi',
+                function: 'Final deceptive motion',
+                dynamics: 'p',
+                notes: [
+                    { time: 0, notes: ["D3", "A3"], duration: "4n" },
+                    { time: 1, notes: ["D3", "F3", "A3"], duration: "4n" },
+                    { time: 2, notes: ["D3", "A3"], duration: "4n" },
+                    { time: 3, notes: ["D3"], duration: "4n" }
+                ]
+            },
+            {
+                measure: 34,
+                chord: 'C',
+                roman: 'V',
+                function: 'Final dominant',
+                notes: [
+                    { time: 0, notes: ["C3", "G3"], duration: "4n" },
+                    { time: 1, notes: ["C3", "E3", "G3"], duration: "4n" },
+                    { time: 2, notes: ["C3", "G3", "Bb3"], duration: "4n" },
+                    { time: 3, notes: ["C3", "E3"], duration: "4n" }
+                ]
+            },
+            {
+                measure: 35,
+                chord: 'F',
+                roman: 'I',
+                function: 'Gentle ending',
+                dynamics: 'pp',
+                notes: [
+                    { time: 0, notes: ["F3", "A3", "C4"], duration: "2n" },
+                    { time: 2, notes: ["F3", "C4"], duration: "2n" }
+                ]
+            },
+            {
+                measure: 36,
+                chord: 'F',
+                roman: 'I',
+                function: 'Final resolution',
+                notes: [
+                    { time: 0, notes: ["F2", "F3", "A3", "C4", "F4"], duration: "1n" }
+                ]
+            }
+        ];
+        
+        // Initialize timeline
+        function createTimeline() {
+            const timelineTrack = document.getElementById('timeline-track');
+            timelineTrack.innerHTML = '';
+            
+            for (let i = 1; i <= 36; i++) {
+                const marker = document.createElement('div');
+                marker.className = 'measure-marker';
+                marker.textContent = i;
+                marker.dataset.measure = i;
+                marker.onclick = () => jumpToMeasure(i);
+                timelineTrack.appendChild(marker);
+            }
+        }
+        
+        // Jump to a specific measure
+        function jumpToMeasure(measureNum) {
+            const piece = musicalPieces.find(p => p.measure === measureNum);
+            if (piece) {
+                updateDisplay(piece);
+            }
+        }
+        
+        let isPlaying = false;
+        
+        // Show notes being played
+        function showNotes(notes) {
+            const visualizer = document.getElementById('note-visualizer');
+            visualizer.innerHTML = '';
+            
+            notes.forEach((note, index) => {
+                setTimeout(() => {
+                    const bubble = document.createElement('div');
+                    bubble.className = 'note-bubble';
+                    bubble.textContent = note.replace(/[0-9]/g, '');
+                    visualizer.appendChild(bubble);
+                    
+                    setTimeout(() => {
+                        bubble.style.animation = 'notePop 0.5s ease reverse';
+                        setTimeout(() => bubble.remove(), 500);
+                    }, 400);
+                }, index * 50);
+            });
+            
+            // Make the dancer dance
+            makeDancerDance();
+        }
+        
+        // Make the dancer dance
+        function makeDancerDance() {
+            const dancer = document.getElementById('dancer');
+            const musicNotes = document.getElementById('music-notes');
+            
+            if (!dancer || !musicNotes) return; // Safety check
+            
+            // Add dancing class
+            dancer.classList.add('dancing');
+            
+            // Show music notes occasionally
+            if (Math.random() > 0.7) {
+                musicNotes.style.display = 'block';
+                setTimeout(() => {
+                    if (musicNotes) {
+                        musicNotes.style.display = 'none';
+                    }
+                }, 2000);
+            }
+            
+            // Change dance speed based on tempo
+            const tempo = parseInt(document.getElementById('tempo').value);
+            const danceSpeed = 60 / tempo; // Convert BPM to seconds per beat
+            dancer.style.animationDuration = `${danceSpeed}s`;
+            
+            // Remove dancing class after a bit if not playing
+            if (!isPlaying) {
+                setTimeout(() => {
+                    if (dancer) {
+                        dancer.classList.remove('dancing');
+                    }
+                }, 1000);
+            }
+        }
+        
+        // Update display
+        function updateDisplay(pieceData) {
+            document.getElementById('current-chord').textContent = pieceData.chord;
+            document.getElementById('roman-numeral').textContent = pieceData.roman;
+            document.getElementById('chord-function').textContent = pieceData.function;
+            document.getElementById('measure-number').textContent = pieceData.measure;
+            
+            if (pieceData.dynamics) {
+                document.getElementById('dynamics').textContent = pieceData.dynamics;
+            }
+            
+            const progress = (pieceData.measure / 36) * 100;
+            document.getElementById('progress').style.width = progress + '%';
+            
+            // Update timeline markers
+            document.querySelectorAll('.measure-marker').forEach(marker => {
+                const markerMeasure = parseInt(marker.dataset.measure);
+                marker.classList.remove('active');
+                
+                if (markerMeasure === pieceData.measure) {
+                    marker.classList.add('active');
+                    // Scroll to active marker
+                    marker.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+                }
+                
+                if (markerMeasure < pieceData.measure) {
+                    marker.classList.add('played');
+                } else {
+                    marker.classList.remove('played');
+                }
+            });
+            
+            // Keep dancer dancing while playing
+            if (isPlaying) {
+                const dancer = document.getElementById('dancer');
+                if (dancer && !dancer.classList.contains('dancing')) {
+                    dancer.classList.add('dancing');
+                }
+            }
+        }
+        
+        // Play the piece
+        async function playPiece() {
+            if (isPlaying) return;
+            
+            if (Tone.context.state !== 'running') {
+                await Tone.start();
+            }
+            
+            isPlaying = true;
+            const tempo = parseInt(document.getElementById('tempo').value);
+            Tone.Transport.bpm.value = tempo;
+            
+            // Clear any previous scheduled events
+            Tone.Transport.cancel();
+            
+            // Create a single part for all events
+            const part = new Tone.Part((time, event) => {
+                // Trigger the notes with the correct time
+                currentPiano.triggerAttackRelease(event.notes, event.duration, time);
+                
+                // Schedule the UI update to happen at the same time as the notes
+                Tone.Draw.schedule(() => {
+                    showNotes(event.notes);
+                    updateDisplay(event.piece);
+                }, time);
+            }, []);
+            
+            // Store reference for cleanup
+            window.currentPart = part;
+            
+            // Add all events to the part
+            musicalPieces.forEach((piece) => {
+                piece.notes.forEach((noteEvent) => {
+                    const measureTime = (piece.measure - 1) * 4;
+                    const eventTime = measureTime + noteEvent.time;
+                    
+                    part.add(`0:${eventTime}:0`, {
+                        notes: noteEvent.notes,
+                        duration: noteEvent.duration,
+                        piece: piece
+                    });
+                });
+            });
+            
+            // Start the part
+            part.start(0);
+            
+            // Calculate total time and schedule stop
+            const totalTime = musicalPieces[musicalPieces.length - 1].measure * 4;
+            
+            Tone.Transport.scheduleOnce(() => {
+                stopPiece();
+            }, `0:${totalTime}:0`);
+            
+            // Start transport
+            Tone.Transport.start();
+        }
+        
+        // Stop playback
+        function stopPiece() {
+            Tone.Transport.stop();
+            Tone.Transport.cancel();
+            isPlaying = false;
+            
+            // Clear the update loop
+            if (window.updateLoopInterval) {
+                clearInterval(window.updateLoopInterval);
+                window.updateLoopInterval = null;
+            }
+            
+            document.getElementById('progress').style.width = '0%';
+            document.getElementById('note-visualizer').innerHTML = '';
+            
+            // Reset timeline
+            document.querySelectorAll('.measure-marker').forEach(marker => {
+                marker.classList.remove('active', 'played');
+            });
+            
+            // Stop dancer
+            const dancer = document.getElementById('dancer');
+            const musicNotes = document.getElementById('music-notes');
+            if (dancer) {
+                dancer.classList.remove('dancing');
+            }
+            if (musicNotes) {
+                musicNotes.style.display = 'none';
+            }
+            
+            if (musicalPieces.length > 0) {
+                updateDisplay(musicalPieces[0]);
+            }
+        }
+        
+        // Event listeners
+        document.getElementById('tempo').addEventListener('input', (e) => {
+            document.getElementById('tempo-value').textContent = e.target.value + ' BPM';
+        });
+        
+        document.getElementById('play-btn').addEventListener('click', playPiece);
+        document.getElementById('stop-btn').addEventListener('click', stopPiece);
+        
+        // Initialize everything when DOM is ready
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize timeline
+            createTimeline();
+            
+            // Initialize display with first piece
+            if (musicalPieces.length > 0) {
+                updateDisplay(musicalPieces[0]);
+            }
+            
+            // Enable play button after a short delay
+            setTimeout(() => {
+                const loadingStatus = document.getElementById('loading-status');
+                const playBtn = document.getElementById('play-btn');
+                
+                if (loadingStatus) {
+                    loadingStatus.textContent = 'Web Piano ready!';
+                    loadingStatus.classList.add('ready');
+                }
+                
+                if (playBtn) {
+                    playBtn.disabled = false;
+                }
+            }, 1000);
+        });
+        
+        // Or if DOM is already loaded
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', function() {
+                createTimeline();
+                if (musicalPieces.length > 0) {
+                    updateDisplay(musicalPieces[0]);
+                }
+            });
+        } else {
+            // DOM is already loaded
+            createTimeline();
+            if (musicalPieces.length > 0) {
+                updateDisplay(musicalPieces[0]);
+            }
+            
+            setTimeout(() => {
+                const loadingStatus = document.getElementById('loading-status');
+                const playBtn = document.getElementById('play-btn');
+                
+                if (loadingStatus) {
+                    loadingStatus.textContent = 'Web Piano ready!';
+                    loadingStatus.classList.add('ready');
+                }
+                
+                if (playBtn) {
+                    playBtn.disabled = false;
+                }
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
