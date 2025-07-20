@@ -1,3 +1,10 @@
+---
+layout:     post
+title:      Piano keys
+date:       2025-07-19
+summary:    Finish the job
+categories: piano music
+---
 If you've ever looked closely at a piano keyboard you may have 
 noticed that the widths of the white keys are not all the same 
 at the back ends (where they pass between the black keys).  Of 
