@@ -1,3 +1,10 @@
+---
+layout:     post
+title:      Nvidia what is gpu
+date:       2025-01-03
+summary:    Finish the job
+categories: quick
+---
 The “brains” of personal computers are central processing units (CPUs). Traditionally, chipmakers made CPUs faster by increasing the frequency of the clock that acts as its heartbeat. But in the early 2000s, overheating forced chipmakers to mostly abandon this technique.
 
 Chipmakers started making CPUs that could execute more than one instruction at a time. But they were held back by a programming paradigm that requires instructions to mostly be executed in order.
