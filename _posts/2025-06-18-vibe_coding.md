@@ -1,3 +1,10 @@
+---
+layout:     post
+title:      Vibe Coding
+date:       2025-07-19
+summary:    Finish the job
+categories: quick
+---
 There has been rather a lot of doomsaying (and perhaps astroturfing) lately about LLMs as the end of computer programming. Much of the discussion has been lacking nuance, so I’d like to add mine. I see claims from one side that “I used $LLM_SERVICE_PROVIDER to make a small throwaway tool, so all programmers will be unemployed in $ARBITRARY_TIME_WINDOW”, and from the other side flat-out rejections of the idea that this type of tool can have any utility.1 I think it best sheds light on these claims to examine them in the context of another field that’s been ahead of the curve on this: translation.
 
 Google translate has been around for a while, and has gone through some technological iterations; I’m most interested in discussing its recent incarnations since the switch to neural machine translation in 2016. Over the years I’ve heard much made about how this is the end of translation and interpretation as professions. I suspect the people who say such things have never actually worked with translator or interpreter. The emblematic example I’ve encountered is “I went on holiday to Japan and we used Google Translate everywhere, there’s no need to hire an interpreter or learn Japanese anymore”. While this undoubtedly speaks for the usefulness of current machine translation technology, the second half of the sentence calls for some scrutiny, particularly “anymore”. I feel confident in asserting that people who say this would not have hired a translator or learned Japanese in a world without Google Translate; they’d have either not gone to Japan at all, or gone anyway and been clueless foreigners as tourists are wont to do.
