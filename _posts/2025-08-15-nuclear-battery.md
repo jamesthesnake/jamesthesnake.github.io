@@ -17,5 +17,11 @@ The term “nuclear batteries” may evoke images of tiny nuclear reactors, but 
 
 Most research groups developing nuclear batteries are focused on harnessing energy from radioactive isotopes of nickel and hydrogen. In many nuclear battery designs, adjacent semiconductors absorb the radiation released by the radioisotopes’ nuclei and convert it to an electric current, much like a solar cell does. In other designs, thermoelectric devices convert the heat produced by the emitted radiation to electricity. So “radioisotope power source” is a better descriptor than “nuclear battery,” but for ease of language, I’ll use these terms interchangeably.
 
+On the heels of some laboratory successes, researchers are racing to commercialize these devices. The United Kingdom Atomic Energy Authority (UKAEA), Miami-based City Labs, Beijing Betavolt New Energy Technology Co., and China’s Northwest Normal University have all announced advances and funding in semiconductor-based nuclear batteries over the last two years, some with plans to commercialize. Last year, Infinity Power, in San Diego, announced a novel electrochemical approach to converting radioisotope energy.
+
+What markets these batteries will find—if they can be commercialized—will depend largely on cost, safety, and licensing issues. One of the most compelling applications is in uncrewed spacecraft for long-distance missions, which require decades of reliable power. Solar power works for missions close to the sun, but by the time a spacecraft gets to Jupiter, the available solar irradiance drops below 4 percent of that on Earth.
+
+That leaves nuclear fission and radioisotope power as the only viable options for deep-space missions. Fission is ideal for larger power needs in space, like NASA’s proposed 100-kilowatt lunar nuclear reactor. But for lower, onboard power needs, nuclear batteries offer simpler designs and lower mass. The current radioisotope workhorse in space is the radioisotope thermoelectric generator, or RTG, which produces a few hundred watts.
+
 
 
