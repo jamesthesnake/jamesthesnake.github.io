@@ -61,3 +61,17 @@ After choosing a fuel, you have to select a conversion technology. Early radiois
 
 To get around this problem, you can use a semiconductor to turn each charged particle emitted by the source into thousands of charge carriers, allowing the device to run at a few volts instead of a few kilovolts. The physics of such a device is essentially that of a solar cell, except that the source of the radiation is from a radioisotope instead of the sun. When the radioisotope is a beta-particle emitter, we call the device “betavoltaic.”
 
+Under development since the 1950s, betavoltaic batteries feature a radioactive emitter and a silicon-diode absorber. As the emitter naturally decays, electrons (in the form of beta particles) strike the absorber. This creates a cascade of electron-hole pairs, which occur when electrons are removed from their original position, leaving a “hole” that generates a small but stable supply of electric current. This process is similar to that of a solar cell, where light produces the electron-hole pairs.
+
+Betavoltaic batteries with silicon diodes have conversion efficiencies of a few percent, and up to 10 percent with silicon carbide, and can typically operate at around 1 volt. Some models indicate that this efficiency can be as high as 23.5 percent. Recent research on betavoltaics uses diamond semiconductors, which offer even higher conversion efficiencies due to their higher bandgap.
+
+Betavoltaics are solid-state, simple, and relatively inexpensive, so they offer an ideal way to produce a low-power option (less than about a milliwatt) for nuclear batteries. They can be used to create higher-power devices, but in those cases it’s often better to switch to an alpha emitter to achieve a higher power density. However, because the alpha particles will damage a semiconductor, their use generally requires a conversion option that relies on heat converted to electricity.
+
+For example, NASA uses thermoelectric conversion in its RTGs, which have been used to power not only Voyager 1 and 2, but also two Mars rovers and over 40 other NASA missions. If you’ve seen the movie The Martian, you may recall how Matt Damon’s character, trapped alone on Mars, used an RTG: He needed a heat source to stay warm while traveling in a rover, so he dug up an old RTG from a previous mission and placed it inside his vehicle.
+
+To convert the heat to electricity, the RTGs employ a series of thermocouples, which consist of a junction of two dissimilar conductors. These components produce a potential in the presence of a temperature gradient (via what’s known as the Seebeck effect). The pacemakers of the 1970s also relied on thermoelectric conversion, albeit on a smaller scale.
+
+Other, more-exotic conversion techniques include radioluminescent conversion, thermionic conversion, and thermophotovoltaic conversion (see sidebar, “Three Other Ways to Convert Radioactivity Into Electricity”), all of which work well in the lab but require higher operating temperatures or have degradation issues. Most companies are focused on developing betavoltaic technology because it permits the use of the safer beta emitters.
+
+
+
