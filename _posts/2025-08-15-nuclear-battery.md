@@ -1,4 +1,4 @@
-IN 1970, Surgeons In Paris implanted the first nuclear-powered pacemaker, and over the next five years, at least 1,400 additional people received the devices, mostly in France and the United States. Encased in titanium, the batteries for these devices contained a radioactive isotope—typically about a tenth of a gram of plutonium-238—and could operate for decades without maintenance. The invention provided relief to a population of people who previously needed surgery every few years to change out their pacemaker’s chemical battery.
+In 1970, Surgeons In Paris implanted the first nuclear-powered pacemaker, and over the next five years, at least 1,400 additional people received the devices, mostly in France and the United States. Encased in titanium, the batteries for these devices contained a radioactive isotope—typically about a tenth of a gram of plutonium-238—and could operate for decades without maintenance. The invention provided relief to a population of people who previously needed surgery every few years to change out their pacemaker’s chemical battery.
 
 As time went on, though, the whereabouts of these radioactive tickers became increasingly difficult to track. In the United States, the devices were supposed to be returned to the U.S. Department of Energy for plutonium recovery. But often, that didn’t happen. Doctors changed jobs, manufacturers went out of business, patients died, and families forgot about their loved one’s pacemaker. Too often, the radioactive material landed in crematoriums and coffins.
 
@@ -72,6 +72,23 @@ For example, NASA uses thermoelectric conversion in its RTGs, which have been us
 To convert the heat to electricity, the RTGs employ a series of thermocouples, which consist of a junction of two dissimilar conductors. These components produce a potential in the presence of a temperature gradient (via what’s known as the Seebeck effect). The pacemakers of the 1970s also relied on thermoelectric conversion, albeit on a smaller scale.
 
 Other, more-exotic conversion techniques include radioluminescent conversion, thermionic conversion, and thermophotovoltaic conversion (see sidebar, “Three Other Ways to Convert Radioactivity Into Electricity”), all of which work well in the lab but require higher operating temperatures or have degradation issues. Most companies are focused on developing betavoltaic technology because it permits the use of the safer beta emitters.
+Since the invention of small betavoltaic power sources in the 1970s, the vast majority of research on nuclear batteries has focused on power levels of less than 1 microwatt (see “Table 2: Who’s Developing Nuclear Batteries”). To date, many of these efforts have been shrouded in secrecy, and there’s been a dearth of patents in the field, which has made it difficult to judge their features and merits.
+
+Beijing Betavolt New Energy Technology Co. says it has a 100-µW battery that’s about the size of a cereal square (15 by 15 by 5 millimeters) and can last 50 years. The company is working with betavoltaics using nickel-63, tritium, promethium-147, and strontium-90, and a diamond semiconductor to convert the energy to electricity.
+
+Beijing Betavolt last year announced plans to commercially launch a 1-W version in 2025, but as of press time, it was still seeking a license and funding to do so. Potential applications include aerospace, medical implants, wearable devices, MEMS systems, advanced sensors, small drones, miniature robots, law-enforcement equipment, and fire-safety remote communication.
+
+Assuming Beijing Betavolt’s device has a conversion efficiency of about 5 percent, the battery would have to hold about 20 curies, or 740 billion becquerels (0.4 grams), of nickel-63. This is well above the typical amount of nickel-63 available on the market, which is normally in the millicurie range.
+
+Infinity Power also uses nickel-63 in its coin-size battery, but may need less of it because of the novel electrochemical conversion process it has developed. The company says its conversion efficiency exceeds 60 percent—about six times as efficient as the best radioisotope power generators.
+
+In Infinity’s design, the isotope is dissolved or suspended in a proprietary liquid electrolyte. The decay of the radioisotope produces high-energy beta particles that ionize the electrolyte, creating a potential difference between the anode and cathode immersed in the solution and driving electron flow through an external circuit to produce electricity.
+
+Academic and government researchers are also pursuing nuclear batteries. The University of Bristol, in England, and the UKAEA last year announced they had developed a battery fueled by carbon-14, a radioactive form of carbon. With carbon-14’s half-life of 5,700 years, the battery could theoretically last for millennia. The U.K. has an ample supply of the fuel because it can be scavenged from the country’s graphite-moderated, gas-cooled fission reactors. Carbon-14 produces beta particles with a maximum energy of 156 kiloelectron volt, which should be low enough to prevent damage to the battery’s diamond semiconductor.
+
+Meanwhile, a collaboration of researchers in China published a report in the December 2024 IEEE Transactions on Nuclear Science on a radioluminescent nuclear battery. The team used an X-ray source, which emits electromagnetic radiation, to mimic a beta source, which emits electrons, to help them understand how the device might perform. The X-ray photons excited two inorganic scintillators, causing them to emit light, and a commercial silicon photodiode converted the light to electricity.
+
+The products envisioned by these startups offer great promise. The key to their lasting success will be identifying markets in which the benefits of nuclear batteries outweigh the challenges. The market for these devices in space applications is strong, but whether new markets will arise remains to be seen. 
 
 
 
